@@ -8,7 +8,7 @@ Type=simple
 Environment="STOW_FILES=%h/.dotfiles"
 Environment="SSH_AUTH_SOCK=%t/keyring/ssh"
 WorkingDirectory=%h/.dotfiles
-ExecStart=%h/.dotfiles/autocommit\ stow.sh
+ExecStart=%h/.dotfiles/autocommit-stow.sh
 Restart=always
 RestartSec=5
 
