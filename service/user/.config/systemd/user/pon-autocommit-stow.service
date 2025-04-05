@@ -1,0 +1,9 @@
+[Unit]
+Description=Start script to watch .dotfiles and autocommit on changes
+
+[Service]
+ExecStart=/usr/bin/zsh -c 'source $HOME/.zshrc && $STOW_FILES/autocommit-stow.sh'
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

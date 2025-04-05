@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd "$STOW_FILES" || exit 1
 inotifywait -q -m -r --exclude '\.git' \
   -e CLOSE_WRITE \
   -e CREATE \
@@ -7,5 +8,4 @@ inotifywait -q -m -r --exclude '\.git' \
   -e MOVED_TO \
   -e MOVED_FROM \
   -e MODIFY \
-  -e ATTRIB \
   --format="git add . && git commit -m 'autocommit on change in %w' && git push" ~/.dotfiles | sh

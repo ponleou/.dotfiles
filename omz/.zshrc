@@ -113,6 +113,8 @@ export ANDROID_HOME="/home/ponleou/Android/Sdk"
 export ANDROID_SDK_ROOT="/home/ponleou/Android/Sdk"
 export CAPACITOR_ANDROID_STUDIO_PATH=/usr/bin/android-studio
 
+export STOW_FILES=$HOME/.dotfiles
+
 # for qt app in sway
 if [ "$DESKTOP_SESSION" = "sway" ]; then
     export QT_QPA_PLATFORMTHEME=qt6ct

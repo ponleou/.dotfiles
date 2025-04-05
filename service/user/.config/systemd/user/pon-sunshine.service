@@ -1,0 +1,18 @@
+[Unit]
+Description=Sunshine Streaming Service
+After=network.target
+
+[Service]
+Environment=HOME=%h
+# ExecStartPre=/usr/bin/kscreen-doctor output.HDMI-A-1.enable output.HDMI-A-1.position.-1707,0
+ExecStartPre=%h/.local/bin/pon-toggle-vdisplay.sh
+ExecStart=/usr/bin/sunshine
+# ExecStop=/usr/bin/kscreen-doctor output.HDMI-A-1.disable
+# ExecStopPost=/usr/bin/kscreen-doctor output.HDMI-A-1.disable
+ExecStop=%h/.local/bin/pon-toggle-vdisplay.sh
+# ExecStopPost=%h/.local/bin/pon-toggle-vdisplay.sh
+
+Restart=always
+
+[Install]
+WantedBy=default.target
