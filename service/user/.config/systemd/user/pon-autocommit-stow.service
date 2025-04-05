@@ -1,9 +1,16 @@
 [Unit]
-Description=Start script to watch .dotfiles and autocommit on changes
+Description=Auto-commit and push changes in dotfiles directory
+After=network.target
 
 [Service]
-ExecStart=/usr/bin/zsh -c 'source $HOME/.zshrc && $STOW_FILES/autocommit-stow.sh'
-Restart=on-failure
+Type=simple
+# Override any existing environment variable with systemd's version
+Environment="STOW_FILES=%h/.dotfiles"
+Environment="SSH_AUTH_SOCK=%t/keyring/ssh"
+WorkingDirectory=%h/.dotfiles
+ExecStart=%h/.dotfiles/autocommit\ stow.sh
+Restart=always
+RestartSec=5
 
 [Install]
 WantedBy=default.target
