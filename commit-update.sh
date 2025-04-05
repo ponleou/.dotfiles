@@ -8,5 +8,4 @@ inotifywait -q -m -r --exclude '\.git' \
   -e MOVED_FROM \
   -e MODIFY \
   -e ATTRIB \
-  -e UNLINK \
   --format="git add . && git commit -m 'autocommit on change in %w' && git push" ~/.dotfiles | sh
