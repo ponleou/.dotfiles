@@ -1,0 +1,7 @@
+[Unit]
+Description=Starts a Visual Studio Code remote tunnel, restarts when ram reaches a certain threshold
+
+[Service]
+MemoryMax=9.5G
+Restart=always
+ExecStart=code tunnel
