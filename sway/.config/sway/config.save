@@ -1,0 +1,244 @@
+# Default config for sway
+#
+# Copy this to ~/.config/sway/config and edit it to your liking.
+
+# Read `man 5 sway` for a complete reference.
+
+include catppuccin-mocha
+
+# target                 title     bg    text   indicator  border
+client.focused           $peach    $base $text  $peach     $peach
+client.focused_inactive  $overlay0 $base $text  $peach     $overlay0
+client.unfocused         $overlay0 $base $text  $peach     $overlay0
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base
+
+# other configs
+font pango: WorkSans Regular 12
+
+gaps inner 10px
+gaps outer 2px
+
+# set sway cursor
+seat seat0 xcursor_theme breeze_cursors 24
+
+# inputs:
+# disable mouse acceleration
+input "type:pointer" accel_profile flat
+
+# trackpad/touchpad settings
+input type:touchpad {
+	tap enabled
+	accel_profile flat
+	natural_scroll enabled
+	scroll_factor 0.2
+}
+
+# disable window titlebar
+default_border pixel 2
+
+focus_on_window_activation focus
+
+# autostart app
+exec swaync
+exec swaybg
+exec wl-paste --watch cliphist store
+exec gtk-update-icon-cache  # allow wofi to get app icon
+# exec walker --gapplication-service
+exec easyeffects --gapplication-service
+
+### Variables
+#
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+
+set $term konsole
+#set $menu wofi --conf ~/.config/wofi/config/ --style ~/.config/wofi/src/mocha/style.css  --show drun --allow-images
+set $menu rofi -show drun -show-icons
+
+set $file dolphin
+
+### Key bindings
+    bindsym $mod+t exec $term
+    bindsym $mod+q kill
+    bindsym $mod+space exec $menu
+    bindsym $mod+e exec $file
+    # Drag floating windows by holding down $mod and left mouse button.
+    # Resize them with right mouse button + $mod.
+    # Despite the name, also works for non-floating windows.
+    # Change normal to inverse to use left mouse button for resizing and right
+    # mouse button for dragging.
+    floating_modifier $mod normal
+
+    # Reload the configuration file
+    bindsym $mod+Shift+Escape reload
+
+    bindsym XF86Launch1 exec grim -g "$(swaymsg -t get_outputs -r | jq -r '.[] | select(.focused) | .rect | "\(.x),\(.y) \(.width)x\(.height)"')" -l 9 -t ppm - | satty --filename - --fullscreen --initial-tool crop --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png
+    bindsym $mod+XF86Launch1 exec sway-screenshot -m window --clipboard-only
+    bindsym Print exec sleep 2 && grim -g "$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .rect | "\(.x),\(.y) \(.width)x\(.height)"')" -l 9 -t ppm - | satty --filename - --fullscreen --initial-tool crop --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png 2>~/grim-satty-error.log
+    bindsym $mod+Print exec sway-screenshot -m window --clipboard-only`
+
+    # opening cliphist with wofi
+    # bindsym $mod+v exec cliphist list | wofi --dmenu | cliphist decode | wl-copy
+	
+    # clipboard history with rofi
+    bindsym $mod+v exec rofi -modi clipboard:~/.config/cliphist/contrib/cliphist-rofi-img -show clipboard -show-icons
+	
+    # Exit sway (logs you out of your Wayland session)
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+#
+# Layout stuff:
+#
+    # You can "split" the current object of your focus with
+    # $mod+b or $mod+v, for horizontal and vertical splits
+    # respectively.
+    bindsym $mod+h splith
+    bindsym $mod+g splitv
+
+    # rotate focused tile
+    bindsym $mod+Return layout toggle split
+
+    bindsym $mod+f fullscreen
+    bindsym $mod+Shift+f floating toggle
+
+#
+# Moving around:
+#
+    # Move your focus around
+    bindsym $mod+A focus left
+    bindsym $mod+S focus down
+    bindsym $mod+W focus up
+    bindsym $mod+D focus right
+
+    # Reposition the focused window
+    bindsym $mod+Left move left
+    bindsym $mod+Down move down
+    bindsym $mod+Up move up
+    bindsym $mod+Right move right
+
+#
+# Workspaces:
+#
+    set $next_or_new swaymsg -r -t get_workspaces | jq -r --arg OUTPUT $(swaymsg -t get_outputs -r | jq -r '.[] | select(.focused == true) | .name') '(. | (max_by(.num) | .num)) as $max | [.[] | select(.output == $OUTPUT)] | (max_by(.num) | .num) as $maxOutput | (.[] | select(.focused == true) | .num) as $current | if $maxOutput > $current then "next_on_output" else $max + 1 end'
+    set $previous_or_new swaymsg -r -t get_workspaces | jq -r --arg OUTPUT $(swaymsg -t get_outputs -r | jq -r '.[] | select(.focused == true) | .name') '(. | (max_by(.num) | .num)) as $max | [.[] | select(.output == $OUTPUT)] | (min_by(.num) | .num) as $minOutput | (.[] | select(.focused == true) | .num) as $current | if $minOutput < $current then "prev_on_output" else $max + 1 end'   
+
+    # Switch to workspace
+    bindsym $mod+1 workspace number 1
+    bindsym $mod+2 workspace number 2
+    bindsym $mod+3 workspace number 3
+    bindsym $mod+4 workspace number 4
+    bindsym $mod+5 workspace number 5
+    bindsym $mod+6 workspace number 6
+    bindsym $mod+7 workspace number 7
+    bindsym $mod+8 workspace number 8
+    bindsym $mod+9 workspace number 9
+    bindsym $mod+0 workspace number 10
+    bindsym $mod+x workspace next
+    bindsym $mod+z workspace prev
+    bindsym $mod+Ctrl+Right workspace next
+    bindsym $mod+Ctrl+left workspace prev
+    bindsym $mod+Ctrl+x exec bash -c "swaymsg 'workspace $($next_or_new)' && ~/.local/bin/pon-reorder-workspace.sh"
+    bindsym $mod+Ctrl+z exec bash -c "swaymsg 'workspace $($previous_or_new)' && ~/.local/bin/pon-reorder-workspace.sh"
+
+    # Move focused container to workspace
+    bindsym $mod+Shift+1 move container to workspace number 1
+    bindsym $mod+Shift+2 move container to workspace number 2
+    bindsym $mod+Shift+3 move container to workspace number 3
+    bindsym $mod+Shift+4 move container to workspace number 4
+    bindsym $mod+Shift+5 move container to workspace number 5
+    bindsym $mod+Shift+6 move container to workspace number 6
+    bindsym $mod+Shift+7 move container to workspace number 7
+    bindsym $mod+Shift+8 move container to workspace number 8
+    bindsym $mod+Shift+9 move container to workspace number 9
+    bindsym $mod+Shift+0 move container to workspace number 10
+
+    bindsym $mod+Shift+x exec bash -c "swaymsg 'move container to workspace $($next_or_new), workspace next' && ~/.local/bin/pon-reorder-workspace.sh"
+    bindsym $mod+Shift+z exec bash -c "swaymsg 'move container to workspace $($previous_or_new), workspace prev' && ~/.local/bin/pon-reorder-workspace.sh"
+
+#
+# Scratchpad:
+#
+    # Sway has a "scratchpad", which is a bag of holding for windows.
+    # You can send windows there and get them back later.
+
+    # Move the currently focused window to the scratchpad
+    bindsym $mod+Tab move scratchpad
+
+    # Show the next scratchpad window or hide the focused scratchpad window.
+    # If there are multiple scratchpad windows, this command cycles through them.
+    # they return as floating window
+    bindsym $mod+Shift+Tab scratchpad show
+
+#
+# Resizing containers:
+#
+mode "resize" {
+    # left will shrink the containers width
+    # right will grow the containers width
+    # up will shrink the containers height
+    # down will grow the containers height
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+
+# You can get the names of your outputs by running: swaymsg -t get_outputs
+output eDP-2 resolution 2560x1600 position 0,0
+output eDP-2 scale 1.5
+
+# Macbook Air 2020 edid virtual display
+
+# output DP-3 resolution 2560x1600 position -1707,0
+# output HDMI-A-1 resolution 2560x1600 position -1707,0
+
+output DP-3 disable
+output HDMI-A-1 disable
+
+output * bg ./wallpaper/PXL_Luna_Beach.jpg fill
+
+### Idle configuration
+#
+# Example configuration:
+#
+ exec swayidle -w \
+          timeout 300 'swaylock -f -C /home/ponleou/.config/swaylock/mocha.conf --clock --indicator --datestr '%d-%m-%Y'' \
+          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+          before-sleep 'swaylock -f -C /home/ponleou/.config/swaylock/mocha.conf --clock --indicator --datestr '%d-%m-%Y''
+#
+# This will lock your screen after 300 seconds of inactivity, then turn off
+# your displays after another 300 seconds, and turn your screens back on when
+# resumed. It will also lock your screen before your computer goes to sleep.
+
+#
+# Utilities:
+#
+    # Special keys to adjust volume via PulseAudio
+    bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
+    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
+    bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
+    bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+    # Special keys to adjust brightness via brightnessctl
+    bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+    bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+    # Special key to take a screenshot with grim
+    #bindsym Print exec grim
+
+    bindsym XF86AudioPlay exec playerctl play
+    bindsym XF86AudioPause exec playerctl pause	
+#
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+bar {
+	swaybar_command waybar
+}
+
+include /etc/sway/config.d/*
