@@ -24,3 +24,10 @@
 2025/04/05 (19:49:21) | WARNING: ROCm SMI: Failed to get GPU power usage
 2025/04/05 (19:49:21) | WARNING: ROCm SMI: Failed to get PCIe throughput
 2025/04/05 (19:49:49) | WARNING: Failed to join _runner thread on exit!
+
+2025/04/05 (19:56:32) | ===> btop++ v.1.4.0
+2025/04/05 (19:56:32) | WARNING: ROCm SMI: Failed to get maximum GPU power draw, defaulting to 225W
+2025/04/05 (19:56:32) | WARNING: ROCm SMI: Failed to get maximum GPU temperature, defaulting to 110°C
+2025/04/05 (19:56:32) | WARNING: ROCm SMI: Failed to get VRAM utilization
+2025/04/05 (19:56:32) | WARNING: ROCm SMI: Failed to get GPU power usage
+2025/04/05 (19:56:32) | WARNING: ROCm SMI: Failed to get PCIe throughput
