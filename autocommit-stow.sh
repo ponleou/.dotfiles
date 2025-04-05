@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd "$STOW_FILES" || exit 1
 inotifywait -q -m -r --exclude '\.git' \
   -e CLOSE_WRITE \
   -e CREATE \
