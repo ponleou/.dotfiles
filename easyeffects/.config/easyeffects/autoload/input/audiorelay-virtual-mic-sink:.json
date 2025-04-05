@@ -1,0 +1,6 @@
+{
+    "device": "audiorelay-virtual-mic-sink",
+    "device-description": "Virtual-Mic",
+    "device-profile": "",
+    "preset-name": "RNN"
+}
