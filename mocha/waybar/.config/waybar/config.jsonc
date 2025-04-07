@@ -132,8 +132,8 @@
     "on-click-middle": "playerctl previous",
     "on-click-right": "playerctl next",
     "format-icons": {
-      "Playing": "󰒮 󰐌 󰒭",
-      "Paused": "󰒮 󰏥 󰒭"
+      "Playing": "󰒮  󰏥  󰒭",
+      "Paused": "󰒮  󰐌  󰒭"
     }
   },
 
