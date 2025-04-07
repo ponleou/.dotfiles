@@ -82,7 +82,7 @@ set $file dolphin
     bindsym $mod+v exec rofi -modi clipboard:~/.config/cliphist/contrib/cliphist-rofi-img -show clipboard -show-icons
 	
     # emoji picker with rofi
-    bindsym $mod+. exec rofi -modi emoji -show emoji
+    bindsym $mod+Period exec rofi -modi emoji -show emoji
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
