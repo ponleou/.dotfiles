@@ -153,7 +153,7 @@ set $file dolphin
     bindsym $mod+Shift+z exec bash -c "swaymsg 'move container to workspace $(~/.config/sway/previous-or-new-workspace.sh), workspace prev' && ~/.config/sway/reorder-workspace.sh"
 
     # Sticky window
-    bindsym $mod+t sticky toggle
+    bindsym $mod+Shift+t sticky toggle
 
 #
 # Scratchpad:
