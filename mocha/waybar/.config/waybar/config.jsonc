@@ -62,7 +62,7 @@
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true,
-    "tooltip-format": "{tooltip}"
+    "tooltip-format": "Tooltip: {tooltip}"
   },
 
   "backlight": {
