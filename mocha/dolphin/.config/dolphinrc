@@ -48,6 +48,8 @@ MenuBar=Disabled
 Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,pothumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,mobithumbnail,opendocumentthumbnail,gsthumbnail,quithumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs
 
 [ViewPropertiesDialog]
+1706x1066 screen: Height=542
+1706x1066 screen: Width=407
 1707x1067 screen: Height=634
 1707x1067 screen: Width=401
 2 screens: Height=634
