@@ -5,7 +5,7 @@
             "rnnoise#0"
         ],
         "rnnoise#0": {
-            "bypass": true,
+            "bypass": false,
             "enable-vad": true,
             "input-gain": 0.0,
             "model-name": "",
