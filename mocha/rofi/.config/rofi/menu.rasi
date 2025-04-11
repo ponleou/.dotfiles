@@ -12,13 +12,12 @@ element-text, element-icon, mode-switcher {
 }
 
 window {
-    border: 1px;
     border-color: transparent;
     background-color: @base;
     /*border-radius: 20px; */
     padding: 0px 20px 0px 0px;
     font: @font;
-    border: 5px;
+    border: 2px;
     border-color: @peach;
 }
 
