@@ -252,7 +252,7 @@
   "custom/power": {
     "format": "",
     "tooltip": true,
-    "tooltip-format": "Power Options"
+    "tooltip-format": "Power Options",
     "on-click": "wlogout"
   }
 }
