@@ -212,7 +212,8 @@
     "format-critical": "{temperatureC}°C {icon}",
     "format": "{temperatureC}°C {icon}",
     "format-icons": ["", "", ""],
-    "on-click": "konsole -e btop"
+    "on-click": "konsole -e btop",
+    "tooltip-format": "Temperature: {temperatureC}°C"
   },
 
   "network": {
