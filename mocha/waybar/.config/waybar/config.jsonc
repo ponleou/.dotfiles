@@ -161,9 +161,9 @@
     "format-icons": {
       "activated": "",
       "deactivated": ""
-    }
-    "tooltip-format-activated": "Sleep Disabled"
-    "tooltip-format-deactivated": "Sleep Enabled"
+    },
+    "tooltip-format-activated": "Sleep Disabled",
+    "tooltip-format-deactivated": "Sleep Enabled",
  },
 
   "clock": {
