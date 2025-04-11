@@ -251,7 +251,7 @@
 
   "custom/power": {
     "format": "",
-    "tooltip": false,
+    "tooltip": true,
     "on-click": "wlogout"
   }
 }
