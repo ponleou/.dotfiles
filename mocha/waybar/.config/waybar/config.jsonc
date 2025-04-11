@@ -162,6 +162,8 @@
       "activated": "",
       "deactivated": ""
     }
+    "tooltip-format-activated": "Sleep Disabled"
+    "tooltip-format-deactivated": "Sleep Enabled"
   },
 
   "clock": {
