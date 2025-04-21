@@ -24,7 +24,7 @@ DirHistory[$e]=/media/Shared/Downloads/,/media/Shared/Drive/Games in folders/R.E
 DoubleClickViewAction=none
 GlobalViewProps=false
 RememberOpenedTabs=false
-ShowStatusBar=false
+ShowStatusBar=Disabled
 Version=202
 ViewPropsTimestamp=2023,10,22,13,32,19.79
 
