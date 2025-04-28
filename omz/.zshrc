@@ -108,7 +108,7 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
 export ANDROID_HOME="/home/ponleou/Android/Sdk"
 export ANDROID_SDK_ROOT="/home/ponleou/Android/Sdk"
 export CAPACITOR_ANDROID_STUDIO_PATH=/usr/bin/android-studio
