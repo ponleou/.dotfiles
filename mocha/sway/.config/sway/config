@@ -33,6 +33,7 @@ input type:touchpad {
 	accel_profile flat
 	natural_scroll enabled
 	scroll_factor 0.2
+	drag_lock enabled
 }
 
 # disable window titlebar
