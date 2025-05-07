@@ -111,7 +111,7 @@ tooltip label {
   padding: 0 10px;
 }
 
-#battery.discharging {
+#battery.charging {
   color: @green;
 }
 
