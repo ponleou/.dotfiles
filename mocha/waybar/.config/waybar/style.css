@@ -111,6 +111,10 @@ tooltip label {
   padding: 0 10px;
 }
 
+#battery.discharging {
+  color: @green;
+}
+
 #custom-playerctl {
   background-color: @peach;
   color: @mantle;
