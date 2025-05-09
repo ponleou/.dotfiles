@@ -47,7 +47,7 @@ exec swaybg
 exec wl-paste --watch cliphist store
 exec gtk-update-icon-cache  # allow wofi to get app icon
 exec easyeffects --gapplication-service
-exec /usr/lib/polkit-kde-authentication-agent-1 # for polkit, using kde's
+exec /usr/lib/polkit-kde-authentication-agent-1
 
 ### Variables
 #
