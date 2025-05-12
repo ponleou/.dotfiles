@@ -199,6 +199,8 @@ output eDP-2 scale 1.5
 # output DP-3 resolution 2560x1600 position -1707,0
 # output HDMI-A-1 resolution 2560x1600 position -1707,0
 
+output HDMI-A-1 resolution 2560x1600@60Hz
+
 output DP-3 disable
 output HDMI-A-1 disable
 
