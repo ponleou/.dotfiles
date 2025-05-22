@@ -49,7 +49,7 @@ exec wl-paste --watch cliphist store
 exec gtk-update-icon-cache  # allow wofi to get app icon
 exec easyeffects --gapplication-service
 exec /usr/lib/polkit-kde-authentication-agent-1
-exec kwallet6
+exec kwalletd6
 
 ### Variables
 #
