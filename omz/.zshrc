@@ -118,3 +118,6 @@ if [ "$DESKTOP_SESSION" = "sway" ]; then
     export QT_QPA_PLATFORMTHEME=qt6ct
     export XDG_CURRENT_DESKTOP=sway
 fi
+
+# set mesa/radv as default vulkan driver
+export AMD_VULKAN_ICD=RADV
