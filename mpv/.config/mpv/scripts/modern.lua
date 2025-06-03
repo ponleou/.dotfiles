@@ -34,7 +34,7 @@ local user_opts = {
     seekbarkeyframes = true,    -- use keyframes when dragging the seekbar
     title = '${media-title}',   -- string compatible with property-expansion
                                 -- to be shown as OSC title
-    showtitle = true,            -- show title and no hide timeout on pause
+    showtitle = false,            -- show title and no hide timeout on pause
     timetotal = true,              -- display total time instead of remaining time?
     timems = false,             -- display timecodes with milliseconds
     visibility = 'auto',        -- only used at init to set visibility_mode(...)
