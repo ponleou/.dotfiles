@@ -3,7 +3,7 @@
 * {
   border: none;
   /* border-radius: 10px; */
-  font-family: SymbolsNerdFont, WorkSans, FontAwesome6Free;
+  font-family: WorkSans, FontAwesome6Free, SymbolsNerdFont;
   font-size: 12px;
   min-height: 0;
 }
