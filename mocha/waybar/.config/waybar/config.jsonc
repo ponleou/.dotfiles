@@ -67,7 +67,7 @@
 
   "backlight": {
     "format": "{icon}",
-    "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"],
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
     "tooltip-format": "Brightness: {percent}%"
   },
 
