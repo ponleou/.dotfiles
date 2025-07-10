@@ -1,6 +1,6 @@
 #!/bin/bash
 
-inotifywait -q -m -r --exclude '\.git' \
+inotifywait -q -m -r --exclude '/\.git($|/)' \
   -e CLOSE_WRITE \
   -e CREATE \
   -e DELETE \
