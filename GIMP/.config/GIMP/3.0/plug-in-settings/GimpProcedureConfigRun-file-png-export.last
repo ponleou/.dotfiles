@@ -1,7 +1,7 @@
 # settings
 
 (interlaced no)
-(compression 0)
+(compression 9)
 (bkgd no)
 (offs no)
 (phys yes)

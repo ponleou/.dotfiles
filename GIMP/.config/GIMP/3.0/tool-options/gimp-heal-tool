@@ -2,8 +2,9 @@
 
 (brush "2. Hardness 050")
 (dynamics "Pressure Size")
-(pattern "Pine")
-(palette "Color History")
+(pattern "Starfield")
+(palette "Standard")
+(brush-size 52)
 (brush-hardness 0.5)
 
 # end of gimp-heal-tool options

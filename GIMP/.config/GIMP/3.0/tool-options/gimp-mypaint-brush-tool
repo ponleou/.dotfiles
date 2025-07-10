@@ -1,7 +1,7 @@
 # GIMP gimp-mypaint-brush-tool options
 
 (mybrush "100% Opaque")
-(pattern "Pine")
+(pattern "Starfield")
 (brush-size 51)
 (brush-hardness 0.5)
 (radius 3.0099999904632568)
