@@ -1,1 +1,2 @@
-mpv/.config/mpv/shaders/**/*.glsl linguist-language=none 
+mpv/.config/mpv/shaders/**/* linguist-language=none 
+mpv/.config/mpv/scripts/**/* linguist-language=none 
