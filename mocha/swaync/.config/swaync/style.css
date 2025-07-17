@@ -369,6 +369,7 @@ slider {
 .widget-backlight {
     padding: 1rem;
     border: @peach solid 1px;
+    border-radius: 5pxl;
 }
 
 .widget-backlight trough highlight {
