@@ -106,6 +106,10 @@
                     "active": true,
                     "command": "sh -c 'pactl set-sink-mute @DEFAULT_SINK@ toggle'",
                     "update-command": "sh -c 'pactl get-sink-mute @DEFAULT_SINK@ | grep -q yes && echo muted || echo unmuted'"
+                },
+                {
+                    "label": "",
+                    "command": "wlogout"
                 }
             ]
         }
