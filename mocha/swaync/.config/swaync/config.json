@@ -101,9 +101,10 @@
                 },
                 {
                     "label": "",
-                    "type": "custom",
-                    "exec": "pactl get-sink-mute @DEFAULT_SINK@ | grep -q 'yes' && echo '' || echo ''",
-                    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+                    "type": "toggle",
+                    "active": true,
+                    "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && pactl set-sink-mute @DEFAULT_SINK@ 1 || pactl set-sink-mute @DEFAULT_SINK@ 0'",
+                    "update-command": "sh -c 'pactl get-sink-mute @DEFAULT_SINK@ | grep -q \"yes\" && echo false || echo true'"
                 }
             ]
         }
