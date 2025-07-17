@@ -381,3 +381,22 @@ slider {
 .image {
     padding-right: 0.5rem;
 }
+
+.widget-buttons-grid {
+    padding: 15px;
+}
+
+.widget-buttons-grid flowbox {
+    display: flex;
+}
+
+.widget-buttons-grid flowbox > * {
+    margin-right: 7.5px;
+    padding: 7.5px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.widget-buttons-grid flowbox > *:last-child {
+    margin: 0;
+}
