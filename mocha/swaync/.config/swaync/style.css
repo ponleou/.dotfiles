@@ -314,6 +314,7 @@ scale trough {
 }
 
 .widget-mpris > box > button:last-child {
+    margin: 0;
     margin-left: 1rem;
 }
 
