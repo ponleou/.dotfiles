@@ -394,7 +394,7 @@ slider {
 
 .widget-buttons-grid flowbox > * {
     margin-right: 5rem;
-    padding: 2.5rem 5rem;
+    padding: 5rem 10rem;
     background-color: @peach;
     border-radius: 5px;
     color: @mantle;
