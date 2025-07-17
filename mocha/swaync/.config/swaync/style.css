@@ -399,7 +399,7 @@ slider {
 }
 
 .widget-buttons-grid {
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 .widget-buttons-grid flowbox > * {
