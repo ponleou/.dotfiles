@@ -16,6 +16,7 @@ scale trough {
     background-color: #313244;
     min-height: 2px;
     min-width: 70px;
+    border-radius: 1px;
 }
 
 .floating-notifications.background .notification-row .notification-background {
