@@ -9,6 +9,7 @@
 
 trough highlight {
     background: @text;
+    border-radius: 1px;
 }
 
 scale trough {
