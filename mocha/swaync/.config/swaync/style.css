@@ -353,7 +353,7 @@ slider {
 }
 
 .widget-volume {
-    padding-top: 1rem;
+    padding: 1rem;
 }
 
 .widget-volume label {
@@ -367,7 +367,7 @@ slider {
 }
 
 .widget-backlight {
-    padding-top: 1rem;
+    padding: 1rem;
 }
 
 .widget-backlight trough highlight {
@@ -389,6 +389,7 @@ slider {
 }
 
 .widget-buttons-grid {
+    padding: 1rem;
 }
 
 .widget-buttons-grid flowbox > * {
