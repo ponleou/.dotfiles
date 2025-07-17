@@ -313,7 +313,7 @@ scale trough {
     border: 1px solid @peach;
     border-radius: 7px;
     padding: 0 0.5rem;
-    margin: 0 0.5rem;
+    margin: 0 0.1rem;
 }
 
 .mpris-overlay {
