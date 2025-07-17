@@ -321,7 +321,7 @@ scale trough {
 }
 
 .widget-mpris-player {
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 .widget-mpris-title {
