@@ -218,8 +218,8 @@
 
   "network": {
     "interval": 60,
-    "interface-ethernet": "enp1s*",
-    "interface-wifi": "wlan0",
+    "interface-ethernet": "enp8s0f3u1u4",
+    "interface-wifi": "wlp5s0",
     "format-ethernet": "",
     "format-wifi": "",
     "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
