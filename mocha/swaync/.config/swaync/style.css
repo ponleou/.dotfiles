@@ -8,7 +8,7 @@
 }
 
 trough highlight {
-    background: #cdd6f4;
+    background: @text;
 }
 
 scale trough {
