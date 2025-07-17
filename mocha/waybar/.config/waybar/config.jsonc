@@ -218,7 +218,7 @@
 
   "network": {
     "interval": 60,
-    "interface-ethernet": "test enp1s*",
+    "interface-ethernet": "enp1s*",
     "interface-wifi": "wlan0",
     "format-ethernet": "",
     "format-wifi": "",
