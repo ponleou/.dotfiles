@@ -50,7 +50,7 @@
             "app-name": "Spotify"
         }
     },
-    "widgets": ["buttons-grid", "volume", "backlight", "inhibitors", "title", "dnd", "notifications", "mpris"],
+    "widgets": ["buttons-grid", "volume", "backlight", "inhibitors", "title", "dnd", "mpris", "notifications"],
     "widget-config": {
         "volume": {
             "label": ""
@@ -79,11 +79,12 @@
         "mpris": {
             "blacklist": [],
             "autohide": false,
-            "show-album-art": "always",
+            "image-size": 96,
+            "image-radius": 12,
             "loop-carousel": false
         },
         "buttons-grid": {
-            "buttons-per-row": 7,
+            "buttons-per-row": 4,
             "actions": [
                 {
                     "label": "",
@@ -103,8 +104,12 @@
                     "label": "",
                     "type": "toggle",
                     "active": true,
-                    "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && pactl set-sink-mute @DEFAULT_SINK@ 1 || pactl set-sink-mute @DEFAULT_SINK@ 0'",
-                    "update-command": "sh -c 'pactl get-sink-mute @DEFAULT_SINK@ | grep -q \"yes\" && echo false || echo true'"
+                    "command": "sh -c 'pactl set-sink-mute @DEFAULT_SINK@ toggle'",
+                    "update-command": "sh -c 'pactl get-sink-mute @DEFAULT_SINK@ | grep -q yes && echo muted || echo unmuted'"
+                },
+                {
+                    "label": "",
+                    "command": "wlogout"
                 }
             ]
         }
