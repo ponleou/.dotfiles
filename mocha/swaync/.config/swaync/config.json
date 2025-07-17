@@ -79,8 +79,8 @@
         "mpris": {
             "blacklist": [],
             "autohide": false,
-                  "image-size": 96,
-      "image-radius": 12
+            "image-size": 96,
+            "image-radius": 12,
             "show-album-art": "always",
             "loop-carousel": false
         },
