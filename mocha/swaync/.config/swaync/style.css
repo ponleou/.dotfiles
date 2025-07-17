@@ -50,7 +50,7 @@ slider {
     .notification
     .notification-content
     .summary {
-    color: #cdd6f4;
+    color: @text;
 }
 
 .floating-notifications.background
