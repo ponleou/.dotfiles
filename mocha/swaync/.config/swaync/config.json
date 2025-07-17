@@ -98,6 +98,12 @@
                     "active": true,
                     "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && rfkill block bluetooth || rfkill unblock bluetooth'",
                     "update-command": "sh -c '[[ $(rfkill list bluetooth | grep -q \"Soft blocked: no\" && echo true || echo false) == true ]] && echo true || echo false'"
+                },
+                {
+                    "label": "",
+                    "type": "custom",
+                    "exec": "pactl get-sink-mute @DEFAULT_SINK@ | grep -q 'yes' && echo '' || echo ''",
+                    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
                 }
             ]
         }
