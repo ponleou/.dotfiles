@@ -314,7 +314,7 @@ scale trough {
 }
 
 .mpris-overlay {
-    background-color: @mantle;
+    background-color: @base;
 }
 
 .widget-mpris-player {
