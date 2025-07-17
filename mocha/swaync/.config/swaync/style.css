@@ -366,12 +366,12 @@ slider {
 }
 
 .widget-backlight trough highlight {
-    background: #f9e2af;
+    background: @peach;
 }
 
 .widget-backlight label {
     font-size: 1.5rem;
-    color: #f9e2af;
+    color: @peach;
 }
 
 .widget-backlight .KB {
