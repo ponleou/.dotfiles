@@ -86,18 +86,6 @@
         }
     },
 
-    "sway/window": {
-        "format": "{title}",
-        "max-length": 60,
-        "all-outputs": false,
-        "offscreen-css": true,
-        "offscreen-css-text": "(inactive)",
-        "rewrite": {
-            "(.*) - Mozilla Firefox": " $1",
-            "(.*) - fish": "> [$1]"
-        }
-    },
-
     "bluetooth": {
         "format-on": "",
         "format-disabled": "󰂲",
