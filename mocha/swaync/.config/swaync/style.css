@@ -398,8 +398,8 @@ slider {
     margin-right: 1rem;
     padding: 1rem 1rem;
     background-color: @peach;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
+    border-radius: 7px;
+    border-top-radius: 0;
     color: @mantle;
 }
 
