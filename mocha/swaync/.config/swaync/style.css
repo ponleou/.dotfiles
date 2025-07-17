@@ -136,7 +136,7 @@ slider {
     /*border-radius: 12.6px;*/
     margin: 18px;
     background-color: #1e1e2e;
-    color: #cdd6f4;
+    color: @text;
     padding: 14px;
 }
 
