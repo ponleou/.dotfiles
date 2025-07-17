@@ -357,6 +357,7 @@ slider {
     border: @peach solid 1px;
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
+    border-bottom: none;
 }
 
 .widget-volume label {
@@ -374,6 +375,7 @@ slider {
     border: @peach solid 1px;
     border-bottom-right-radius: 7px;
     border-bottom-left-radius: 7px;
+    border-top: none;
 }
 
 .widget-backlight trough highlight {
