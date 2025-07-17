@@ -318,6 +318,7 @@ scale trough {
 
 .mpris-overlay {
     background-color: @peach;
+    border-radius: 16px;
 }
 
 .mpris-overlay > box > button {
