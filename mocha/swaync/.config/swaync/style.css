@@ -310,7 +310,8 @@ scale trough {
 }
 
 .widget-mpris {
-    /* The parent to all players */
+    border: 1px solid @peach;
+    border-radius: 7px;
 }
 
 .mpris-overlay {
