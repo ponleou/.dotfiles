@@ -84,7 +84,7 @@
             "loop-carousel": false
         },
         "buttons-grid": {
-            "buttons-per-row": 7,
+            "buttons-per-row": 4,
             "actions": [
                 {
                     "label": "",
