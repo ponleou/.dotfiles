@@ -332,6 +332,11 @@ scale trough {
 .widget-mpris-subtitle {
     font-size: 0.9rem;
 }
+
+.widget-mpris-album-art {
+    border-radius: 7px;
+}
+
 .widget-menubar > box > .menu-button-bar > button > label {
     font-size: 3rem;
     padding: 0.5rem 2rem;
