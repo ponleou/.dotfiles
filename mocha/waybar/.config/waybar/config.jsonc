@@ -224,7 +224,7 @@
     "pulseaudio": {
         "format": "{icon}",
         "format-bluetooth": "{icon}",
-        "format-bluetooth-muted": " {icon}",
+        "format-bluetooth-muted": " {icon}",
         "format-muted": "",
         "format-source": "{volume}% ",
         "format-source-muted": "",
