@@ -14,7 +14,7 @@ trough highlight {
 scale trough {
     margin: 0rem 0 0 1rem;
     background-color: #313244;
-    min-height: 8px;
+    min-height: 2px;
     min-width: 70px;
 }
 
