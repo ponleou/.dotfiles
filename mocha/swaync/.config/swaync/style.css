@@ -359,7 +359,6 @@ scale trough {
 }
 
 .widget-volume {
-    margin-top: 1rem;
     padding: 1rem;
     border: @peach solid 1px;
     border-top-right-radius: 7px;
