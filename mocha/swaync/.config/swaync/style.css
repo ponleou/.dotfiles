@@ -377,6 +377,7 @@ slider {
     border-bottom-right-radius: 7px;
     border-bottom-left-radius: 7px;
     border-top: none;
+    margin-bottom: 1rem;
 }
 
 .widget-backlight trough highlight {
