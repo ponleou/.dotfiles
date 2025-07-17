@@ -383,12 +383,6 @@ slider {
 }
 
 .widget-buttons-grid {
-    padding: 15px;
-}
-
-.widget-buttons-grid flowbox {
-    display: flex;
-    flex-direction: column;
 }
 
 .widget-buttons-grid flowbox > * {
