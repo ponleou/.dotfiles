@@ -218,17 +218,19 @@
 
   "network": {
     "interval": 60,
-    "interface-ethernet": "enp1s*",
-    "interface-wifi": "wlan0",
+    "interface-ethernet": "enp8s0f3u1u4",
+    "interface-wifi": "wlp5s0",
     "format-ethernet": "",
-    "format-wifi": "",
+    "format-wifi": "󰖩",
     "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
-    "tooltip-format-wifi": "{ifname} ({essid} {signalStrength}%): {ipaddr}/{cidr}",
+    "tooltip-format-wifi": "{ifname} ({essid} {signalStrength}%)",
     "format-linked": "(No IP) ",
-    "format-disconnected": "",
+    "format-disconnected": "󱚵",
+    "format-disabled": "󰖪",
     "on-click": "konsole -e nmtui"
   },
-  
+
+
   "pulseaudio": {
     "format": "{icon}",
     "format-bluetooth": "{icon}",
@@ -243,7 +245,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""]
+      "default": ["", "󰖀", ""]
     },
     "tooltip-format": "{desc}\n{volume}%  {format_source}",
     "on-click": "pavucontrol-qt"
