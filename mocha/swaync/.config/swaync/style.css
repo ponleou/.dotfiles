@@ -68,7 +68,7 @@ slider {
     .notification
     .notification-content
     .body {
-    color: #cdd6f4;
+    color: @text;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * {
