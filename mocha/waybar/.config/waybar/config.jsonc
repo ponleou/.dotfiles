@@ -150,8 +150,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
+            "activated": "󰒳",
+            "deactivated": "󰒲"
         },
         "tooltip-format-activated": "Sleep Disabled",
         "tooltip-format-deactivated": "Sleep Enabled"
