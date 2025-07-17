@@ -313,6 +313,10 @@ scale trough {
     /* The parent to all players */
 }
 
+.mpris-overlay {
+    background-color: @crust;
+}
+
 .widget-mpris-player {
     padding: 8px;
     margin: 8px;
