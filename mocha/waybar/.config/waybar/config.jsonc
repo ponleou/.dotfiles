@@ -217,13 +217,12 @@
   },
 
   "network": {
-  "interval": 10,
   "interface": "enp8s0f3u1u4",
+  "interval": 5,
   "format": " {ipaddr}",
   "format-disabled": "Disconnected",
-  "format-linked": "(No IP) ",
-  "on-click": "konsole -e nmtui"  },
-  
+  "on-click": "konsole -e nmtui"
+},  
   "pulseaudio": {
     "format": "{icon}",
     "format-bluetooth": "{icon}",
