@@ -217,7 +217,6 @@
   },
 
   "network": {
-  "interface": "enp8s0f3u1u4",
   "interval": 5,
   "format": " {ipaddr}",
   "format-disabled": "Disconnected",
