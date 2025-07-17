@@ -399,6 +399,7 @@ slider {
     padding: 1rem 1rem;
     background-color: @peach;
     border-radius: 7px;
+    border-top-radius: 0;
     color: @mantle;
 }
 
