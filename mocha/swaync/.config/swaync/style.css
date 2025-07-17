@@ -98,7 +98,7 @@ slider {
     .notification-action:hover {
     box-shadow: inset 0 0 0 1px #45475a;
     background-color: #313244;
-    color: #cdd6f4;
+    color: @text;
 }
 
 .floating-notifications.background
