@@ -357,7 +357,7 @@ slider {
 }
 
 .widget-volume label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: @peach;
     min-width: 25px;
 }
