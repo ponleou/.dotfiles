@@ -217,11 +217,19 @@
   },
 
   "network": {
-    "interface": "enp8s0f3u1u4",
-    "interval": 5,
-    "format": " {ipaddr}",
-    "format-disabled": "Disconnected"
-},  
+    "interval": 60,
+    "interface-ethernet": "enp8s0f3u1u4",
+    "interface-wifi": "wlp5s0",
+    "format-ethernet": "",
+    "format-wifi": "",
+    "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
+    "tooltip-format-wifi": "{ifname} ({essid} {signalStrength}%)",
+    "format-linked": "(No IP) ",
+    "format-disconnected": "",
+    "on-click": "konsole -e nmtui"
+  },
+
+
   "pulseaudio": {
     "format": "{icon}",
     "format-bluetooth": "{icon}",
