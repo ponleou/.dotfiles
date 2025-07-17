@@ -391,7 +391,7 @@ slider {
     flex-direction: column;
 }
 
-.widget-buttons-grid flowbox > * {
+.widget-buttons-grid flowbox {
     margin-right: 7.5px;
     padding: 7.5px;
     background-color: @peach;
