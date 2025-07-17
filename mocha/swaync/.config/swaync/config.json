@@ -51,6 +51,7 @@
     }
   },
   "widgets": [
+    "volume"
     "inhibitors",
     "title",
     "dnd",
