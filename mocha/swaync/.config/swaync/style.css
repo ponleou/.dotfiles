@@ -82,7 +82,7 @@ slider {
     > *:last-child
     > *
     .notification-action {
-    border-radius: 7px;
+    /* border-radius: 7px; */
     color: @text;
     background-color: #313244;
     box-shadow: inset 0 0 0 1px #45475a;
