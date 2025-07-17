@@ -310,16 +310,10 @@ scale trough {
 }
 
 .widget-mpris > box > button {
-    margin-right: 1rem;
-}
-
-.widget-mpris > box > button:last-child {
-    margin-left: 1rem;
 }
 
 .mpris-overlay {
     background-color: @peach;
-    color: @mantle;
 }
 
 .mpris-overlay > box > button {
