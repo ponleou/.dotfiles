@@ -393,8 +393,8 @@ slider {
 }
 
 .widget-buttons-grid flowbox > * {
-    margin-right: 7.5px;
-    padding: 7.5px 15px;
+    margin-right: 5rem;
+    padding: 5rem 10rem;
     background-color: @peach;
     border-radius: 5px;
     color: @mantle;
@@ -406,5 +406,5 @@ slider {
 
 .widget-buttons-grid flowbox > flowboxchild > button > label {
     font-size: 1.5rem;
-    min-width: 50px;
+    min-width: 3rem;
 }
