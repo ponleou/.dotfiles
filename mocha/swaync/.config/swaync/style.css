@@ -330,6 +330,7 @@ scale trough {
 
 .widget-mpris-player {
     padding: 0.5rem;
+    background-color: @peach;
 }
 
 .widget-mpris-title {
