@@ -403,3 +403,7 @@ slider {
 .widget-buttons-grid flowbox > *:last-child {
     margin: 0;
 }
+
+.widget-buttons-grid flowbox > flowboxchild > button > label {
+    font-size: 1.5rem;
+}
