@@ -225,7 +225,6 @@
     "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
     "tooltip-format-wifi": "{ifname} ({essid} {signalStrength}%)",
     "format-linked": "(No IP) ",
-    "format-disabled": "test",
     "format-disconnected": "",
     "on-click": "konsole -e nmtui"
   },
