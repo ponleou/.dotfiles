@@ -367,7 +367,7 @@ scale trough {
 }
 
 .widget-volume label {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     color: @text;
     min-width: 2.5rem;
 }
@@ -391,7 +391,7 @@ scale trough {
 }
 
 .widget-backlight label {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: @text;
     min-width: 2.5rem;
 }
