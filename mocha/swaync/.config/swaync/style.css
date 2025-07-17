@@ -9,7 +9,6 @@
 
 trough highlight {
     background: @text;
-    padding: 2px 0;
 }
 
 scale trough {
@@ -17,7 +16,6 @@ scale trough {
     background-color: #313244;
     min-height: 2px;
     min-width: 70px;
-    padding: 2px 0;
 }
 
 .floating-notifications.background .notification-row .notification-background {
