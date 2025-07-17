@@ -388,7 +388,8 @@ slider {
 
 .widget-buttons-grid > * {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between; /* spread items evenly */
+    align-items: center;
 }
 
 .widget-buttons-grid flowbox > * {
