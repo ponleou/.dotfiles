@@ -359,7 +359,7 @@ scale trough {
 }
 
 .widget-volume {
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     border: @peach solid 1px;
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
@@ -377,7 +377,7 @@ scale trough {
 }
 
 .widget-backlight {
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     padding-top: 0;
     border: @peach solid 1px;
     border-bottom-right-radius: 7px;
