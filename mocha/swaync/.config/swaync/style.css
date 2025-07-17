@@ -326,11 +326,11 @@ scale trough {
 
 .widget-mpris-title {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .widget-mpris-subtitle {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
 }
 .widget-menubar > box > .menu-button-bar > button > label {
     font-size: 3rem;
