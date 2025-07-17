@@ -50,7 +50,7 @@
             "app-name": "Spotify"
         }
     },
-    "widgets": ["buttons-grid", "volume", "backlight", "mpris", "inhibitors", "title", "dnd", "notifications"],
+    "widgets": ["buttons-grid", "volume", "backlight", "inhibitors", "title", "dnd", "mpris", "notifications"],
     "widget-config": {
         "volume": {
             "label": ""
