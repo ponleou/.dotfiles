@@ -396,6 +396,7 @@ slider {
     padding: 7.5px;
     background-color: @peach;
     border-radius: 5px;
+    color: @mantle;
 }
 
 .widget-buttons-grid flowbox > *:last-child {
