@@ -373,6 +373,7 @@ slider {
 
 .widget-backlight {
     padding: 1rem;
+    padding-top: 0;
     border: @peach solid 1px;
     border-bottom-right-radius: 7px;
     border-bottom-left-radius: 7px;
