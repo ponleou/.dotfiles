@@ -217,6 +217,16 @@
   },
 
   "network": {
+    "interval": 60,
+    "interface-ethernet": "enp1s*",
+    "interface-wifi": "wlan0",
+    "format-ethernet": "",
+    "format-wifi": "",
+    "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
+    "tooltip-format-wifi": "{ifname} ({essid} {signalStrength}%)>
+    "format-linked": "(No IP) ",
+    "format-disconnected": "",
+    "on-click": "konsole -e nmtui"
   },
   
   "pulseaudio": {
