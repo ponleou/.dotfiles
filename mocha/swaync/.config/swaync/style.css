@@ -33,7 +33,7 @@ slider {
 
 .floating-notifications.background .notification-row .notification-background .notification {
     padding: 7px;
-    border-radius: 12.6px;
+    /* border-radius: 12.6px; */
 }
 
 .floating-notifications.background .notification-row .notification-background .notification.critical {
