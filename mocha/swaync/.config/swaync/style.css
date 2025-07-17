@@ -393,7 +393,7 @@ slider {
 }
 
 .widget-buttons-grid flowbox > * {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     padding: 0.5rem 1rem;
     background-color: @peach;
     border-radius: 5px;
