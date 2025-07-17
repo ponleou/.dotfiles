@@ -64,7 +64,8 @@
       "label": ""
     },
     "backlight": {
-      "label": ""
+      "label": "",
+      "device": "amdgpu_bl2"
     },
     "inhibitors": {
       "text": "Inhibitors",
