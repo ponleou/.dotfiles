@@ -320,6 +320,14 @@ scale trough {
     background-color: @base;
 }
 
+.mpris-overlay > box > button {
+    margin-right: 1rem;
+}
+
+.mpris-overlay > box > button:last-child {
+    margin: 0;
+}
+
 .widget-mpris-player {
     padding: 0.5rem;
 }
