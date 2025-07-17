@@ -77,11 +77,8 @@
             "text": "Label Text"
         },
         "mpris": {
-            "blacklist": [],
-            "autohide": false,
             "image-size": 96,
-            "image-radius": 12,
-            "loop-carousel": false
+            "image-radius": 12
         },
         "buttons-grid": {
             "buttons-per-row": 4,
