@@ -226,6 +226,7 @@
     "tooltip-format-wifi": "{ifname} ({essid} {signalStrength}%)",
     "format-linked": "(No IP) ",
     "format-disconnected": "",
+    "format-disabled": "",
     "on-click": "konsole -e nmtui"
   },
 
