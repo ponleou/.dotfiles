@@ -77,8 +77,8 @@
             "text": "Label Text"
         },
         "mpris": {
-            "image-size": 0,
-            "image-radius": 0
+            "image-size": 96,
+            "image-radius": 7
         },
         "buttons-grid": {
             "buttons-per-row": 4,
