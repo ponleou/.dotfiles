@@ -386,10 +386,9 @@ slider {
     padding: 15px;
 }
 
-.widget-buttons-grid > * {
+/* .widget-buttons-grid flowbox {
     display: flex;
-    justify-content: space-between; /* spread items evenly */
-    align-items: center;
+    flex-direction: column;
 }
 
 .widget-buttons-grid flowbox > * {
@@ -401,4 +400,4 @@ slider {
 
 .widget-buttons-grid flowbox > *:last-child {
     margin: 0;
-}
+} */
