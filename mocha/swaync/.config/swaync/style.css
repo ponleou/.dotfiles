@@ -318,7 +318,6 @@ scale trough {
 
 .mpris-overlay {
     background-color: @peach;
-    border-radius: 16px;
 }
 
 .mpris-overlay > box > button {
@@ -332,6 +331,7 @@ scale trough {
 .widget-mpris-player {
     padding: 0.5rem;
     background-color: @peach;
+    border-radius: 10px;
 }
 
 .widget-mpris-title {
