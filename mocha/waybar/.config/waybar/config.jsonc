@@ -245,7 +245,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""]
+      "default": ["", "󰖀", ""]
     },
     "tooltip-format": "{desc}\n{volume}%  {format_source}",
     "on-click": "pavucontrol-qt"
