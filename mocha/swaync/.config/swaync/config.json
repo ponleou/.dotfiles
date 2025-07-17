@@ -51,7 +51,7 @@
     }
   },
   "widgets": [
-    "volume"
+    "volume",
     "inhibitors",
     "title",
     "dnd",
