@@ -412,7 +412,7 @@ scale trough {
 
 .widget-buttons-grid flowbox > * {
     margin-right: 1rem;
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
     background-color: @peach;
     border-radius: 7px;
     color: @mantle;
