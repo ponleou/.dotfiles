@@ -77,11 +77,8 @@
             "text": "Label Text"
         },
         "mpris": {
-            "blacklist": [],
-            "autohide": false,
-            "image-size": 96,
-            "image-radius": 12,
-            "loop-carousel": false
+            "image-size": 100,
+            "image-radius": 12
         },
         "buttons-grid": {
             "buttons-per-row": 4,
@@ -94,7 +91,7 @@
                     "update-command": "sh -c '[[ $(nmcli radio wifi) == \"enabled\" ]] && echo true || echo false'"
                 },
                 {
-                    "label": "",
+                    "label": "",
                     "type": "toggle",
                     "active": true,
                     "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && rfkill block bluetooth || rfkill unblock bluetooth'",
