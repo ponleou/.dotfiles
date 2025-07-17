@@ -309,19 +309,23 @@ scale trough {
     border: 1px solid #6c7086;
 }
 
-.widget-mpris .widget-mpris-player {
-    background: #313244;
-    padding: 7px;
+.widget-mpris {
+    /* The parent to all players */
 }
 
-.widget-mpris .widget-mpris-title {
-    font-size: 1.2rem;
+.widget-mpris-player {
+    padding: 8px;
+    margin: 8px;
 }
 
-.widget-mpris .widget-mpris-subtitle {
-    font-size: 0.8rem;
+.widget-mpris-title {
+    font-weight: bold;
+    font-size: 1.25rem;
 }
 
+.widget-mpris-subtitle {
+    font-size: 1.1rem;
+}
 .widget-menubar > box > .menu-button-bar > button > label {
     font-size: 3rem;
     padding: 0.5rem 2rem;
