@@ -393,12 +393,11 @@ slider {
 
 .widget-buttons-grid flowbox > * {
     margin-right: 7.5px;
-    padding: 7.5px;
+    padding: 15px;
     background-color: @peach;
     border-radius: 5px;
     color: @mantle;
     min-width: 50px;
-    font-size: 1.5rem;
 }
 
 .widget-buttons-grid flowbox > *:last-child {
