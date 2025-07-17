@@ -359,7 +359,7 @@ slider {
 .widget-volume label {
     font-size: 1.5rem;
     color: @peach;
-    min-width: 50px;
+    min-width: 25px;
 }
 
 .widget-volume trough highlight {
@@ -373,7 +373,7 @@ slider {
 .widget-backlight label {
     font-size: 1.5rem;
     color: @peach;
-    min-width: 50px;
+    min-width: 25px;
 }
 
 .widget-backlight .KB {
