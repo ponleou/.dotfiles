@@ -51,6 +51,7 @@
     }
   },
   "widgets": [
+    "buttons-grid",
     "volume",
     "backlight",
     "inhibitors",
