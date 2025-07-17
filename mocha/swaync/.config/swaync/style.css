@@ -1,7 +1,7 @@
 * {
   all: unset;
   font-size: 14px;
-  font-family: Work Sans, "Ubuntu Nerd Font";
+  font-family: WorkSans, FontAwesome6Free, SymbolsNerdFont;
   transition: 200ms;
 }
 

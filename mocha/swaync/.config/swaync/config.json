@@ -51,6 +51,7 @@
     }
   },
   "widgets": [
+    "buttons-grid",
     "volume",
     "backlight",
     "inhibitors",
@@ -64,7 +65,7 @@
       "label": ""
     },
     "backlight": {
-      "label": "",
+      "label": "󰃞",
       "device": "amdgpu_bl2"
     },
     "inhibitors": {
