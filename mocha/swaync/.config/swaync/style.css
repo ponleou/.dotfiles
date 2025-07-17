@@ -12,7 +12,7 @@ trough highlight {
 }
 
 scale trough {
-    margin: 0rem 1rem;
+    margin: 0rem 0 0 1rem;
     background-color: #313244;
     min-height: 8px;
     min-width: 70px;
@@ -353,25 +353,31 @@ slider {
 }
 
 .widget-volume {
-    padding-top: 1rem;
+    padding: 1rem;
 }
 
 .widget-volume label {
-    font-size: 1.5rem;
-    color: #74c7ec;
+    font-size: 1.2rem;
+    color: @peach;
+    min-width: 2.5rem;
 }
 
 .widget-volume trough highlight {
-    background: #74c7ec;
+    background: @peach;
+}
+
+.widget-backlight {
+    padding: 1rem;
 }
 
 .widget-backlight trough highlight {
-    background: #f9e2af;
+    background: @peach;
 }
 
 .widget-backlight label {
     font-size: 1.5rem;
-    color: #f9e2af;
+    color: @peach;
+    min-width: 2.5rem;
 }
 
 .widget-backlight .KB {
@@ -383,17 +389,12 @@ slider {
 }
 
 .widget-buttons-grid {
-    padding: 15px;
-}
-
-.widget-buttons-grid flowbox {
-    display: flex;
-    flex-direction: column;
+    padding: 1rem;
 }
 
 .widget-buttons-grid flowbox > * {
-    margin-right: 7.5px;
-    padding: 7.5px;
+    margin-right: 1rem;
+    padding: 1rem 1rem;
     background-color: @peach;
     border-radius: 5px;
     color: @mantle;
@@ -401,4 +402,40 @@ slider {
 
 .widget-buttons-grid flowbox > *:last-child {
     margin: 0;
+}
+
+.widget-buttons-grid flowbox > flowboxchild > button > label {
+    font-size: 1.5rem;
+    min-width: 3rem;
+}
+
+.widget-buttons-grid flowbox > flowboxchild > button {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ripple circle */
+.widget-buttons-grid flowbox > flowboxchild > button::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.3);
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.4s ease, opacity 0.8s ease;
+    will-change: transform, opacity;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+/* On button press, animate ripple */
+.widget-buttons-grid flowbox > flowboxchild > button:active::before {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 1;
+    transition: transform 0.4s ease, opacity 0.8s ease;
 }
