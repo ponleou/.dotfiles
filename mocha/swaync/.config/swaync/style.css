@@ -270,6 +270,10 @@ scale trough {
     padding: 0.5rem 1rem;
 }
 
+.notification-action:hover {
+    background-color: @surface1;
+}
+
 .notification-action label {
     font-size: 1rem;
 }
