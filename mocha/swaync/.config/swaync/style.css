@@ -268,7 +268,6 @@ scale trough {
     margin-top: 5px;
     border-radius: 8px;
     background: @surface0;
-    border: 1px solid #45475a;
     box-shadow: none;
 }
 
