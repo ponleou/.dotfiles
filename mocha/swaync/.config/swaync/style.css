@@ -146,22 +146,12 @@ scale trough {
 .control-center .widget-title button {
     border-radius: 7px;
     color: @text;
-    /* background-color: @surface0; */
+    background-color: @surface0;
     padding: 0.5rem 1rem;
 }
 
 .control-center .widget-title > button > label {
     font-size: 1rem;
-}
-
-.control-center .widget-title button:hover {
-    background-color: #585b70;
-    color: @text;
-}
-
-.control-center .widget-title button:active {
-    background-color: #74c7ec;
-    color: #1e1e2e;
 }
 
 .control-center .notification-row .notification-background {
