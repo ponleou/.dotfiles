@@ -154,6 +154,10 @@ scale trough {
     padding: 0.5rem 1rem;
 }
 
+.control-center .widget-title button:hover {
+    box-shadow: inset 0 0 0 1px @peach;
+}
+
 .control-center .widget-title > button > label {
     font-size: 1rem;
 }
@@ -271,7 +275,7 @@ scale trough {
 }
 
 .notification-action:hover {
-    background-color: @surface2;
+    box-shadow: inset 0 0 0 1px @peach;
 }
 
 .notification-action label {
