@@ -276,7 +276,7 @@ scale trough {
 }
 
 .control-center-dnd slider {
-    background: #45475a;
+    background: @surface1;
     border-radius: 8px;
 }
 
