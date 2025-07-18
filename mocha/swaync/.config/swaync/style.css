@@ -251,10 +251,10 @@ scale trough {
     color: @text;
 }
 
-/* .control-center .notification-row .notification-background:active {
+.control-center .notification-row .notification-background:active {
     background-color: #74c7ec;
     color: @text;
-} */
+}
 
 .notification.critical progress {
     background-color: #f38ba8;
