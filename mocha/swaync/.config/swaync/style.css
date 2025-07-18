@@ -39,7 +39,7 @@ scale trough {
 }
 
 .floating-notifications.background .notification-row .notification-background .notification .notification-content {
-    margin: 7px;
+    margin: 1rem;
 }
 
 .floating-notifications.background
