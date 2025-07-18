@@ -282,6 +282,10 @@ scale trough {
     font-size: 1rem;
 }
 
+.notification-group revealer > box {
+    margin-top: 1rem;
+}
+
 /* .notification-content .image {
     min-width: 3.236rem;
     min-height: 3.236rem;
