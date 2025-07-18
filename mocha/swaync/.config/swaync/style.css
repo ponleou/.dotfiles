@@ -157,7 +157,7 @@ scale trough {
 .control-center .widget-title > button > label {
     font-size: 1rem;
 }
-
+/* 
 /* .control-center .notification-row .notification-background {
     border-radius: 7px;
     color: @text;
@@ -263,8 +263,9 @@ scale trough {
 .notification.normal progress {
     background-color: #89b4fa;
 } */
+*/
 
-.notification-content .image {
+/* .notification-content .image {
     min-width: 3.236rem;
     min-height: 3.236rem;
 }
@@ -276,7 +277,7 @@ scale trough {
 .notification-background {
     padding: 1rem;
     margin-top: 1rem;
-}
+} */
 
 .control-center-dnd {
     border-radius: 8px;
