@@ -264,6 +264,10 @@ scale trough {
     background-color: #89b4fa;
 } */
 
+.notification-content picture {
+    min-width: 1.618rem;
+}
+
 .control-center-dnd {
     border-radius: 8px;
     background: @surface0;
