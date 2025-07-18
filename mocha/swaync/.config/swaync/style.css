@@ -427,6 +427,8 @@ scale trough {
 
 .image {
     padding-right: 0.5rem;
+    min-width: 3.236rem;
+    min-height: 3.236rem;
 }
 
 .widget-buttons-grid {
