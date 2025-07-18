@@ -264,7 +264,7 @@ scale trough {
     background-color: #89b4fa;
 } */
 
-.notification-content picture {
+.notification-content .image {
     min-width: 1.618rem;
     font-size: 2rem;
 }
