@@ -152,7 +152,7 @@ scale trough {
 }
 
 .control-center .widget-title > button > label {
-    font-size: 0.618rem;
+    font-size: 1rem;
 }
 
 .control-center .widget-title button:hover {
