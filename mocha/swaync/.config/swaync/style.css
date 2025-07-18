@@ -265,7 +265,9 @@ scale trough {
 } */
 
 .notification-content .image {
-    min-width: 1.618rem;
+    min-width: 5rem;
+    min-height: 5rem;
+
     font-size: 2rem;
 }
 
