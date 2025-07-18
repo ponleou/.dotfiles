@@ -264,6 +264,13 @@ scale trough {
     background-color: #89b4fa;
 }
 
+.notification-action {
+    border-radius: 7px;
+    color: @text;
+    background-color: @surface0;
+    padding: 0.5rem 1rem;
+}
+
 /* .notification-content .image {
     min-width: 3.236rem;
     min-height: 3.236rem;
