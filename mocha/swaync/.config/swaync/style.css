@@ -271,7 +271,7 @@ scale trough {
 }
 
 .notification-action:hover {
-    background-color: @surface3;
+    background-color: @surface2;
 }
 
 .notification-action label {
