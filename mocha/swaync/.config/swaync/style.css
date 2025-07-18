@@ -266,6 +266,7 @@ scale trough {
 
 .notification-content picture {
     min-width: 1.618rem;
+    font-size: 2rem;
 }
 
 .control-center-dnd {
