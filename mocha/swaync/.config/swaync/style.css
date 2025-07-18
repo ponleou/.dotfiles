@@ -192,7 +192,7 @@ scale trough {
 }
 
 .control-center .notification-row .notification-background .notification > *:last-child > * {
-    min-height: 3.4em;
+    /* min-height: 3.4em; */
 }
 
 .control-center .notification-row .notification-background .notification > *:last-child > * .notification-action {
