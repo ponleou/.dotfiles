@@ -167,10 +167,6 @@ scale trough {
     margin-top: 1rem;
 }
 
-.control-center .notification-row .notification-background:first-child {
-    margin-top: 0;
-}
-
 scrolledwindow {
     margin-top: 1rem;
 }
