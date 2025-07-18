@@ -267,13 +267,13 @@ scale trough {
 .control-center-dnd {
     margin-top: 5px;
     border-radius: 8px;
-    background: #313244;
+    background: @surface0;
     border: 1px solid #45475a;
     box-shadow: none;
 }
 
 .control-center-dnd:checked {
-    background: #313244;
+    background: @peach;
 }
 
 .control-center-dnd slider {
