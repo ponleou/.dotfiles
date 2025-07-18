@@ -188,7 +188,7 @@ scale trough {
 }
 
 .control-center .notification-row .notification-background .notification .notification-content .time {
-    color: #a6adc8;
+    color: @subtext1;
 }
 
 .control-center .notification-row .notification-background .notification .notification-content .body {
