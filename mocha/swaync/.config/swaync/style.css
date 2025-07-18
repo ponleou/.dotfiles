@@ -265,6 +265,7 @@ scale trough {
 }
 
 .notification-action {
+    margin-top: 1rem;
     border-radius: 7px;
     color: @text;
     background-color: @surface0;
