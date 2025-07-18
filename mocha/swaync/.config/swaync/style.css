@@ -264,6 +264,10 @@ scale trough {
     background-color: #89b4fa;
 }
 
+.notification-alt-actions {
+    font-size: 1rem;
+}
+
 /* .notification-content .image {
     min-width: 3.236rem;
     min-height: 3.236rem;
