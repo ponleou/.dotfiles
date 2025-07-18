@@ -150,11 +150,6 @@ scrolledwindow {
     color: @text;
 }
 
-.control-center .notification-row .notification-background:active {
-    background-color: @sapphire;
-    color: @text;
-}
-
 .notification.critical progress {
     background-color: @red;
 }
