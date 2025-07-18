@@ -295,7 +295,7 @@ scale trough {
 }
 
 .widget-dnd > switch:checked {
-    background: #313244;
+    background: @peach;
 }
 
 .widget-dnd > switch slider {
