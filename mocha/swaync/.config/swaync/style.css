@@ -165,6 +165,7 @@ scrolledwindow {
 }
 
 .notification-action {
+    margin: 1px;
     margin-top: 1rem;
     border-radius: 7px;
     color: @text;
