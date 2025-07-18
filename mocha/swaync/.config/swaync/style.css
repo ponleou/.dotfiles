@@ -265,7 +265,6 @@ scale trough {
 }
 
 .control-center-dnd {
-    margin-top: 5px;
     border-radius: 8px;
     background: @surface0;
     box-shadow: none;
