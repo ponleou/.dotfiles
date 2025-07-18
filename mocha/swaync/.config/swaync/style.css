@@ -138,6 +138,10 @@ scale trough {
     padding: 1rem;
 }
 
+.widget-title {
+    margin-bottom: 1rem;
+}
+
 .control-center .widget-title > label {
     color: @text;
     font-size: 1.618em;
