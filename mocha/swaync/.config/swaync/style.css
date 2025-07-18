@@ -265,8 +265,8 @@ scale trough {
 } */
 
 .notification-content .image {
-    min-width: 1.618rem;
-    min-height: 1.618rem;
+    min-width: 3.236rem;
+    min-height: 3.236rem;
 }
 
 .control-center-dnd {
