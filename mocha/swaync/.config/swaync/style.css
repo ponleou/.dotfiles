@@ -376,7 +376,7 @@ scale trough {
 
 .control-center .widget-label > label {
     color: @text;
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 
 .widget-buttons-grid {
