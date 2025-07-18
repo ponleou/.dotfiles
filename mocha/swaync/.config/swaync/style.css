@@ -176,7 +176,7 @@ scale trough {
 }
 
 .control-center .notification-row .notification-background .notification .notification-content {
-    margin: 7px;
+    margin: 1rem;
 }
 
 .control-center .notification-row .notification-background .notification .notification-content .summary {
