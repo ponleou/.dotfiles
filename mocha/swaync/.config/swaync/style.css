@@ -287,7 +287,7 @@ scale trough {
 }
 
 .widget-dnd > switch {
-    font-size: initial;
+    font-size: 1rem;
     border-radius: 8px;
     background: @surface0;
     box-shadow: none;
