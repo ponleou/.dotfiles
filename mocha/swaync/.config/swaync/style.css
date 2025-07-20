@@ -348,7 +348,6 @@ scrolledwindow {
 }
 
 .widget-buttons-grid flowbox > * {
-    margin: 1px;
     margin-right: 1rem;
     padding: 0.5rem 1rem;
     background-color: @peach;
@@ -358,12 +357,6 @@ scrolledwindow {
 
 .widget-buttons-grid flowbox > *:last-child {
     margin-right: 0;
-}
-
-.widget-buttons-grid flowbox > *:hover {
-    background-color: @base;
-    /* color: @text; */
-    box-shadow: inset 0 0 0 1px @peach;
 }
 
 .widget-buttons-grid flowbox > flowboxchild > button > label {
