@@ -2,7 +2,7 @@
 
 set -e
 
-notify-send "test "$TMP_DIR
+notify-send "test" $TMP_DIR
 
 cd "$TMP_DIR"
 
