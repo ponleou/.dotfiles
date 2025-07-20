@@ -116,11 +116,12 @@ scrolledwindow {
 
 .control-center .notification-row .notification-background .notification .notification-content .time {
     color: @subtext0;
-    font-size: 0.618rem;
+    font-size: 1rem;
 }
 
 .control-center .notification-row .notification-background .notification .notification-content .body {
-    color: @text;
+    color: @subtext0;
+    margin-top: 0.5rem;
 }
 
 .control-center .notification-row .notification-background .close-button {
