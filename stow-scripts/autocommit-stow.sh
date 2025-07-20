@@ -7,7 +7,7 @@ trigger_sync_after_idle() {
     if [ -n "$SYNC_TIMER_PID" ]; then
       kill "$SYNC_TIMER_PID"
       notify-send $SYNC_TIMER_PID
-      SYNC_TIMER_PID=""
+      SYNC_TIMER_PID="" 
 
     ( sleep 10 && bash $SCRIPT_DIR/autosync-stow.sh ) &
     SYNC_TIMER_PID=$!
