@@ -1,5 +1,17 @@
 #!/bin/bash
 
+SCRIPT_DIR="$(dirname "$(realpath "$0")")"
+SYNC_TIMER_PID=""
+
+trigger_sync_after_idle() {
+    [ -n "$SYNC_TIMER_PID" ] && kill "$SYNC_TIMER_PID" 2>/dev/null
+    ( sleep 5 && $SCRIPT_DIR/autosync-stow.sh ) &
+    SYNC_TIMER_PID=$!
+    export SYNC_TIMER_PID
+}
+
+export -f trigger_sync_after_idle
+
 inotifywait -q -m -r --exclude '/\.git($|/)' \
   -e CLOSE_WRITE \
   -e CREATE \
@@ -7,4 +19,4 @@ inotifywait -q -m -r --exclude '/\.git($|/)' \
   -e MOVED_TO \
   -e MOVED_FROM \
   -e MODIFY \
-  --format="git add -A && git commit -m 'autocommit: change in %w' && git push" ~/.dotfiles | sh
+  --format="git add -A && git commit -m 'autocommit: change in %w' && git push && trigger_sync_after_idle" ~/.dotfiles | sh
