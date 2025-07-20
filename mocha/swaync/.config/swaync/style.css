@@ -328,11 +328,15 @@ scrolledwindow {
     padding-bottom: 1rem;
 }
 
-.image,
-.app-icon {
+.image {
     padding-right: 1rem;
     min-width: 3.236rem;
     min-height: 3.236rem;
+}
+
+.app-icon {
+    padding-right: 1rem;
+    border-radius: 100%;
 }
 
 .widget-buttons-grid {
