@@ -4,9 +4,10 @@ SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 SYNC_TIMER_PID=""
 
 trigger_sync_after_idle() {
-    [ -n "$SYNC_TIMER_PID" ] && kill "$SYNC_TIMER_PID" 2>/dev/null
-
-    notify-send $SYNC_TIMER_PID
+    if [ -n "$SYNC_TIMER_PID" ]; then
+      kill "$SYNC_TIMER_PID"
+      notify-send $SYNC_TIMER_PID
+      SYNC_TIMER_PID=""
 
     ( sleep 10 && bash $SCRIPT_DIR/autosync-stow.sh ) &
     SYNC_TIMER_PID=$!
