@@ -2,6 +2,8 @@
 
 set -e
 
+notify-send $TMP_DIR
+
 cd "$TMP_DIR"
 
 notify-send "Git merge" "$(git merge --squash origin/autocommit)"
