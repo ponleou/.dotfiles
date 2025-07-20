@@ -329,13 +329,15 @@ scrolledwindow {
 }
 
 .image {
-    padding-right: 1rem;
+    margin-right: 1rem;
     min-width: 3.236rem;
     min-height: 3.236rem;
 }
 
 .app-icon {
-    padding-right: 1rem;
+    margin-right: 1rem;
+    padding: 2px;
+    background-color: @base;
     border-radius: 100%;
 }
 
