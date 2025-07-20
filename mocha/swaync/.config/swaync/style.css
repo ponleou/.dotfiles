@@ -357,7 +357,7 @@ scrolledwindow {
 }
 
 .widget-buttons-grid flowbox > *:last-child {
-    margin: 0;
+    margin-right: 0;
 }
 
 .widget-buttons-grid flowbox > *:hover {
