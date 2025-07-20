@@ -5,13 +5,13 @@ SYNC_TIMER_PID=""
 
 trigger_sync_after_idle() {
     [ -n "$SYNC_TIMER_PID" ] && kill "$SYNC_TIMER_PID" 2>/dev/null
-    echo $SCRIPT_DIR
     ( sleep 5 && $SCRIPT_DIR/autosync-stow.sh ) &
     SYNC_TIMER_PID=$!
     export SYNC_TIMER_PID
 }
 
-export -f trigger_sync_after_idle
+export SCRIPT_DIR
+export -f trigger_sync_after_idle 
 
 inotifywait -q -m -r --exclude '/\.git($|/)' \
   -e CLOSE_WRITE \
