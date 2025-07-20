@@ -362,7 +362,7 @@ scrolledwindow {
 .widget-buttons-grid flowbox > *:hover {
     background-color: @base;
     color: @text;
-    /* box-shadow: inset 0 0 0 1px @peach; */
+    box-shadow: inset 0 0 0 1px @peach;
 }
 
 .widget-buttons-grid flowbox > flowboxchild > button > label {
