@@ -5,7 +5,7 @@ SYNC_TIMER_PID=""
 
 trigger_sync_after_idle() {
     [ -n "$SYNC_TIMER_PID" ] && kill "$SYNC_TIMER_PID" 2>/dev/null
-    notify-send "running"
+    echo "test"
     ( sleep 5 && $SCRIPT_DIR/autosync-stow.sh ) &
     SYNC_TIMER_PID=$!
     export SYNC_TIMER_PID
