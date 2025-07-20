@@ -9,7 +9,7 @@ trigger_sync_after_idle() {
       SYNC_TIMER_PID="" 
     fi
 
-    ( sleep 10 && bash $SCRIPT_DIR/autosync-stow.sh ) &
+    ( sleep 15 && bash $SCRIPT_DIR/autosync-stow.sh ) &
     SYNC_TIMER_PID=$!
     export SYNC_TIMER_PID
 }
