@@ -353,6 +353,7 @@ scrolledwindow {
     border-radius: 100%; */
     min-width: 0;
     min-height: 0;
+    background: none;
 }
 
 .widget-buttons-grid {
