@@ -354,6 +354,7 @@ scrolledwindow {
     min-width: 0;
     min-height: 0;
     background: none;
+    overflow: hidden;
 }
 
 .widget-buttons-grid {
