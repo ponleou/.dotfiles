@@ -21,8 +21,8 @@ fi
 cd "$TMP_DIR"
 
 LOCK_FILE="autosync.lock"
-if [ -f "$LOCK_FILE" ]; then
-  notify-send "Autosync aborted" "$TMP_DIR/$LOCK_FILE exists"
+if [ -f "$SCRIPT_DIR/../tmp/$LOCK_FILE" ]; then
+  notify-send "Autosync aborted" "$SCRIPT_DIR/../tmp/$LOCK_FILE exists"
   exit 1
 fi
 
