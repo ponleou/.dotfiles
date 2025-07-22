@@ -20,6 +20,12 @@ fi
 
 cd "$TMP_DIR"
 
+LOCK_FILE="autosync.lock"
+if [ -f "$SCRIPT_DIR/../tmp/$LOCK_FILE" ]; then
+  notify-send "Autosync aborted" "$SCRIPT_DIR/../tmp/$LOCK_FILE exists"
+  exit 1
+fi
+
 notify-send "Autosync is merging" "$(git merge --squash -X theirs origin/autocommit)"
 git add -A
 git commit -m "autosync: sync from autocommit branch ($(date +'%d-%m-%Y %H:%M:%S'))"
