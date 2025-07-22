@@ -6,10 +6,12 @@ SYNC_TIMER_PID=""
 trigger_sync_after_idle() {
   SYNC_TIMER_FILE="$SCRIPT_DIR/../tmp/SYNC_TIMER_PID"
 
+  # get PID from file
   if [ -f "$SYNC_TIMER_FILE" ]; then
     SYNC_TIMER_PID="$(cat "$SYNC_TIMER_FILE")"
   fi
 
+  # kill process if PID exist
   if [ -n "$SYNC_TIMER_PID" ]; then
     kill "$SYNC_TIMER_PID"
     SYNC_TIMER_PID="" 
