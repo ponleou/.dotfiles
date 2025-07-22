@@ -121,7 +121,7 @@
         "format": "<span>{}</span>",
         "return-type": "json",
         "max-length": 48,
-        "exec": "playerctl -a metadata --format '{\"text\": \"{{default(markup_escape(artist), 'test')}} — {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(artist)}}  {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{default(markup_escape(artist), 'test')}} — {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(artist)}} — {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
         "format-icons": {
             "Playing": "󰒮  󰒭",
             "Paused": "󰒮 󰏥 󰒭"
