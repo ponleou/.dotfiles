@@ -4,7 +4,6 @@ SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 SYNC_TIMER_PID=""
 
 trigger_sync_after_idle() {
-
   SYNC_TIMER_FILE="$SCRIPT_DIR/../tmp/SYNC_TIMER_PID"
 
   if [ -f "$SYNC_TIMER_FILE" ]; then
@@ -19,6 +18,7 @@ trigger_sync_after_idle() {
   (sleep 3600 && bash $SCRIPT_DIR/autosync-stow.sh) &
   SYNC_TIMER_PID=$!
 
+  # echo into file for next run to kill process
   if [ -f "$SYNC_TIMER_FILE" ]; then
     echo "$SYNC_TIMER_PID" > "$SYNC_TIMER_FILE"
   fi
