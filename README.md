@@ -1,6 +1,6 @@
 # Sway Dotfiles (Arch Linux and Catppuccin)
 
-My personal _"productivity-oriented"_ rice with some nice and minimal colors and styles. Feel free to take inspiration or copy for yourself.
+My personal _"productivity-oriented"_ rice for my Arch Linux machine with some nice and minimal colors and styles. Feel free to take inspiration or copy for yourself.
 
 -   WM: Sway
 -   Bar: Waybar
