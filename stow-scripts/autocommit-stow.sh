@@ -4,14 +4,26 @@ SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 SYNC_TIMER_PID=""
 
 trigger_sync_after_idle() {
-    if [ -n "$SYNC_TIMER_PID" ]; then
-      kill "$SYNC_TIMER_PID"
-      SYNC_TIMER_PID="" 
-    fi
+  SYNC_TIMER_FILE="$SCRIPT_DIR/../tmp/SYNC_TIMER_PID"
 
-    (sleep 3600 && bash $SCRIPT_DIR/autosync-stow.sh) &
-    SYNC_TIMER_PID=$!
-    export SYNC_TIMER_PID
+  # get PID from file
+  if [ -f "$SYNC_TIMER_FILE" ]; then
+    SYNC_TIMER_PID="$(cat "$SYNC_TIMER_FILE")"
+  fi
+
+  # kill process if PID exist
+  if [ -n "$SYNC_TIMER_PID" ]; then
+    kill "$SYNC_TIMER_PID"
+    SYNC_TIMER_PID="" 
+  fi
+
+  (sleep 3600 && bash $SCRIPT_DIR/autosync-stow.sh) &
+  SYNC_TIMER_PID=$!
+
+  # echo into file for next run to kill process
+  if [ -f "$SYNC_TIMER_FILE" ]; then
+    echo "$SYNC_TIMER_PID" > "$SYNC_TIMER_FILE"
+  fi
 }
 
 export SCRIPT_DIR
