@@ -1,5 +1,18 @@
 # Sway Dotfiles (Arch Linux and Catppuccin)
 
+My personal _"productivity-oriented"_ rice with some nice and minimal colors and styles. Feel free to take inspiration or copy for yourself.
+
+-   WM: Sway
+-   Bar: Waybar
+-   Launcher: Rofi
+-   File manager: Dolphin
+-   Notifications: Swaync
+-   Lockscreen: wLogout and swaylock-effects
+-   Wallpaper: Swaybg
+-   Terminal: Konsole
+-   Shell: Zsh
+-   Editor: VSCode
+
 ### Additional info
 
 Stow's `.dotfiles/mocha/nwg-look` should not own any of the config folders, except for nwg-look config itself (that means it should not own the gtk-3.0 or gtk-4.0 directories). Stow should ONLY symlink the FILES, not the directory.
