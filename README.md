@@ -7,7 +7,7 @@ My personal _"productivity-oriented"_ rice with some nice and minimal colors and
 -   Launcher: Rofi
 -   File manager: Dolphin
 -   Notifications: Swaync
--   Lockscreen: wLogout and swaylock-effects
+-   Lockscreen: wlogout and Swaylock
 -   Wallpaper: Swaybg
 -   Terminal: Konsole
 -   Shell: Zsh
