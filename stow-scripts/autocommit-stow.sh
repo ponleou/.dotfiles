@@ -18,7 +18,7 @@ trigger_sync_after_idle() {
   fi
 
   (
-    sleep 3600 &
+    sleep 10 &
     SYNC_TIMER_PID=$!
 
     # echo into file for next run to kill process
