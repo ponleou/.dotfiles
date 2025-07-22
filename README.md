@@ -1,3 +1,5 @@
 # Sway Dotfiles (Arch Linux and Catppuccin)
 
+### Additional info
+
 Stow's `.dotfiles/mocha/nwg-look` should not own any of the config folders, except for nwg-look config itself (that means it should not own the gtk-3.0 or gtk-4.0 directories). Stow should ONLY symlink the FILES, not the directory.
