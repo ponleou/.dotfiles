@@ -8,7 +8,7 @@ trigger_sync_after_idle() {
   SYNC_TIMER_FILE="$SCRIPT_DIR/../tmp/SYNC_TIMER_PID"
 
   if [ -f "$SYNC_TIMER_FILE" ]; then
-    SYNC_TIMER_PID=$(cat "$SYNC_TIMER_FILE")
+    SYNC_TIMER_PID="$(cat "$SYNC_TIMER_FILE")"
   fi
 
   if [ -n "$SYNC_TIMER_PID" ]; then
