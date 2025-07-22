@@ -27,6 +27,8 @@ trigger_sync_after_idle() {
   fi
 }
 
+trigger_sync_after_idle
+
 export SCRIPT_DIR
 export -f trigger_sync_after_idle 
 
