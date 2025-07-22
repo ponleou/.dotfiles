@@ -4,7 +4,7 @@ My personal _"productivity-oriented"_ rice for my Arch Linux machine with some n
 
 Note that this repository also contains my personal scripts and systemd-services. Once again, feel free to use it for yourself.
 
-### Applications used
+## Applications used
 
 -   WM: Sway
 -   Bar: Waybar
@@ -16,6 +16,10 @@ Note that this repository also contains my personal scripts and systemd-services
 -   Terminal: Konsole
 -   Shell: Zsh
 -   Editor: VSCode
+
+## Screenshots
+
+## Keybinds
 
 ### Additional info
 

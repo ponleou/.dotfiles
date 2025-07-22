@@ -17,13 +17,18 @@ trigger_sync_after_idle() {
     SYNC_TIMER_PID="" 
   fi
 
-  ( sleep 3600 && bash "$SCRIPT_DIR/autosync-stow.sh" ) &
-  SYNC_TIMER_PID=$!
+  (
+    sleep 20 &
+    SYNC_TIMER_PID=$!
 
-  # echo into file for next run to kill process
-  if [ -f "$SYNC_TIMER_FILE" ]; then
-    echo "$SYNC_TIMER_PID" > "$SYNC_TIMER_FILE"
-  fi
+    # echo into file for next run to kill process
+    if [ -f "$SYNC_TIMER_FILE" ]; then
+      echo "$SYNC_TIMER_PID" > "$SYNC_TIMER_FILE"
+    fi
+
+    # wait for sleep before running script
+    wait $SYNC_TIMER_PID && bash "$SCRIPT_DIR/autosync-stow.sh"
+  ) &
 }
 
 export SCRIPT_DIR
