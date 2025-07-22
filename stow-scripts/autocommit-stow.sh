@@ -7,21 +7,21 @@ trigger_sync_after_idle() {
 
   SYNC_TIMER_FILE="$SCRIPT_DIR/../tmp/SYNC_TIMER_PID"
 
-    if [ -f "$SYNC_TIMER_FILE" ]; then
-      SYNC_TIMER_PID=$(cat "$SYNC_TIMER_FILE")
-    fi
+  if [ -f "$SYNC_TIMER_FILE" ]; then
+    SYNC_TIMER_PID=$(cat "$SYNC_TIMER_FILE")
+  fi
 
-    if [ -n "$SYNC_TIMER_PID" ]; then
-      kill "$SYNC_TIMER_PID"
-      SYNC_TIMER_PID="" 
-    fi
+  if [ -n "$SYNC_TIMER_PID" ]; then
+    kill "$SYNC_TIMER_PID"
+    SYNC_TIMER_PID="" 
+  fi
 
-    (sleep 3600 && bash $SCRIPT_DIR/autosync-stow.sh) &
-    SYNC_TIMER_PID=$!
+  (sleep 3600 && bash $SCRIPT_DIR/autosync-stow.sh) &
+  SYNC_TIMER_PID=$!
 
-    if [ -f "$SYNC_TIMER_FILE" ]; then
-      echo "$SYNC_TIMER_PID" > "$SYNC_TIMER_FILE"
-    fi
+  if [ -f "$SYNC_TIMER_FILE" ]; then
+    echo "$SYNC_TIMER_PID" > "$SYNC_TIMER_FILE"
+  fi
 }
 
 export SCRIPT_DIR
