@@ -5,7 +5,7 @@ set -e
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 
 if [ -z "$TMP_DIR" ]; then
-    TMP_DIR="$(cat $SCRIPT_DIR/../tmp/TMP_DIR)"
+  TMP_DIR="$(cat $SCRIPT_DIR/../tmp/TMP_DIR)"
 fi
 
 cd "$TMP_DIR"
