@@ -4,6 +4,8 @@ My personal _"productivity-oriented"_ rice for my Arch Linux machine with some n
 
 Note that this repository also contains my personal scripts and systemd-services. Once again, feel free to use it for yourself.
 
+### Applications used
+
 -   WM: Sway
 -   Bar: Waybar
 -   Launcher: Rofi
