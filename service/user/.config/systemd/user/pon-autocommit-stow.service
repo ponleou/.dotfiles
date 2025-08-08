@@ -13,6 +13,8 @@ ExecStartPre=/bin/bash -c 'export TMP_DIR=$(mktemp -d); mkdir -p tmp; touch tmp/
 ExecStart=/bin/bash -c 'export TMP_DIR=$(cat ./tmp/TMP_DIR); ./stow-scripts/autocommit-stow.sh'
 ExecStop=/bin/bash -c 'export TMP_DIR=$(cat ./tmp/TMP_DIR); ./stow-scripts/autosync-stow.sh'
 ExecStopPost=/bin/bash -c 'export TMP_DIR=$(cat ./tmp/TMP_DIR); git worktree remove $TMP_DIR; rm ./tmp/TMP_DIR; rm ./tmp/SYNC_TIMER_PID'
+Restart=always
+RestartSec=5
 
 [Install]
 WantedBy=default.target
