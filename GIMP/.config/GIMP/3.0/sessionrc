@@ -72,8 +72,9 @@
     (position 2559 856))
 (session-info "toplevel"
     (factory-entry "gimp-preferences-dialog")
-    (position 1340 397)
-    (size 1746 896))
+    (position 26 23)
+    (size 1706 896)
+    (monitor 0))
 (session-info "toplevel"
     (factory-entry "gimp-levels-tool-dialog")
     (position 432 32)
