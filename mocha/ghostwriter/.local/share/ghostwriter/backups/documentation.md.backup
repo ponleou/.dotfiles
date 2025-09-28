@@ -19,7 +19,7 @@ header-includes:
   - \usepackage{float}
   - \floatplacement{figure}{H}
   - \usepackage{listings}
-  -   - \usepackage{fancyhdr}
+  - \usepackage{fancyhdr}
   - \lstset{
       basicstyle=\ttfamily\small,
       breaklines=true,
