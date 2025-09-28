@@ -58,4 +58,4 @@ header-includes:
 
 # Introduction
 
-*rockscale* is a CLI program built with FFmpeg and HIP, optimising GPU performance to upscale video using interpolation algorithms.
+*rockscale* is a CLI program built with HIP, optimising GPU performance to upscale video using interpolation algorithms. The program uses
