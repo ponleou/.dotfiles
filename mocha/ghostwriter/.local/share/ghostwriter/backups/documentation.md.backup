@@ -1,0 +1,44 @@
+---
+title: "SIT315 M4.T1D Project Documentation"
+author: "Keo Ponleou Sok"
+date: "28 September 2025"
+titlepage: true
+titlepage-rule-height: 1.5
+
+output:
+  pdf_document:
+    latex_engine: xelatex
+    toc: true
+    cover: true
+
+header-includes:
+  - \usepackage[dvipsnames]{xcolor}
+  - \usepackage{graphicx}
+  - \usepackage{float}
+  - \floatplacement{figure}{H}
+  - \usepackage{listings}
+  - \lstset{
+      basicstyle=\ttfamily\small,
+      breaklines=true,
+      columns=flexible,
+      showstringspaces=false,
+      keywordstyle=\color{blue}\bfseries,
+      commentstyle=\color{teal},
+      stringstyle=\color{brown},
+      identifierstyle=\color{black}
+    }
+  - \AtBeginDocument{\hypersetup{linkcolor=black,urlcolor=black,citecolor=black}}
+  - \usepackage{titling}
+  - \setlength{\droptitle}{-4em}
+  - \renewcommand\maketitlehooka{\null\mbox{}\vfill\vfill}
+  - \renewcommand\maketitlehookd{\vfill\null}
+...
+
+<div style="page-break-after: always;">\pagebreak</div>
+
+\tableofcontents
+
+<div style="page-break-after: always;">\pagebreak</div>
+
+# Introduction
+
