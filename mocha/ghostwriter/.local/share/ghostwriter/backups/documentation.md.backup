@@ -36,11 +36,11 @@ header-includes:
     } 
     <!-- keep links black -->
   - \AtBeginDocument{\hypersetup{linkcolor=black,urlcolor=black,citecolor=black}}
-	<!-- make title page in the centre of the first page -->
+	 <!-- make title page in the centre of the first page -->
   - \usepackage{titling}
   - \renewcommand\maketitlehooka{\vspace*{-2in}\null\vfill\thispagestyle{empty}}
   - \renewcommand\maketitlehookd{\vfill\null}
-	<!-- table of contents setup -->
+	 <!-- table of contents setup -->
   - \usepackage{tocloft}
   - \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
   - \renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
