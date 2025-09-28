@@ -62,4 +62,4 @@ header-includes:
 
 # Architecture
 
-The architecture of the program is a multithreaded producer-processor-consumer model, with each role capable of running in multiple threads to share workload.
+The architecture of the program is a multithreaded producer-processor-consumer model, with each role capable of running in multiple threads to share workload. The producer in this program is the decoder, decoding the video packets into individual frames, 
