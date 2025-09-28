@@ -30,9 +30,12 @@ header-includes:
     
   - \AtBeginDocument{\hypersetup{linkcolor=black,urlcolor=black,citecolor=black}}
   
-  - \usepackage{titling}
-  - \renewcommand\maketitlehooka{\vspace*{-2in}\null\vfill}
-  - \renewcommand\maketitlehookd{\vfill\null}
+- \pretitle{\begin{center}\LARGE\bfseries}
+- \posttitle{\par\end{center}\vskip 0.5em\noindent\rule{\linewidth}{0.4pt}\vskip 1.5em}
+- \preauthor{\begin{center}\large}
+- \postauthor{\par\end{center}}
+- \predate{\begin{center}\large}
+- \postdate{\par\end{center}\vskip 1.5em\noindent\rule{\linewidth}{0.4pt}}
   
   - \usepackage{tocloft}
   - \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
