@@ -11,7 +11,7 @@ output:
     latex_engine: xelatex
     toc: true
     cover: true
-    number_sections: false
+    number_sections: true
     keep_tex: true
 
 header-includes:
