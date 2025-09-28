@@ -1,7 +1,7 @@
 ---
-title: "*Rockscale* — An Algorithmic Video Upscaler with ROCm"
+title: "*rockscale* — An Algorithmic Video Upscaler with ROCm"
 subtitle: "**SIT315 Task M4.T1D Project Documentation**"
-author: "\nKeo Ponleou Sok"
+author: "Keo Ponleou Sok"
 date: "28 September 2025"
 titlepage: true
 titlepage-rule-height: 1.5
