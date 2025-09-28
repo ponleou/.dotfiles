@@ -69,3 +69,5 @@ The processors are responsible for taking frames from the decoder's queue, in wh
 The consumer runs FFmpeg's encoder, which takes frames from its priority queue, and packages them into a new file's streams, and closes the file once queue is empty. Additionally, if a hardware encoder is chosen for the consumer, the processors have an extra step to copy the frame data into a hardware frame in the device's memory before appending it in the encoder's priority queue. The encoder's priority queue works differently from a traditional FIFO queue. Since encoding frames into packages requires ordering the frames by its `pts` value, all frames passed into the priority queue are ordered by ascending `pts` and the encoder consumes each frame from the buffer in that order.
 
 ## Architectural Limitations
+
+Due to the requirements of a bounded encoder buffer, with strict priority of frames' `pts` order during encoding, it poses a limitati
