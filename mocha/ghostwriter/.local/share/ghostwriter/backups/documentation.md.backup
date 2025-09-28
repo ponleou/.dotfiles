@@ -22,7 +22,7 @@ header-includes:
   - \usepackage{listings}
   - \usepackage{fancyhdr}
   - \usepackage[australian]{datetime2}
-  - \DTMsetregion{en-AU
+  - \DTMsetregion{en-AU}
   
   - \setcounter{secnumdepth}{3}
   
