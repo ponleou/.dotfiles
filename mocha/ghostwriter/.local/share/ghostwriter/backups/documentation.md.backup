@@ -21,6 +21,8 @@ header-includes:
   - \floatplacement{figure}{H}
   - \usepackage{listings}
   - \usepackage{fancyhdr}
+  - \usepackage[australian]{datetime2}
+  - \DTMsetregion{en-AU
   
   - \setcounter{secnumdepth}{3}
   
