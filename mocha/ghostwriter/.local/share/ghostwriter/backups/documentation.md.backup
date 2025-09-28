@@ -71,3 +71,5 @@ The consumer runs FFmpeg's encoder, which takes frames from its priority queue, 
 ## Architectural Limitations
 
 Due to the requirements of a bounded encoder buffer, with strict priority of frames' `pts` order during encoding, it poses a limitation when used with multiple processing threads. Since the decoder produces frames also within the ascending `pts` order, a processor thread pick frames from the decoder queue in that order as well, and ideally, append the processed frame in the encoder's queue before picking up the next frame. If this was the case, then a priority queue for the encoder queue would not be necessary as it is guaranteed that the order of frames is determined by the decoder's output. The problem arises when multiple processor threads will each take its own frames, process them, and append them to the encoder queue in a non-deterministic order. In this case, it is possible, and rather common, that the frames inside the encoder queue is not in the same order as the output from the decoder.
+
+Hence, a priority queue is required
