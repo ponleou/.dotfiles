@@ -15,7 +15,8 @@ output:
     keep_tex: true
 
 header-includes:
-  - \setcounter{secnumdepth}{3}
+<!-- secti -->
+  - \setcounter{secnumdepth}{3} <!-- sub -->
   - \usepackage[dvipsnames]{xcolor}
   - \usepackage{graphicx}
   - \usepackage{float}
