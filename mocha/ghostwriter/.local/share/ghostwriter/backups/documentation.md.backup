@@ -27,11 +27,14 @@ header-includes:
       stringstyle=\color{brown},
       identifierstyle=\color{black}
     }
+    
   - \AtBeginDocument{\hypersetup{linkcolor=black,urlcolor=black,citecolor=black}}
+  
   - \usepackage{titling}
   - \renewcommand\maketitlehooka{\vspace*{-2in}\null\vfill}
   - \renewcommand\maketitlehookd{\vfill\null}
-  -   - \usepackage{tocloft}
+  
+  - \usepackage{tocloft}
   - \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
   - \renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
   - \renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
