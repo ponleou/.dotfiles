@@ -35,6 +35,7 @@ header-includes:
   - \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
   - \renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
   - \renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
+  - \AtBeginDocument{\pagenumbering{gobble}\clearpage\pagenumbering{arabic}}
 ...
 
 <div style="page-break-after: always;">\pagebreak</div>
