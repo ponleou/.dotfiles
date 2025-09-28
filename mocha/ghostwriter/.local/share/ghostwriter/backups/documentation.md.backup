@@ -58,7 +58,7 @@ header-includes:
 
 # Introduction
 
-*rockscale* is a CLI program built with HIP to optimise GPU performance to upscale video using interpolation algorithms. The program uses FFmpeg to decode videos into individual frames, and each frames are copied into the device memory, where HIP interpolation kernels are ran to interpolate pixels within the frame. The program offers 3 different interpolation algorithms—bilinear, bicubic and lanczos. After interpolation, each frames are copied back to host memory, and are passed into the encoder to output a new, upscaled video. Both software and hardware encoder options are  Tested video configurations include `mp4`, `mkv`, and `mov` containers, with `h264` and `h265/hevc` codec. Other video file configurations may work, but have not been tested.
+*rockscale* is a CLI program built with HIP to optimise GPU performance to upscale video using interpolation algorithms. The program uses FFmpeg to decode videos into individual frames, and each frames are copied into the device memory, where HIP interpolation kernels are ran to interpolate pixels within the frame. The program offers 3 different interpolation algorithms—bilinear, bicubic and lanczos. After interpolation, each frames are copied back to host memory, and are passed into the encoder to output a new, upscaled video. Both software and hardware encoder options are provided. Tested video configurations include `mp4`, `mkv`, and `mov` containers, with `h264` and `h265/hevc` codec. Other video file configurations may work, but have not been tested.
 
 # Architecture
 
@@ -66,3 +66,4 @@ The architecture of the program is a multithreaded producer-processor-consumer m
 
 The processors are responsible for taking frames from the decoder's queue, in which the frames are then processed through interpolation. This interpolation processing uses HIP kernel to take advantage of GPU parallel computing. Each interpolation algorithm—bilinear, bicubic, and lanczos—have its own series of kernel functions in order to process the frames. When multiple threads are assigned to the processor role, each thread will consume its own frame from the decoder buffer, and pass kernel functions into its own kernel streams, allowing ROCm (or the parallel computing platform) to optimise multiple streams processing, and ensuring optimal device utilisation. Each processing threads then pass the upscaled frame into the encoder's bounded priority queue.
 
+The consumer runs FFmpeg's encoder, which takes frames fr
