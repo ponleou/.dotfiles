@@ -29,14 +29,8 @@ header-includes:
     }
   - \AtBeginDocument{\hypersetup{linkcolor=black,urlcolor=black,citecolor=black}}
   - \usepackage{titling}
-- \renewcommand\maketitlehooka{\vspace*{-2in}\null\vfill}
-- \renewcommand\maketitlehookd{\vfill\null}
-- \pretitle{\begin{center}\vspace{2em}{\large Deakin University}\\\vspace{1em}{\large SIT315 - Concurrent and Distributed Programming}\\\vspace{3em}\LARGE\bfseries}
-- \posttitle{\par\end{center}}
-- \preauthor{\begin{center}\vspace{2em}\large Student: }
-- \postauthor{\par\end{center}}
-- \predate{\begin{center}\vspace{1em}\large}
-- \postdate{\par\end{center}\vspace{2em}}
+  - \renewcommand\maketitlehooka{\vspace*{-2in}\null\vfill}
+  - \renewcommand\maketitlehookd{\vfill\null}
   - \usepackage{tocloft}
   - \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
   - \renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
