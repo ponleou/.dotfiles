@@ -34,7 +34,7 @@ header-includes:
       stringstyle=\color{brown},
       identifierstyle=\color{black}
     }
- <!-- keep links black -->
+<!-- keep links black -->
   - \AtBeginDocument{\hypersetup{linkcolor=black,urlcolor=black,citecolor=black}}
 <!-- make title page in the centre of the first page -->
   - \usepackage{titling}
