@@ -29,8 +29,7 @@ header-includes:
     }
   - \AtBeginDocument{\hypersetup{linkcolor=black,urlcolor=black,citecolor=black}}
   - \usepackage{titling}
-  - \setlength{\droptitle}{-4em}
-  - \renewcommand\maketitlehooka{\null\mbox{}\vfill\vfill}
+  - \renewcommand\maketitlehooka{\vspace*{-2in}\null\vfill}
   - \renewcommand\maketitlehookd{\vfill\null}
 ...
 
