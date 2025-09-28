@@ -70,4 +70,4 @@ The consumer runs FFmpeg's encoder, which takes frames from its priority queue, 
 
 ## Architectural Limitations
 
-Due to the requirements of a bounded encoder buffer, with strict priority of frames' `pts` order during encoding, it poses a limitation when used with multiple processing threads. Since the decoder produces frames also within the ascending `pts` order
+Due to the requirements of a bounded encoder buffer, with strict priority of frames' `pts` order during encoding, it poses a limitation when used with multiple processing threads. Since the decoder produces frames also within the ascending `pts` order, processors pick frames from the decoder queue in that order as well.
