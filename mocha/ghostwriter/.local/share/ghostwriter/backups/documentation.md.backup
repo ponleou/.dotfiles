@@ -29,7 +29,7 @@ header-includes:
     }
   - \AtBeginDocument{\hypersetup{linkcolor=black,urlcolor=black,citecolor=black}}
   - \pretitle{\begin{center}\LARGE\bfseries}
-  - \posttitle{\par\end{center}\vskip 0.5em\noindent\rule{\linewidth}{0.4pt}\vskip1.5em}
+  - \posttitle{\par\end{center}\vskip 0.5em\noindent\rule{\linewidth}{0.4pt}\vskip 1.5em}
   - \preauthor{\begin{center}\large}
   - \postauthor{\par\end{center}}
   - \predate{\begin{center}\large}
