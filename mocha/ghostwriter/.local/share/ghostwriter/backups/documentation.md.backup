@@ -58,4 +58,4 @@ header-includes:
 
 # Introduction
 
-*rockscale* is a CLI program built with HIP to optimise GPU performance to upscale video using interpolation algorithms. The program uses FFmpeg to decode videos into individual frames, and each frames are t
+*rockscale* is a CLI program built with HIP to optimise GPU performance to upscale video using interpolation algorithms. The program uses FFmpeg to decode videos into individual frames, and each frames are copied into the device memory, where HIP interpolation kernels are ran to interpolate pixels within the frame. The program offers 3 different interpolation algorithms, bilinear, bicubic and lanczos 
