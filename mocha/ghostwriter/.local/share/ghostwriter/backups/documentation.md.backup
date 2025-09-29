@@ -119,6 +119,8 @@ $$x_i = f_t(\frac{i}{n}), \quad i\in\{1,\dots,n-1\}$$
 or for the pixel in the last row or column, $x_k$, is
 $$x_j = f_{k-1}(\frac{j+1}{n}), \quad j\in\{1,\dots,n-1\}$$
 
+Note that there are multiple methods of ca
+
 This interpolation uses a series of 4 kernels, where the first
 
 ## Lanczos
