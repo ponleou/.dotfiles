@@ -104,7 +104,7 @@ Furthermore, each interpolated data value are clamped between value $0$ and $255
 
 ## Bicubic
 
-
+The bicubic interpolation follows the same suit as the bilinear interpolation
 
 ## Lanczos
 
