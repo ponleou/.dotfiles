@@ -121,7 +121,7 @@ $$x_j = f_{k-1}(\frac{j+1}{n}), \quad j\in\{1,\dots,n-1\}$$
 
 Note that there are multiple methods of calculating the tangent of a specific pixel. The implementation above describes the usage of **Catmull-Rom spline** calculation for the tangents. The decision to be in favour of this method was for its simple and fast tangent calculation, ideal for a performance-focused program.
 
-This interpolation uses a series of 4 kernels, where the first kernel calculates the tangent of each pixel across the columns, which the second kernel follows through calculating the interpolated values across the columns, using the tangent output of the first kernel to calculate the cubic splines between each pixels. Similarly, the third kernel calculates the tangents across the rows, including the interpolated columns, and followed with the fourt
+This interpolation uses a series of 4 kernels, where the first kernel calculates the tangent of each pixel across the columns, which the second kernel follows through calculating the interpolated values across the columns, using the tangent output of the first kernel to calculate the cubic splines between each pixels. Similarly, the third kernel calculates the tangents across the rows, including the interpolated columns, and followed with the fourth kernel to interpolate across the rows with the tangents from the third kernel.
 
 ## Lanczos
 
