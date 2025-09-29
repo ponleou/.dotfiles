@@ -138,4 +138,6 @@ This interpolation uses a series of 4 kernels, where the first kernel calculates
 
 INCLUDE
 - specify the tech stack
-- what conc
+- what concurrency is observed in the project, and how it is achieved
+- what challenges were faced
+- what i did and what i face
