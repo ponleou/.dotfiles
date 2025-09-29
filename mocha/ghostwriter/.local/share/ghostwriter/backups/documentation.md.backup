@@ -104,7 +104,7 @@ Furthermore, each interpolated data value are clamped between value $0$ and $255
 
 ## Bicubic
 
-The bicubic interpolation follows the same approach as the bilinear interpolation, except the values between two pixels constructs a cubic spline rather than a linear line following a gradient. The interpolation for new pixels is first completed across the columns, and then repeated across each row, where the interpolated values are calculated by the cubic spline between the two pixels. Similarly, the pixel in the last column or row str
+The bicubic interpolation follows the same approach as the bilinear interpolation, except the values between two pixels constructs a cubic spline rather than a linear line following a gradient. The interpolation for new pixels is first completed across the columns, and then repeated across each row, where the interpolated values are calculated by the cubic spline between the two pixels. Similarly, data is interpolated after the pixel in the last column or row by stretching the cubic spline from the previous two pixels to interpolate new data after 
 
 ## Lanczos
 
