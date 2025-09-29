@@ -134,3 +134,8 @@ This interpolation uses a series of 4 kernels, where the first kernel calculates
 # Performance Tests
 
 # Results comparison (images of each frame per interpolation)
+
+
+INCLUDE
+- specify the tech stack
+- what conc
