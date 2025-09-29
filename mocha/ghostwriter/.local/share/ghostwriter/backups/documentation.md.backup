@@ -90,7 +90,7 @@ Hence, this program ensures that all frames inside the decode buffer should be c
 
 ## Bilinear
 
-Bilinear is the most simple interpolation out of the three. Its principle is to simply assume that the values between two pixels changes linearly. Hence, for $n$ scaling, $n$ new pixel data is created for each pixel, where the values follow between the linear gradient of the current pixel data to the next. Since the data plane to be interpolated is 2-dimensional, the linear interpolation is calculated twice, one across the columns, and one more across the rows, hence, the name bilinear.
+Bilinear is the most simple interpolation out of the three. Its principle is to simply assume that the values between two pixels changes linearly. Hence, for $n$ scaling, $n-1$ new pixel data is created for each pixel, where the values follow between the linear gradient of the current pixel data to the next. Since the data plane to be interpolated is 2-dimensional, the linear interpolation is calculated twice, one across the columns, and one more across the rows, hence, the name bilinear.
 
 The program implements this bilinear interpolation using two HIP kernels. The first kernel interpolates the linear data across each columns for all columns. For the current column, new pixel data are interpolated with the next columns' data, all the way until the last column of the plane. However, note that the last column does not have a next column to calculate the linear gradient against. Hence, this program implementation accommodates this by stretching the previous gradient across, in assumption that the data after the last column follows the same linear gradient as the previous gradient.
 
