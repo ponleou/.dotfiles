@@ -88,7 +88,7 @@ Each individual video frames to be interpolated are in YUV pixel format, where e
 
 Hence, this program ensures that all frames inside the decode buffer should be converted to a YUV pixel format by the processor before interpolating them in the kernels. Each series of kernel runs for a particular interpolation will occur 3 times to process a single frame, one time for each plane in the frame.
 
-## Bilinear
+## Bilinear Interpolation
 
 Bilinear is the most simple interpolation out of the three. Its principle is to simply assume that the values between two pixels changes linearly. Hence, for $n$ scaling, $n-1$ new pixel data is created for each pixel, where the values follow between the linear gradient of the current pixel data to the next. Since the data plane to be interpolated is 2-dimensional, the linear interpolation is calculated twice, one across the columns, and one more across the rows, hence, the name bilinear.
 
@@ -102,7 +102,7 @@ Additionally, the pixels within the last column/row, $x_k$, interpolates $n-1$ p
 
 Furthermore, each interpolated data value are clamped between value $0$ and $255$ inclusive, as the planes are a flatten array of bytes, with a maximum value of 8-bits.
 
-## Bicubic
+## Bicubic Interpolation
 
 The bicubic interpolation follows the same approach as the bilinear interpolation, except the values between two pixels constructs a cubic spline rather than a linear line following a gradient. The interpolation for new pixels is first completed across the columns, and then repeated across each row, where the interpolated values are calculated by the cubic spline between the two pixels. Similarly, data is interpolated after the pixel in the last column or row by stretching the cubic spline from the previous two pixels.
 
@@ -124,6 +124,8 @@ Note that there are multiple methods of calculating the tangent of a specific pi
 This interpolation uses a series of 4 kernels, where the first kernel calculates the tangent of each pixel across the columns, which the second kernel follows through calculating the interpolated values across the columns, using the tangent output of the first kernel to calculate the cubic splines between each pixels. Similarly, the third kernel calculates the tangents across the rows, including the interpolated columns, and followed with the fourth kernel to interpolate across the rows with the tangents from the third kernel.
 
 ## Lanczos
+
+
 
 ## Memory 
 
