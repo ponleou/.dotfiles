@@ -86,11 +86,11 @@ This program offers 3 different interpolation algorithm for upscaling, that is, 
 
 Each individual video frames to be interpolated are in YUV pixel format, where each frame would have 3 different data planes, the Y plane, U plane, and V plane. The Y plane, which contains the brightness data, is a flatten 2-dimension array, where its shape reflects the video's resolution. The chroma planes, which are U and V planes, are also a flatten 2-dimension array, however, its shape is scaled down from the original video's resolution depending on the chroma subsampling. Unlike pixel formats such as RGB, or BGR, a frame will contain 3 separate planes as most formats do, however, the chroma planes (U and V planes) tend to be smaller with chroma subsampling. This allows YUV pixel format to be the most efficient for image/video processing, requiring less data to be processed while containing the same information.
 
-Hence, this program ensures that all frames inside the decode buffer should be converted to a YUV pixel format by the processor before interpolating them in the kernels. Each series of kernel 
+Hence, this program ensures that all frames inside the decode buffer should be converted to a YUV pixel format by the processor before interpolating them in the kernels. Each series of kernel runs for a particular interpolation will occur 3 times to process a single frame, one time for each plane in the frame.
 
 ## Bilinear
 
-Bilinear is the most simple interpolation out of the three. Its principle is to simply assume that the values between two pixels
+Bilinear is the most simple interpolation out of the three. Its principle is to simply assume that the values between two pixels changes linearly
 
 ## Bicubic
 
