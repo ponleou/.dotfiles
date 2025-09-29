@@ -82,7 +82,7 @@ This issue is simply a limitation of a bounded queue that requires specific orde
 
 # Interpolation Algorithms
 
-This program offers 3 different interpolation algorithm for upscaling, that is, bilinear, bicubic, and lanczos interpolations. All 3 algorithms are implemented with a series of HIP kernels, utilising global, shared memory, and memory buffer reusage to optimise performance.
+This program offers 3 different interpolation algorithm for upscaling, that is, bilinear, bicubic, and Lanczos interpolations. All 3 algorithms are implemented with a series of HIP kernels, utilising global, shared memory, and memory buffer reusage to optimise performance.
 
 Each individual video frames to be interpolated are in YUV pixel format, where each frame would have 3 different data planes, the Y plane, U plane, and V plane. The Y plane, which contains the brightness data, is a flatten 2-dimension array, where its shape reflects the video's resolution. The chroma planes, which are U and V planes, are also a flatten 2-dimension array, however, its shape is scaled down from the original video's resolution depending on the chroma subsampling. Unlike pixel formats such as RGB, or BGR, a frame will contain 3 separate planes as most formats do, however, the chroma planes (U and V planes) tend to be smaller with chroma subsampling. This allows YUV pixel format to be the most efficient for image/video processing, requiring less data to be processed while containing the same information.
 
