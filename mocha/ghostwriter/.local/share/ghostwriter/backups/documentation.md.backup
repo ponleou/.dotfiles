@@ -84,7 +84,7 @@ This issue is simply a limitation of a bounded queue that requires specific orde
 
 This program offers 3 different interpolation algorithm for upscaling, that is, bilinear, bicubic, and lanczos interpolations. All 3 algorithms are implemented in a HIP kernel, utilising global, shared memory, and memory buffer reusage to optimise performance.
 
-All HIP kernels are written to read a flatten 2-dimension array of frames within a YUV format.
+All HIP kernels are written to read a flatten 2-dimension array of frames within a YUV pixel format.
 
 ## Bilinear
 
