@@ -82,6 +82,14 @@ This issue is simply a limitation of a bounded queue that requires specific orde
 
 # Interpolation Algorithms with HIP Kernels
 
+## Bilinear
+
+## Bicubic
+
+## Lanczos
+
+## Memory 
+
 # The Video Pipeline and decisions
 
 # Performance Tests
