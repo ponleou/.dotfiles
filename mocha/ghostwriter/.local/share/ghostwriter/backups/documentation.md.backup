@@ -82,7 +82,7 @@ This issue is simply a limitation of a bounded queue that requires specific orde
 
 # Interpolation Algorithms
 
-This program offers 3 different interpolation algorithm 
+This program offers 3 different interpolation algorithm for upscaling, that is, bilinear, bicubic, and lanczos
 
 ## Bilinear
 
