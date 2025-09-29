@@ -90,7 +90,7 @@ Hence, this program ensures that all frames inside the decode buffer should be c
 
 ## Bilinear
 
-Bilinear is the most simple interpolation out of the three. Its principle is to simply assume that the values between two pixels changes linearly. Hence, so
+Bilinear is the most simple interpolation out of the three. Its principle is to simply assume that the values between two pixels changes linearly. Hence, for $n$ scaling, $n$ new data is created for ea
 
 ## Bicubic
 
