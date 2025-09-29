@@ -90,7 +90,9 @@ This issue is simply a limitation of a bounded queue that requires specific orde
 
 ## Memory 
 
-# The Video Pipeline and decisions
+# The Video Pipeline and decisions 
+
+(about hardware encoder, software encoder being the bottleneck, or maybe this can be introduced in performance tests)
 
 # Performance Tests
 
