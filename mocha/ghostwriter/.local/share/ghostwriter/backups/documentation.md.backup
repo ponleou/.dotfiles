@@ -145,3 +145,4 @@ INCLUDE
 
 challenges to include
 - getting the hardware encoder to work due to encoder bottleneck
+- optimising performance through memory buffer reusage
