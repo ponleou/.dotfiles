@@ -80,9 +80,9 @@ Despite using a threshold, it still does not guarantee that the frames output fr
 
 This issue is simply a limitation of a bounded queue that requires specific ordering of data produced by a non-deterministic order of multiple producers. Of course, this problem can be eliminated by simply having one processor thread, so that the order is fully deterministic, while maintaining the producer-processor-consumer model. The downside is potentially slower processing performance, therefore, it is still useful to keep the implementation of multiple processor threads. Through experimentation, the queue size and threshold value that is "reliable-enough" for minimal misplaced frames, and optimal memory consumption was $$\text{queue size} = \text{processor threads} \times 4$$ $$\text{threshold} = 0.75 \times \text{queue size}$$.
 
-# Interpolation Algorithms with HIP Kernels
+# Interpolation Algorithms
 
-
+This program offers 3 different interpolation algorithm 
 
 ## Bilinear
 
