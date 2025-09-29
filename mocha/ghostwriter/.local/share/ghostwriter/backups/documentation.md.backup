@@ -100,6 +100,8 @@ For the current pixel, $x_t$, and the next pixel, $x_{t+1}$, and a scaling of $n
 
 Additionally, the pixels within the last column/row, $x_k$, interpolates $n-1$ pixels after $x_k$ using $$g=\frac{x_{k} - x_{k-1}}{n}$$ $$x_j = x_k + ((j+n) \cdot g),\quad j\in\{1,\dots, n-1\}$$
 
+Furthermore, each interpolated data value are clamped between value $0$ and $255$ inclusive, as the planes are a flatten array of bytes, with a maximum value of 8-bits.
+
 ## Bicubic
 
 
