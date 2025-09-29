@@ -79,3 +79,11 @@ Hence, a priority queue is required to accommodate the fact that the frames inpu
 Despite using a threshold, it still does not guarantee that the frames output from the priority buffer will be the expected frame `pts` when multiple processor threads are running. In a situation where a specific processor thread consumes and is processing a frame, however, other threads finish multiple frames (enough to reach the queue threshold) before that specific thread finishes its one frame, that frame's `pts` would still be stuck under processing while the encoder has already consumed multiple frames. If that frame's `pts` is the next ordered frame expected by the encoder, but still hasn't reached the queue, this would caused a miss ordered frame encoding. In the case when the encoder receives an unexpected `pts` frame, the encoder simply rejects the frame, causing artifacts in the video. However, the program minimises this issue by overwriting the frame's `pts` with the expected value, but the incorrect frame positioning in the video is still a problem in the output.
 
 This issue is simply a limitation of a bounded queue that requires specific ordering of data produced by a non-deterministic order of multiple producers. Of course, this problem can be eliminated by simply having one processor thread, so that the order is fully deterministic, while maintaining the producer-processor-consumer model. The downside is potentially slower processing performance, therefore, it is still useful to keep the implementation of multiple processor threads. Through experimentation, the queue size and threshold value that is "reliable-enough" for minimal misplaced frames, and optimal memory consumption was $$\text{queue size} = \text{processor threads} \times 4$$ $$\text{threshold} = 0.75 \times \text{queue size}$$.
+
+# Interpolation Algorithms with HIP Kernels
+
+# The Video Pipeline and decisions
+
+# Performance Tests
+
+# 
