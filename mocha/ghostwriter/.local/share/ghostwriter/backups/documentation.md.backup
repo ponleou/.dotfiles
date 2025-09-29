@@ -106,7 +106,7 @@ Furthermore, each interpolated data value are clamped between value $0$ and $255
 
 The bicubic interpolation follows the same approach as the bilinear interpolation, except the values between two pixels constructs a cubic spline rather than a linear line following a gradient. The interpolation for new pixels is first completed across the columns, and then repeated across each row, where the interpolated values are calculated by the cubic spline between the two pixels. Similarly, data is interpolated after the pixel in the last column or row by stretching the cubic spline from the previous two pixels.
 
-For the current pixel, $x_t$, and the next pixel, $x_{t+1}$, the cubic spline is calculated with $$f(i) = \{[(2x_t + m_t - 2x_{t+1} + m_{t+1})i + (-3x_t+3x_{t+1}-2m_t-m_{t+1})]i + m_t\}i + x_t$$
+For the current pixel, $x_t$, and the next pixel, $x_{t+1}$, the cubic spline is calculated with $$f_t(i) = \{[(2x_t + m_t - 2x_{t+1} + m_{t+1})i + (-3x_t+3x_{t+1}-2m_t-m_{t+1})]i + m_t\}i + x_t$$
 
 ## Lanczos
 
