@@ -98,6 +98,8 @@ Once the columns are interpolated, the same interpolation is calculated across e
 
 For the current pixel, $x_t$, and the next pixel, $x_{t+1}$, and a scaling of $n$, the gradient is calculated by $$g=\frac{x_{t+1} - x_t}{n}$$ whereby the $n-1$ new pixels is interpolated through $$x_i = x_t + (i \cdot g),\quad i\in\{1,\dots, n-1\}$$
 
+Additionally, the column/row, $x_k$
+
 ## Bicubic
 
 
