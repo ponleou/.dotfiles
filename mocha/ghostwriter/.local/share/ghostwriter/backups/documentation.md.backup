@@ -96,7 +96,7 @@ The program implements this bilinear interpolation using two HIP kernels. The fi
 
 Once the columns are interpolated, the same interpolation is calculated across each row, including the new data from the generated columns. Similarly, the last row in the plane also stretches the previous linear gradient in assumption that the gradient continues from the previous 2 points.
 
-For the current pixel, $x_t$, and the next pixel, $x_{t+1}$, the gradient is calculated by $$g=\frac{x_{t+1} - x_t}{n-1}$$
+For the current pixel, $x_t$, and the next pixel, $x_{t+1}$, and a scaling of $n$, the gradient is calculated by $$g=\frac{x_{t+1} - x_t}{n+1}$$ whereby the $n-1$ new pixe
 
 ## Bicubic
 
