@@ -96,6 +96,8 @@ The program implements this bilinear interpolation using two HIP kernels. The fi
 
 Once the columns are interpolated, the same interpolation is calculated across each row, including the new data from the generated columns. Similarly, the last row in the plane also stretches the previous linear gradient in assumption that the gradient continues from the previous 2 points.
 
+For the current pixel $x_t$ and 
+
 ## Bicubic
 
 
