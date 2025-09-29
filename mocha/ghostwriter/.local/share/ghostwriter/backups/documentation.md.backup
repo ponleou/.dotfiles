@@ -117,7 +117,7 @@ $$m_k = \frac{x_{k} - x_{k-1}}2$$
 Hence, the interpolated values for the current pixel, $x_t$, of scaling $n$ is
 $$x_i = f_t(\frac{i}{n}), \quad i\in\{1,\dots,n-1\}$$
 or for the pixel in the last row or column, $x_k$, is
-$$x_j = ~~f_t~~(\frac{j+1}{n}), \quad j\in\{1,\dots,n-1\}$$
+$$x_j = f_{k-1}(\frac{j+1}{n}), \quad j\in\{1,\dots,n-1\}$$
 
 ## Lanczos
 
