@@ -119,7 +119,7 @@ $$x_i = f_t(\frac{i}{n}), \quad i\in\{1,\dots,n-1\}$$
 or for the pixel in the last row or column, $x_k$, is
 $$x_j = f_{k-1}(\frac{j+1}{n}), \quad j\in\{1,\dots,n-1\}$$
 
-Note that there are multiple methods of calculating the tangent of a specific pixel. The implementation above describes the usage of **Catmull-Rom spline** calculation for the tangents. The decision to use this method for the implementation
+Note that there are multiple methods of calculating the tangent of a specific pixel. The implementation above describes the usage of **Catmull-Rom spline** calculation for the tangents. The decision to be in favour of this method was for its simple and fast tangent calculation
 
 This interpolation uses a series of 4 kernels, where the first
 
