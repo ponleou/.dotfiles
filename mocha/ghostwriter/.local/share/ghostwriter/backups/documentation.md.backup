@@ -82,9 +82,11 @@ This issue is simply a limitation of a bounded queue that requires specific orde
 
 # Interpolation Algorithms
 
-This program offers 3 different interpolation algorithm for upscaling, that is, bilinear, bicubic, and lanczos interpolations. All 3 algorithms are implemented in a HIP kernel, utilising global
+This program offers 3 different interpolation algorithm for upscaling, that is, bilinear, bicubic, and lanczos interpolations. All 3 algorithms are implemented in a HIP kernel, utilising global, shared memory, and memory buffer reusage to optimise performance.
 
 ## Bilinear
+
+Bilinear is the most simple interpolation ab
 
 ## Bicubic
 
