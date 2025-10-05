@@ -50,7 +50,7 @@ recording_options=(
     -cursor $ENABLE_CURSOR
     -cr $COLOR_RANGE
     -c $CONTAINER
-    -o "$SAVE_DIR/$RECORDING_PREFIX-${date}.mp4"
+    -ro "$SAVE_DIR"
 )
 
 replay_options=(
@@ -65,7 +65,7 @@ replay_options=(
     -cursor $ENABLE_CURSOR
     -cr $COLOR_RANGE
     -c $CONTAINER
-    -o "$SAVE_DIR/$REPLAY_PREFIX-${date}.mp4"
+    -o "$SAVE_DIR"
 )
 
 # Handle selected input
