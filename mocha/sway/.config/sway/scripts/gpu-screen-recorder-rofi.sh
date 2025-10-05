@@ -79,9 +79,8 @@ case "$choice" in
     ;;
 "${options[1]}")
     # SAVE REPLAY
-    pkill -SIGUSR1 -f gpu-screen-recorder
-    if [ $? -ne 0 ]; then
-        notify-send "Replay saved" "Replay of the last $REPLAY_BUFFER_SEC\s is saved in $SAVE_DIR."
+    if pkill -SIGUSR1 -f gpu-screen-recorder; then
+        notify-send "Replay saved" "Replay of the last ${REPLAY_BUFFER_SEC}s is saved in $SAVE_DIR."
     else
         notify-send "Replay not started" "Replay was not started. No replay saved."
     fi
