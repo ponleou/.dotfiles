@@ -83,7 +83,7 @@ case "$choice" in
     if [ $? -ne 0 ]; then
         notify-send "Replay saved" "Replay of the last $REPLAY_BUFFER_SEC\s is saved in $SAVE_DIR."
     else
-        notify-send "Command succeeded" "Everything ran fine."
+        notify-send "Replay not started" "Replay was not started. No replay saved."
     fi
     exit 0
     ;;
