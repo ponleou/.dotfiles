@@ -36,6 +36,7 @@ date=$(date +"%Y-%m-%d_%H-%M-%S")
 recording_options=(
     -w "screen"
     -f $FRAMERATE
+    -fm $FRAMERATE_MODE
     -fm "cfr"
     -a "default_output|default_input"
     -k $VIDEO_CODEC
@@ -47,6 +48,7 @@ recording_options=(
 replay_options=(
     -w "screen"
     -f $FRAMERATE
+    -fm $FRAMERATE_MODE
     -fm "cfr"
     -a "default_output|default_input"
     -c "mp4"
