@@ -22,7 +22,7 @@ FRAMERATE_MODE="cfr"                            # 'cfr', or 'vfr'
 VIDEO_CODEC="hevc"                              # 'auto', 'h264', 'hevc', 'av1', 'vp8', 'vp9', 'hevc_hdr', 'av1_hdr', 'hevc_10bit' or 'av1_10bit'
 AUDIO_CODEC="opus"                              # 'aac', 'opus' or 'flac'
 VIDEO_QUALITY="high"                            # 'medium', 'high', 'very_high' or 'ultra'
-COLOR_RANGE="limited"                           # 'limited', or 'full'
+COLOR_RANGE="full"                              # 'limited', or 'full'
 CONTAINER="mkv"                                 # 'mp4', 'mkv', 'flv', 'webm' and others that support h264, hevc, av1, vp8 or vp9
 ENABLE_CURSOR="yes"                             # 'yes' or 'no'
 
