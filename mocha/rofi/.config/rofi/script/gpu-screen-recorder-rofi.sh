@@ -37,7 +37,6 @@ recording_options=(
     -w "screen"
     -f $FRAMERATE
     -fm $FRAMERATE_MODE
-    -fm "cfr"
     -a "default_output|default_input"
     -k $VIDEO_CODEC
     -ac $AUDIO_CODEC
@@ -49,7 +48,6 @@ replay_options=(
     -w "screen"
     -f $FRAMERATE
     -fm $FRAMERATE_MODE
-    -fm "cfr"
     -a "default_output|default_input"
     -c "mp4"
     -r $REPLAY_BUFFER_SEC
