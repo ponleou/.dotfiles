@@ -6,10 +6,16 @@
 # Date: 30.04.2025
 # License: MIT
 # 
+# Modified by: ponleou
+
+###########
+# CONFIG #
+##########
+SAVE_DIR="/media/Shared/Drive/Replay captures"
 
 # Make sure the "Videos" folder exists
-if [ ! -d "$HOME/Videos" ]; then
-    mkdir -p "$HOME/Videos"
+if [ ! -d "$SAVE_DIR" ]; then
+    mkdir -p "$SAVE_DIR"
 fi
 
 # Create Menu Items
@@ -26,7 +32,7 @@ recording_options=(
     -w "screen"
     -f "60"
     -a "default_output|default_input"
-    -o "$HOME/Videos/Video-${date}.mp4"
+    -o "$SAVE_DIR/Video-${date}.mp4"
 )
 
 replay_options=(
@@ -35,7 +41,7 @@ replay_options=(
     -a "default_output|default_input"
     -c "mp4"
     -r "60"
-    -o "$HOME/Videos/Clip-${date}.mp4"
+    -o "$SAVE_DIR/Clip-${date}.mp4"
 )
 
 # Handle selected input
