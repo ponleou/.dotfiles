@@ -30,7 +30,7 @@ if [ ! -d "$SAVE_DIR" ]; then
 fi
 
 # Create Menu Items
-options=(" Start Replay" " Stop Replay" " Save Replay" " Start Recording" " Stop Recording" " Pause/Resume Recording")
+options=(" Start Replay" " Save Replay" " Stop Replay" " Start Recording" " Stop Recording" " Pause/Resume Recording")
 
 # Print Menu Items each with a newline
 choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i -p " 󰕧 Recorder ")
@@ -70,32 +70,32 @@ replay_options=(
 
 # Handle selected input
 case "$choice" in
-"${options[3]}")
+"${options[0]}")
     # START REPLAY
     gpu-screen-recorder "${replay_options[@]}"
     exit 0
     ;;
-"${options[4]}")
-    # STOP REPPLAY
-    pkill -SIGINT -f gpu-screen-recorder
-    exit 0
-    ;;
-"${options[5]}")
+"${options[1]}")
     # SAVE REPLAY
     pkill -SIGUSR1 -f gpu-screen-recorder
     exit 0
     ;;
-"${options[0]}")
+"${options[2]}")
+    # STOP REPPLAY
+    pkill -SIGINT -f gpu-screen-recorder
+    exit 0
+    ;;
+"${options[3]}")
     # START RECORDING
     gpu-screen-recorder "${recording_options[@]}"
     exit 0
     ;;
-"${options[1]}")
+"${options[4]}")
     # STOP RECORDING
     pkill -SIGINT -f gpu-screen-recorder
     exit 0
     ;;
-"${options[2]}")
+"${options[5]}")
     # PAUSE/RESUME RECORDING
     pkill -SIGUSR2 -f gpu-screen-recorder
     exit 0
