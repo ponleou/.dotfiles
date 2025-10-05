@@ -17,6 +17,7 @@ SAVE_DIR="/media/Shared/Drive/Replay captures"
 REPLAY_BUFFER_SEC="60"
 VIDEO_CODEC="hevc"
 AUDIO_CODEC="opus"
+VIDEO_QUALITY="high"
 
 # Make sure the "Videos" folder exists
 if [ ! -d "$SAVE_DIR" ]; then
@@ -37,6 +38,7 @@ recording_options=(
     -w "screen"
     -f $FRAMERATE
     -fm $FRAMERATE_MODE
+    -q $VIDEO_QUALITY
     -a "default_output|default_input"
     -k $VIDEO_CODEC
     -ac $AUDIO_CODEC
@@ -48,6 +50,7 @@ replay_options=(
     -w "screen"
     -f $FRAMERATE
     -fm $FRAMERATE_MODE
+    -q $VIDEO_QUALITY
     -a "default_output|default_input"
     -c "mp4"
     -r $REPLAY_BUFFER_SEC
