@@ -46,7 +46,7 @@ recording_options=(
     -f $FRAMERATE
     -fm $FRAMERATE_MODE
     -q $VIDEO_QUALITY
-    -a "default_output|default_input"
+    -a "$AUDIO_OUTPUT|$AUDIO_INPUT"
     -k $VIDEO_CODEC
     -ac $AUDIO_CODEC
     -cursor $ENABLE_CURSOR
