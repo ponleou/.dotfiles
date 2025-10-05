@@ -11,7 +11,12 @@
 ###########
 # CONFIG #
 ##########
+FRAMERATE="60"
+FRAMERATE_MODE="cfr"
 SAVE_DIR="/media/Shared/Drive/Replay captures"
+REPLAY_BUFFER_SEC="60"
+VIDEO_CODEC="hevc"
+AUDIO_CODEC="opus"
 
 # Make sure the "Videos" folder exists
 if [ ! -d "$SAVE_DIR" ]; then
@@ -30,17 +35,25 @@ date=$(date +"%Y-%m-%d_%H-%M-%S")
 # gpu-screen-recorder options
 recording_options=(
     -w "screen"
-    -f "60"
+    -f $FRAMERATE
+    -fm "cfr"
     -a "default_output|default_input"
+    -k $VIDEO_CODEC
+    -ac $AUDIO_CODEC
+    -cursor $ENABLE_CURSOR
     -o "$SAVE_DIR/Video-${date}.mp4"
 )
 
 replay_options=(
     -w "screen"
-    -f "60"
+    -f $FRAMERATE
+    -fm "cfr"
     -a "default_output|default_input"
     -c "mp4"
-    -r "60"
+    -r $REPLAY_BUFFER_SEC
+    -k $VIDEO_CODEC
+    -ac $AUDIO_CODEC
+    -cursor $ENABLE_CURSOR
     -o "$SAVE_DIR/Clip-${date}.mp4"
 )
 
