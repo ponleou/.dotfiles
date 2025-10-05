@@ -78,9 +78,9 @@ set $file dolphin
 
     # screenshot
     bindsym XF86Launch1 exec bash -c "~/.config/sway/scripts/screenshot.sh"
-    bindsym $mod+XF86Launch1 exec bash -c "~/.config/sway/window-screenshot.sh"
+    bindsym $mod+XF86Launch1 exec bash -c "~/.config/sway/scripts/window-screenshot.sh"
     bindsym Print exec bash -c "~/.config/sway/scripts/screenshot.sh"
-    bindsym $mod+Print exec bash -c "~/.config/sway/window-screenshot.sh"
+    bindsym $mod+Print exec bash -c "~/.config/sway/scripts/window-screenshot.sh"
 
     # clipboard history with rofi
     bindsym $mod+v exec rofi -modi clipboard:~/.config/cliphist/contrib/cliphist-rofi-img -show clipboard -show-icons
