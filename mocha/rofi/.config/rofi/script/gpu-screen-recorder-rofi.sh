@@ -17,7 +17,8 @@ SAVE_DIR="/media/Shared/Drive/Replay captures"
 REPLAY_BUFFER_SEC="60"
 VIDEO_CODEC="hevc"
 AUDIO_CODEC="opus"
-VIDEO_QUALITY="high"
+VIDEO_QUALITY="high"                            # 'medium', 'high', 'very_high' or 'ultra'
+COLOR_RANGE="limited"                           # 'limited', or 'full'
 
 # Make sure the "Videos" folder exists
 if [ ! -d "$SAVE_DIR" ]; then
