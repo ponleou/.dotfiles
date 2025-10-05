@@ -20,6 +20,7 @@ AUDIO_CODEC="opus"                              # 'aac', 'opus' or 'flac'
 VIDEO_QUALITY="high"                            # 'medium', 'high', 'very_high' or 'ultra'
 COLOR_RANGE="limited"                           # 'limited', or 'full'
 CONTAINER="mkv"                                 # 'mp4', 'mkv', 'flv', 'webm' and others that support h264, hevc, av1, vp8 or vp9
+ENABLE_CURSOR="yes"                             # 'yes' or 'no'
 
 # Make sure the "Videos" folder exists
 if [ ! -d "$SAVE_DIR" ]; then
@@ -45,6 +46,8 @@ recording_options=(
     -k $VIDEO_CODEC
     -ac $AUDIO_CODEC
     -cursor $ENABLE_CURSOR
+    -cr $COLOR_RANGE
+    -c $CONTAINER
     -o "$SAVE_DIR/Video-${date}.mp4"
 )
 
@@ -54,11 +57,12 @@ replay_options=(
     -fm $FRAMERATE_MODE
     -q $VIDEO_QUALITY
     -a "default_output|default_input"
-    -c "mp4"
     -r $REPLAY_BUFFER_SEC
     -k $VIDEO_CODEC
     -ac $AUDIO_CODEC
     -cursor $ENABLE_CURSOR
+    -cr $COLOR_RANGE
+    -c $CONTAINER
     -o "$SAVE_DIR/Clip-${date}.mp4"
 )
 
