@@ -15,10 +15,11 @@ FRAMERATE="60"
 FRAMERATE_MODE="cfr"
 SAVE_DIR="/media/Shared/Drive/Replay captures"
 REPLAY_BUFFER_SEC="60"
-VIDEO_CODEC="hevc"
-AUDIO_CODEC="opus"
+VIDEO_CODEC="hevc"                              # 'auto', 'h264', 'hevc', 'av1', 'vp8', 'vp9', 'hevc_hdr', 'av1_hdr', 'hevc_10bit' or 'av1_10bit'
+AUDIO_CODEC="opus"                              # 'aac', 'opus' or 'flac'
 VIDEO_QUALITY="high"                            # 'medium', 'high', 'very_high' or 'ultra'
 COLOR_RANGE="limited"                           # 'limited', or 'full'
+CONTAINER="mkv"                                 # 'mp4', 'mkv', 'flv', 'webm' and others that support h264, hevc, av1, vp8 or vp9
 
 # Make sure the "Videos" folder exists
 if [ ! -d "$SAVE_DIR" ]; then
