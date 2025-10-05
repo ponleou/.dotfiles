@@ -80,6 +80,11 @@ case "$choice" in
 "${options[1]}")
     # SAVE REPLAY
     pkill -SIGUSR1 -f gpu-screen-recorder
+    if [ $? -ne 0 ]; then
+    notify-send "Command failed" "The last command did not succeed."
+else
+    notify-send "Command succeeded" "Everything ran fine."
+fi
     exit 0
     ;;
 "${options[2]}")
