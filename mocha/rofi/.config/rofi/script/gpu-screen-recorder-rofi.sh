@@ -14,6 +14,8 @@
 SAVE_DIR="/media/Shared/Drive/Replay captures"
 REPLAY_BUFFER_SEC="60"
 FRAMERATE="60"
+RECORDING_PREFIX="recording"
+REPLAY_PREFIX="replay"
 FRAMERATE_MODE="cfr"                            # 'cfr', or 'vfr'
 VIDEO_CODEC="hevc"                              # 'auto', 'h264', 'hevc', 'av1', 'vp8', 'vp9', 'hevc_hdr', 'av1_hdr', 'hevc_10bit' or 'av1_10bit'
 AUDIO_CODEC="opus"                              # 'aac', 'opus' or 'flac'
@@ -48,7 +50,7 @@ recording_options=(
     -cursor $ENABLE_CURSOR
     -cr $COLOR_RANGE
     -c $CONTAINER
-    -o "$SAVE_DIR/Video-${date}.mp4"
+    -o "$SAVE_DIR/$RECORDING_PREFIX-${date}.mp4"
 )
 
 replay_options=(
@@ -63,7 +65,7 @@ replay_options=(
     -cursor $ENABLE_CURSOR
     -cr $COLOR_RANGE
     -c $CONTAINER
-    -o "$SAVE_DIR/Clip-${date}.mp4"
+    -o "$SAVE_DIR/$REPLAY_PREFIX-${date}.mp4"
 )
 
 # Handle selected input
