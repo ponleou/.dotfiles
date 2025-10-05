@@ -61,12 +61,12 @@ replay_options=(
     -fm $FRAMERATE_MODE
     -q $VIDEO_QUALITY
     -a "$AUDIO_OUTPUT|$AUDIO_INPUT"
-    -r $REPLAY_BUFFER_SEC
     -k $VIDEO_CODEC
     -ac $AUDIO_CODEC
     -cursor $ENABLE_CURSOR
     -cr $COLOR_RANGE
     -c $CONTAINER
+    -r $REPLAY_BUFFER_SEC
     -o "$SAVE_DIR"
 )
 
