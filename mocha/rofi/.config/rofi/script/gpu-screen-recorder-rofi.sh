@@ -14,7 +14,7 @@
 FRAMERATE="60"
 SAVE_DIR="/media/Shared/Drive/Replay captures"
 REPLAY_BUFFER_SEC="60"
-FRAMERATE_MODE="cfr"                            # 'cfr', 'vfr', or 'content'
+FRAMERATE_MODE="cfr"                            # 'cfr', 'vfr'
 VIDEO_CODEC="hevc"                              # 'auto', 'h264', 'hevc', 'av1', 'vp8', 'vp9', 'hevc_hdr', 'av1_hdr', 'hevc_10bit' or 'av1_10bit'
 AUDIO_CODEC="opus"                              # 'aac', 'opus' or 'flac'
 VIDEO_QUALITY="high"                            # 'medium', 'high', 'very_high' or 'ultra'
