@@ -11,7 +11,7 @@
 ###########
 # CONFIG #
 ##########
-SAVE_DIR="/media/Shared/Drive/Replay captures"
+SAVE_DIR="/media/Shared/Drive/Replay captures/GSR"
 REPLAY_BUFFER_SEC="60"
 FRAMERATE="60"
 RECORDING_PREFIX="recording"
