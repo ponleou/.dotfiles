@@ -5,6 +5,7 @@
 # Author: Justus0405
 # Date: 30.04.2025
 # License: MIT
+# 
 
 # Make sure the "Videos" folder exists
 if [ ! -d "$HOME/Videos" ]; then
@@ -12,7 +13,7 @@ if [ ! -d "$HOME/Videos" ]; then
 fi
 
 # Create Menu Items
-options=(" Start Recording" " Stop  Recording" " Pause/Resume Recording" " Start   Replay" " Stop    Replay" " Save    Replay")
+options=(" Start Recording" " Stop Recording" " Pause/Resume Recording" " Start Replay" " Stop Replay" " Save Replay")
 
 # Print Menu Items each with a newline
 choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i -p " 󰕧 Recorder ")
