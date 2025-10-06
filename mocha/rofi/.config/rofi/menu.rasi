@@ -27,7 +27,7 @@ mainbox {
 }
 
 inputbar {
-    children: [prompt, entry];
+    children: [prompt, textbox-prompt-colon, entry];
     background-color: @base;
     /*border-radius: 5px;*/
     padding: 2px;
@@ -44,7 +44,13 @@ prompt {
     text-align: center;
     margin: 0px;
     font: @font;
-    str: "❯:";
+}
+
+textbox-prompt-colon {
+    str: ":";
+    text-color: @peach;
+    background-color: @base;
+    font: @font;
 }
 
 entry {
@@ -54,7 +60,6 @@ entry {
     text-align: center; 
     line-height: 30px;   
     font: @font;
-    expand: true;
 }
 
 listview {
