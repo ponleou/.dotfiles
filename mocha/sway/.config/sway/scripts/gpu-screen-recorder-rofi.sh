@@ -54,7 +54,6 @@ recording_options=(
     -cr $COLOR_RANGE
     -c $CONTAINER
     -o "$SAVE_DIR"
-    -o "Recording_$date"
 )
 
 replay_options=(
