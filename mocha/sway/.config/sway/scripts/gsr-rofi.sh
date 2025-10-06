@@ -36,12 +36,14 @@ PAUSE_RECORDING=" Pause/Resume Recording"
 
 process_list=$(pgrep -af gpu-screen-recorder)
 pgrep_code=$?
-echo $process_list
 running=0
+replay_mode=0
 
-if [ pgrep_code -eq 0 ]; then
+if [[ pgrep_code == 0 ]]; then
     running=1
 fi
+
+if [[ running == 1 && "$process_list" == *"-r "* ]]; then
 
 
 # Make sure the "Videos" folder exists
