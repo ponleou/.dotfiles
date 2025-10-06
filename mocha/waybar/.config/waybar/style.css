@@ -116,10 +116,6 @@ tooltip label {
     color: @green;
 }
 
-#battery.charging {
-  color: @green;
-}
-
 #custom-playerctl {
     background-color: @peach;
     color: @mantle;
