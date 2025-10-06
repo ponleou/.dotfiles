@@ -34,7 +34,6 @@ inputbar {
     border-color: @peach;
     padding: 3px 8px 3px 8px;  
     margin: 20px 0px 0px 20px;
-    font-size: 7.5px;
 }
 
 prompt {
