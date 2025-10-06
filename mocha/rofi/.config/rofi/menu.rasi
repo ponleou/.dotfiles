@@ -13,11 +13,11 @@ element-text, element-icon, mode-switcher {
 window {
     border-color: transparent;
     background-color: @base;
-    padding: 1.11em;
+    padding: 20px;
     font: @font;
-    border: 0.11em;
+    border: 2px;
     border-color: @peach;
-    border-radius: 0.3em;
+    border-radius: 5px;
 }
 
 mainbox {
