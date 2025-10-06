@@ -53,7 +53,7 @@ textbox-prompt-colon {
 }
 
 entry {
-    padding-left: 5px;
+    padding: 0 0 0 5px;
     text-color: @peach;
     background-color: @base;
     text-align: center; 
