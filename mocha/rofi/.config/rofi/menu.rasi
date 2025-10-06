@@ -56,6 +56,7 @@ textbox-prompt-colon {
 }
 
 entry {
+    enabled: true;
     expand: true;
     padding: 0 0 0 5px;
     text-color: @peach;
