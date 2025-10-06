@@ -1,6 +1,5 @@
 @import "mocha.css";
-
-* {
+@import "theme.css" * {
     all: unset;
     font-size: 14px;
     font-family: WorkSans, FontAwesome6Free, SymbolsNerdFont;
@@ -29,7 +28,7 @@ scale trough {
 }
 
 .floating-notifications.background .notification-row .notification-background:hover {
-    box-shadow: inset 0 0 0 1px @peach;
+    box-shadow: inset 0 0 0 1px @primary;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification {
@@ -93,7 +92,7 @@ scale trough {
 }
 
 .control-center .widget-title button:hover {
-    box-shadow: inset 0 0 0 1px @peach;
+    box-shadow: inset 0 0 0 1px @primary;
 }
 
 .control-center .widget-title > button > label {
@@ -158,7 +157,7 @@ scrolledwindow {
 }
 
 .control-center .notification-row .notification-background:hover {
-    box-shadow: inset 0 0 0 1px @peach;
+    box-shadow: inset 0 0 0 1px @primary;
     color: @text;
 }
 
@@ -181,7 +180,7 @@ scrolledwindow {
 }
 
 .notification-action:hover {
-    box-shadow: inset 0 0 0 1px @peach;
+    box-shadow: inset 0 0 0 1px @primary;
 }
 
 .notification-action label {
@@ -199,7 +198,7 @@ scrolledwindow {
 }
 
 .control-center-dnd:checked {
-    background: @peach;
+    background: @primary;
 }
 
 .control-center-dnd slider {
@@ -220,7 +219,7 @@ scrolledwindow {
 }
 
 .widget-dnd > switch:checked {
-    background: @peach;
+    background: @primary;
 }
 
 .widget-dnd > switch slider {
@@ -238,7 +237,7 @@ scrolledwindow {
 }
 
 .mpris-overlay {
-    background-color: @peach;
+    background-color: @primary;
     color: @mantle;
 }
 
@@ -252,7 +251,7 @@ scrolledwindow {
 
 .widget-mpris-player {
     padding: 0.5rem;
-    background-color: @peach;
+    background-color: @primary;
     border-radius: 10px;
 }
 
@@ -299,7 +298,7 @@ scrolledwindow {
 
 .widget-volume {
     padding: 1rem;
-    border: @peach solid 1px;
+    border: @primary solid 1px;
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
     border-bottom: none;
@@ -318,7 +317,7 @@ scrolledwindow {
 .widget-backlight {
     padding: 1rem;
     padding-top: 0;
-    border: @peach solid 1px;
+    border: @primary solid 1px;
     border-bottom-right-radius: 7px;
     border-bottom-left-radius: 7px;
     border-top: none;
@@ -361,7 +360,7 @@ scrolledwindow {
 .widget-buttons-grid flowbox > * {
     margin-right: 1rem;
     padding: 0.5rem 1rem;
-    background-color: @peach;
+    background-color: @primary;
     border-radius: 7px;
     color: @mantle;
 }
