@@ -36,6 +36,7 @@ inputbar {
     padding: 0px 5px 8px 5px;  
     margin: 15px 0px 0px 15px;
 }
+
 prompt {
     enabled: true;
     background-color: @base;
@@ -43,7 +44,6 @@ prompt {
     text-align: center;
     margin: 0px;
     font: @font;
-    expand: false;
 }
 
 textbox-prompt-colon {
@@ -52,8 +52,7 @@ textbox-prompt-colon {
     background-color: @base;
     margin: 0px 2px 0px 2px;
     font: @font;
-    expand: false;
-    width: 10px;
+    width: 10px
 }
 
 entry {
@@ -63,7 +62,6 @@ entry {
     text-align: center; 
     line-height: 30px;   
     font: @font;
-    expand: true;
 }
 
 listview {
