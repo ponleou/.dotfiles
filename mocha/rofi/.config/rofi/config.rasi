@@ -155,13 +155,13 @@ configuration {
       sorting-method:    "name";
   }
 
-
-    display-ssh:    "󰣀 ssh:";
-    display-run:    "󱓞 run:";
-    display-drun:   "󰣖 drun:";
-    display-window: "󱂬 window:";
-    display-combi:  "󰕘 combi:";
-    display-filebrowser: "󰉋 filebrowser:";
+show-icons: true;
+  display-ssh:    "󰣀 ssh:";
+  display-run:    "󱓞 run:";
+  display-drun:   "󰣖 drun:";
+  display-window: "󱂬 window:";
+  display-combi:  "󰕘 combi:";
+  display-filebrowser: "󰉋 filebrowser:";
 }
 
 @theme "~/.config/rofi/menu.rasi"
