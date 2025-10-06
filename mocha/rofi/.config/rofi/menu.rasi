@@ -27,7 +27,7 @@ mainbox {
 }
 
 inputbar {
-    children: [textbox, entry];
+    children: [prompt, entry];
     background-color: @base;
     /*border-radius: 5px;*/
     padding: 2px;
@@ -38,18 +38,15 @@ inputbar {
 }
 
 prompt {
-    enabled: false;
-}
-
-textbox {
-    str: "❯:";
+    enabled: true;
     background-color: @base;
     text-color: @peach;
     text-align: center;
     margin: 0px;
     font: @font;
-    expand: false;
+    str: "❯:";
 }
+
 entry {
     padding: 0 0 0 5px;
     text-color: @peach;
