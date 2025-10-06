@@ -64,7 +64,7 @@ entry {
 
 listview {
     border: 0px;
-    padding: 4px 0px 0px;
+    padding: 5px 0px 0px;
     columns: 1;
     background-color: @base;
     fixed-height: false;
