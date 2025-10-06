@@ -38,7 +38,7 @@ inputbar {
 }
 
 prompt {
-    expand: false;
+    enabled: true;
     background-color: @base;
     text-color: @peach;
     text-align: center;
@@ -47,17 +47,12 @@ prompt {
 }
 
 textbox-prompt-colon {
-    expand: false;
+    expand: true;
     str: ":";
-    text-color: @peach;
-    background-color: @base;
-    margin: 0px 2px 0px 2px;
     font: @font;
 }
 
 entry {
-    enabled: true;
-    expand: true;
     padding: 0 0 0 5px;
     text-color: @peach;
     background-color: @base;
