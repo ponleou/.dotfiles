@@ -79,6 +79,7 @@ element {
     font: @font;
     background-color: @base;
     text-color: @text;
+    margin: 5px 0;
 }
 
 element-icon {
