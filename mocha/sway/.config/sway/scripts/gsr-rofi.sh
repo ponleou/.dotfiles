@@ -33,6 +33,8 @@ START_RECORDING=" Start Recording"
 STOP_RECORDING=" Stop Recording"
 PAUSE_RECORDING=" Pause/Resume Recording"
 
+
+
 # get process states (if its running and if its in replay mode)
 process_list=$(pgrep -af gpu-screen-recorder)
 pgrep_code=$?
