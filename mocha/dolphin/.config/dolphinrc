@@ -1,0 +1,56 @@
+MenuBar=Disabled
+
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
+
+[DetailsMode]
+PreviewSize=22
+SidePadding=0
+
+[ExtractDialog]
+1706x1066 screen: Height=1008
+1706x1066 screen: Width=832
+1707x1067 screen: Height=534
+1707x1067 screen: Width=1138
+2 screens: Height=1008
+2 screens: Width=832
+DirHistory[$e]=/media/ext4/Downloads/,/media/ext4/Videos/,/media/Shared/Drive/Games in folders/temp2/,/media/Shared/Drive/Games in folders/,/media/Shared/Drive/Games in folders/temp/,/media/ext4/Downloads/qlty-cli/,/media/Shared/Downloads/,/media/Shared/Drive/Games in folders/R.E.P.O./,$HOME/Code files/Arch Linux/EcoRound_Project/Backend/,$HOME/Shared/Documents/
+
+[FileDialogSize]
+2 screens: Height=598
+2 screens: Width=838
+
+[General]
+DoubleClickViewAction=none
+GlobalViewProps=false
+RememberOpenedTabs=false
+ShowStatusBar=Disabled
+Version=202
+ViewPropsTimestamp=2023,10,22,13,32,19.79
+
+[IconsMode]
+PreviewSize=80
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[KPropertiesDialog]
+1920x1200 screen: Height=510
+1920x1200 screen: Width=436
+2 screens: Height=532
+2 screens: Width=414
+
+[MainWindow]
+MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,pothumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,mobithumbnail,opendocumentthumbnail,gsthumbnail,quithumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs
+
+[ViewPropertiesDialog]
+1706x1066 screen: Height=542
+1706x1066 screen: Width=407
+1707x1067 screen: Height=634
+1707x1067 screen: Width=401
+2 screens: Height=634
+2 screens: Width=401
