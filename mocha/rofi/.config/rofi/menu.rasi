@@ -38,6 +38,7 @@ inputbar {
 }
 
 prompt {
+    expand: false;
     background-color: @base;
     text-color: @peach;
     text-align: center;
