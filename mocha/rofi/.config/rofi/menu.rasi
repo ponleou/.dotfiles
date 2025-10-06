@@ -81,7 +81,7 @@ element {
     border-radius: 0px;
     font: @font;
     background-color: @base;
-    text-color: @peach;
+    text-color: @text;
 }
 
 element-icon {
