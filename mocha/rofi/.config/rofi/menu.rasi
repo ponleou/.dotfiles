@@ -33,7 +33,7 @@ inputbar {
     font: @font;
     border-color: @peach;
     padding: 3px 8px 3px 8px;  
-    margin: 15px 0px 0px 15px;
+    margin: 20px 0px 0px 15px;
 }
 
 prompt {
