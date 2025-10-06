@@ -1,84 +1,85 @@
 @import "mocha.css";
 
 * {
-  border: none;
-  /* border-radius: 10px; */
-  font-family: WorkSans, FontAwesome6Free, SymbolsNerdFont;
-  font-size: 12px;
-  min-height: 0;
+    border: none;
+    /* border-radius: 10px; */
+    font-family: WorkSans, FontAwesome6Free, SymbolsNerdFont;
+    font-size: 12px;
+    min-height: 0;
 }
 
 window#waybar {
-  background-color: @base;
-  /* background-color: black; */
-  color: @text;
+    background-color: @base;
+    /* background-color: black; */
+    color: @text;
 }
 
 tooltip {
-  background-color: @base;
-  border: 1px solid @surface1;
+    background-color: @base;
+    border: 1px solid @surface1;
 }
 
 tooltip label {
-  color: @text;
+    color: @text;
 }
 
 #workspaces {
-  background-color: @peach;
-  border-radius: 7px;
-  margin-right: 5px;
-  padding: 1px 4px;
+    background-color: @peach;
+    border-radius: 7px;
+    margin-right: 5px;
+    padding: 1px 4px;
 }
 
 #workspaces button {
-  padding: 0 0px;
-  margin: 0 -5px;
-  color: @base;
+    padding: 0 0px;
+    margin: 0 -5px;
+    color: @base;
 }
 
 #workspaces button:hover {
-  box-shadow: inherit;
-  text-shadow: inherit;
+    box-shadow: inherit;
+    text-shadow: inherit;
 }
 
 #workspaces button.urgent {
-  /* background-image: linear-gradient(0deg, @red, @mantle); */
-  /* color: rgb(190, 0, 0); */
-  color: @red;
+    /* background-image: linear-gradient(0deg, @red, @mantle); */
+    /* color: rgb(190, 0, 0); */
+    color: @red;
 }
 
 .modules-right,
 .modules-center,
 .modules-left {
-  margin: 3px 10px;
-  padding: 2px;
+    margin: 3px 10px;
+    padding: 2px;
 }
 
 #interact {
-  background-color: @peach;
-  color: @mantle;
-  border-radius: 5px;
-  padding: 1px 5px;
+    background-color: @peach;
+    color: @mantle;
+    border-radius: 5px;
+    padding: 1px 5px;
 }
 
 #stats {
-  border: @peach solid 1px;
-  border-radius: 5px;
-  margin-right: 5px;
-  padding: 1px 3px;
+    border: @peach solid 1px;
+    border-radius: 5px;
+    margin-right: 5px;
+    height: 20px;
+    padding: 1px 3px;
 }
 
 #swayinfo {
-  border: @peach solid 1px;
-  border-radius: 5px;
-  padding: 1px 1px;
-  margin-right: 5px;
+    border: @peach solid 1px;
+    border-radius: 5px;
+    padding: 1px 1px;
+    margin-right: 5px;
 }
 
 #music {
-  border-radius: 5px;
-  /* padding: 1px 1px; */
-  /* margin-right: 5px; */
+    border-radius: 5px;
+    /* padding: 1px 1px; */
+    /* margin-right: 5px; */
 }
 
 #idle_inhibitor,
@@ -88,7 +89,7 @@ tooltip label {
 #backlight,
 #custom-power,
 #custom-notification {
-  margin: 0 -3px;
+    margin: 0 -3px;
 }
 
 #window,
@@ -109,41 +110,41 @@ tooltip label {
 #backlight,
 #custom-power,
 #custom-notification {
-  padding: 0 10px;
+    padding: 0 10px;
 }
 
 #battery.charging {
-  color: @green;
+    color: @green;
 }
 
 #custom-playerctl {
-  background-color: @peach;
-  color: @mantle;
-  border-radius: 5px;
+    background-color: @peach;
+    color: @mantle;
+    border-radius: 5px;
 }
 
 #custom-playerlabel {
-  margin: 0 -5px;
+    margin: 0 -5px;
 }
 
 #mode {
-  background-color: @red;
-  color: @mantle;
-  border-radius: 3px;
+    background-color: @red;
+    color: @mantle;
+    border-radius: 3px;
 }
 
 #pulseaudio.muted,
 #network.disconnected {
-  color: rgb(190, 0, 0);
+    color: rgb(190, 0, 0);
 }
 
 @keyframes blink {
-  to {
-    background-color: @mantle;
-    color: @text;
-  }
+    to {
+        background-color: @mantle;
+        color: @text;
+    }
 }
 
 label:focus {
-  background-color: @mantle;
+    background-color: @mantle;
 }
