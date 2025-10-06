@@ -44,6 +44,8 @@ if [[ pgrep_code == 0 ]]; then
 fi
 
 if [[ running == 1 && "$process_list" == *"-r "* ]]; then
+    replay_mode=1
+fi
 
 
 # Make sure the "Videos" folder exists
