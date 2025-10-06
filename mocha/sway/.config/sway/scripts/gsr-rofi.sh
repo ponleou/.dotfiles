@@ -39,7 +39,7 @@ pgrep_code=$?
 echo $process_list
 running=0
 
-if [pgrep_code == 0]; then
+if [ pgrep_code -eq 0 ]; then
     running=1
 fi
 
