@@ -38,10 +38,13 @@ prompt {
     text-align: center;
     margin: 0px;
     font: @font;
+    expand: false;
+
 }
 
 textbox-prompt-colon {
-    content: ":";
+    expand: false;
+    str: ":";
     text-color: @peach;
     background-color: @base;
     font: @font;
