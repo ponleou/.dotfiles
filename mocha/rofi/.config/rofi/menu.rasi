@@ -27,7 +27,7 @@ mainbox {
 
 inputbar {
     children: [prompt, textbox-prompt-colon, entry];
-    background-color: @surface1;
+    background-color: @surface0;
     border-radius: 5px;
     padding: 2px;
     font: @font;
