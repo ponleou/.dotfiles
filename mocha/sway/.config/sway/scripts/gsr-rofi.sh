@@ -14,8 +14,6 @@
 SAVE_DIR="/media/Shared/Drive/Replay captures/GSR"
 REPLAY_BUFFER_SEC="60"
 FRAMERATE="60"
-# RECORDING_PREFIX="recording"
-# REPLAY_PREFIX="replay"
 AUDIO_OUTPUT="default_output"
 AUDIO_INPUT="default_input"
 WINDOW="portal"                                # 'screen', 'screen-direct', 'focused', 'portal' or 'region'
