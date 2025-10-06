@@ -53,7 +53,7 @@ recording_options=(
     -cursor $ENABLE_CURSOR
     -cr $COLOR_RANGE
     -c $CONTAINER
-    -o "$SAVE_DIR"
+    -o "$SAVE_DIR/Recording_$date"
 )
 
 replay_options=(
