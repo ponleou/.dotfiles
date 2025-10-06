@@ -162,9 +162,6 @@ set $file dolphin
     # Sticky window
     bindsym $mod+Shift+t sticky toggle
 
-    # Sticky window
-    bindsym $mod+Shift+t sticky toggle
-
 #
 # Scratchpad:
 #

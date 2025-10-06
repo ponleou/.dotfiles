@@ -27,34 +27,36 @@ mainbox {
 }
 
 inputbar {
-    children: [prompt, entry];
+    children: [prompt, textbox-prompt-colon, entry];
     background-color: @base;
     /*border-radius: 5px;*/
     padding: 2px;
     font: @font;
     border-color: @peach;
+    padding: 0px 5px 8px 5px;  
+    margin: 15px 0px 0px 15px;
 }
 
 prompt {
     enabled: true;
-    background-color: @peach;
-    padding: 5px;
-    text-color: @base;
-    /*border-radius: 5px;*/
+    background-color: @base;
+    text-color: @peach;
     text-align: center;
     margin: 0px;
     font: @font;
 }
 
 textbox-prompt-colon {
-    expand: false;
     str: ":";
+    text-color: @peach;
+    background-color: @base;
     font: @font;
+    expand: false;
+    width: 1ch;
 }
 
 entry {
-    padding: 0px 5px 8px 5px;  
-    margin: 15px 0px 0px 15px;
+    padding: 0 0 0 5px;
     text-color: @peach;
     background-color: @base;
     text-align: center; 
