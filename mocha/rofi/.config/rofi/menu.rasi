@@ -49,7 +49,7 @@ prompt {
 textbox-prompt-colon {
     str: ":";
     text-color: @peach;
-    background-color: @base;
+    background-color: white;
     font: @font;
     expand: false;
 }
