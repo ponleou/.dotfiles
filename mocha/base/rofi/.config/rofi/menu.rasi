@@ -32,7 +32,7 @@ inputbar {
     children: [prompt, entry];
     background-color: @base;
     font: @font;
-    border-color: @peach;
+    border-color: @primay;
 }
 
 prompt {
