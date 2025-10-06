@@ -64,7 +64,7 @@ entry {
     text-align: center; 
     line-height: 30px;   
     font: @font;
-     text-align: left; 
+    text-align: left; 
 }
 
 listview {
