@@ -13,9 +13,9 @@ element-text, element-icon, mode-switcher {
 window {
     border-color: transparent;
     background-color: @base;
-    padding: 1em 20px;
+    padding: 1em;
     font: @font;
-    border: 2px;
+    border: 0.1em;
     border-color: @peach;
     border-radius: 5px;
 }
