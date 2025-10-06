@@ -13,7 +13,7 @@ element-text, element-icon, mode-switcher {
 window {
     border-color: transparent;
     background-color: @base;
-    padding: 1.66em;
+    padding: 1em;
     font: @font;
     border: 2px;
     border-color: @peach;
