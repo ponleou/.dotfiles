@@ -59,6 +59,7 @@ entry {
     text-align: center; 
     line-height: 30px;   
     font: @font;
+    cursor: transparent;
 }
 
 listview {
