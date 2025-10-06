@@ -47,7 +47,7 @@ prompt {
 }
 
 textbox-prompt-colon {
-    expand: true;
+    expand: false;
     str: ":";
     font: @font;
 }
