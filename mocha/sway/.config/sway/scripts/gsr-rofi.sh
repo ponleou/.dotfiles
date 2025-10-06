@@ -57,6 +57,16 @@ fi
 # Create Menu Items based on state
 options=()
 
+# not running
+if [[ running == 0 ]]; then
+    options=("$START_REPLAY" "$START_RECORDING")
+# running in replay mode
+elif [[ replay_mode == 1 ]]; then
+    options=("$SAVE_REPLAY" "$STOP_REPLAY")
+# running in recording mode
+elif [[ replay_mode == 0 ]]; then
+    options=("$PAUSE_RECORDING" "$STOP_RECORDING")
+fi
 
 
 # Print Menu Items each with a newline
