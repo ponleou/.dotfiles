@@ -41,11 +41,11 @@ pgrep_code=$?
 running=0
 replay_mode=0
 
-if [[ pgrep_code == 0 ]]; then
+if [[ $pgrep_code == 0 ]]; then
     running=1
 fi
 
-if [[ running == 1 && "$process_list" == *"-r "* ]]; then
+if [[ $running == 1 && "$process_list" == *"-r "* ]]; then
     replay_mode=1
 fi
 
@@ -58,13 +58,13 @@ fi
 options=()
 
 # not running
-if [[ running == 0 ]]; then
+if [[ $running == 0 ]]; then
     options=("$START_REPLAY" "$START_RECORDING")
 # running in replay mode
-elif [[ replay_mode == 1 ]]; then
+elif [[ $replay_mode == 1 ]]; then
     options=("$SAVE_REPLAY" "$STOP_REPLAY")
 # running in recording mode
-elif [[ replay_mode == 0 ]]; then
+elif [[ $replay_mode == 0 ]]; then
     options=("$PAUSE_RECORDING" "$STOP_RECORDING")
 fi
 
