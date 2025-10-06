@@ -6,7 +6,6 @@
 element-text, element-icon, mode-switcher {
     background-color: inherit;
     text-color: inherit;
-    border-radius: 20px;
     font: @font;
     highlight: none; 
 }
