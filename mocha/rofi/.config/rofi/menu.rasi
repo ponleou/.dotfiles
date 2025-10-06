@@ -34,6 +34,7 @@ inputbar {
     border-color: @peach;
     padding: 3px 8px 3px 8px;  
     margin: 20px 0px 0px 20px;
+    font-size: 7.5px;
 }
 
 prompt {
@@ -61,7 +62,6 @@ entry {
     text-align: center; 
     line-height: 30px;   
     font: @font;
-    font-size: 7.5px;
 }
 
 listview {
