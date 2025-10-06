@@ -165,4 +165,4 @@ configuration {
   display-filebrowser: "󰉋 filebrowser:";
 }
 
-@theme "~/.config/rofi/menu.rasi"
+@theme "./menu.rasi"
