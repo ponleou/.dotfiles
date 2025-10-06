@@ -40,6 +40,7 @@ prompt {
     text-align: center;
     margin: 0px;
     font: @font;
+    padding: 5px 10px 5px 10px;
 }
 
 textbox-prompt-colon {
@@ -59,7 +60,6 @@ entry {
     font: @font;
     cursor-color: transparent;
     padding: 5px 10px 5px 10px;
-
 }
 
 listview {
