@@ -33,7 +33,7 @@ inputbar {
     padding: 2px;
     font: @font;
     border-color: @peach;
-        padding: 0px 5px 8px 5px;  
+    padding: 0px 5px 8px 5px;  
     margin: 15px 0px 0px 15px;
 }
 
@@ -53,6 +53,7 @@ textbox-prompt-colon {
 }
 
 entry {
+    padding-left: 5px;
     text-color: @peach;
     background-color: @base;
     text-align: center; 
