@@ -27,6 +27,18 @@ COLOR_RANGE="full"                              # 'limited', or 'full'
 CONTAINER="mkv"                                 # 'mp4', 'mkv', 'flv', 'webm' and others that support h264, hevc, av1, vp8 or vp9
 ENABLE_CURSOR="yes"                             # 'yes' or 'no'
 
+START_REPLAY=" Start Replay"
+SAVE_REPLAY=" Save Replay"
+STOP_REPLAY=" Stop Replay"
+START_RECORDING=" Start Recording"
+STOP_RECORDING=" Stop Recording"
+PAUSE_RECORDING=" Pause/Resume Recording"
+
+process_list=$(pgrep -af gpu-screen-recorder)
+print($process_list)
+running=0
+
+
 # Make sure the "Videos" folder exists
 if [ ! -d "$SAVE_DIR" ]; then
     mkdir -p "$SAVE_DIR"
