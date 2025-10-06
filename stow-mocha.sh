@@ -1,4 +1,17 @@
 #!/bin/bash
 
-stow --dir=./mocha/base --adopt --target=$HOME btop dolphin konsole nwg-look qt6ct rofi sway swaylock swaync waybar wlogout ghostwriter
+primary_themes=("peach")
+valid_theme=0
 
+for theme in "${primary_themes[@]}"; do
+  if [[ "$1" == "$theme" ]]; then
+    valid_theme=1
+    break
+  fi
+done
+
+stow --dir=./mocha/base --target=$HOME btop dolphin konsole nwg-look qt6ct rofi sway swaylock swaync waybar wlogout ghostwriter
+
+if [[ $valid_theme == 1 ]]; then
+    stow --dir=./mocha/$1 --target=$HOME
+fi
