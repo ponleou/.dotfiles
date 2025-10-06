@@ -38,8 +38,7 @@ inputbar {
 
 prompt {
     enabled: true;
-        background-color: @surface0;
-
+    background-color: @surface0;
     text-color: @peach;
     text-align: center;
     margin: 0px;
@@ -49,8 +48,7 @@ prompt {
 textbox-prompt-colon {
     str: ":";
     text-color: @peach;
-        background-color: @surface0;
-
+    background-color: @surface0;
     font: @font;
     expand: false;
     width: 1ch;
@@ -59,8 +57,7 @@ textbox-prompt-colon {
 entry {
     padding: 0 0 0 5px;
     text-color: @peach;
-        background-color: @surface0;
-
+    background-color: @surface0;
     text-align: center; 
     line-height: 30px;   
     font: @font;
