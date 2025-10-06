@@ -34,6 +34,7 @@ START_RECORDING=" Start Recording"
 STOP_RECORDING=" Stop Recording"
 PAUSE_RECORDING=" Pause/Resume Recording"
 
+# get process states (if its running and if its in replay mode)
 process_list=$(pgrep -af gpu-screen-recorder)
 pgrep_code=$?
 running=0
@@ -52,8 +53,10 @@ if [ ! -d "$SAVE_DIR" ]; then
     mkdir -p "$SAVE_DIR"
 fi
 
-# Create Menu Items
-options=(" Start Replay" " Save Replay" " Stop Replay" " Start Recording" " Stop Recording" " Pause/Resume Recording")
+# Create Menu Items based on state
+options=()
+
+
 
 # Print Menu Items each with a newline
 choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i -p " 󰕧 Recorder ")
