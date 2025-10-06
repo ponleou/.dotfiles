@@ -1,8 +1,10 @@
+@import "./colors.rasi"
+
 * {
     width: 600;
     font: "Work Sans 12";
 }
-@import "./colors.rasi"
+
 element-text, element-icon, mode-switcher {
     background-color: inherit;
     text-color: inherit;
