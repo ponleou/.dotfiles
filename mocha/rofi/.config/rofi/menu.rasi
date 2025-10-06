@@ -1,6 +1,6 @@
 * {
     width: 600;
-    font: "Work Sans 12";
+    font: "Work Sans 9";
 }
 @import "./colors.rasi"
 element-text, element-icon, mode-switcher {
