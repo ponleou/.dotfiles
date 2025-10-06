@@ -83,7 +83,6 @@ element {
 }
 
 element-icon {
-    enabled: true;
     size: 22px;
     padding: 0 5px 0 0;
     font: @font;
