@@ -156,6 +156,7 @@ configuration {
   }
 
   show-icons: true;
+  display-clipboard: "󰅇 clipboard";
   display-ssh:    "󰣀 ssh";
   display-run:    "󱓞 run";
   display-drun:   "󰣖 drun";
