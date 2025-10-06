@@ -52,7 +52,7 @@ textbox-prompt-colon {
     background-color: @base;
     margin: 0px 2px 0px 2px;
     font: @font;
-    width: 10px
+    width: 10px;
 }
 
 entry {
