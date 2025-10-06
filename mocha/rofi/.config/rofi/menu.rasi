@@ -1,4 +1,5 @@
 * {
+    width: 600;
     font: "Work Sans 12";
 }
 @import "./colors.rasi"
