@@ -31,7 +31,6 @@ inputbar {
     border-radius: 5px;
     font: @font;
     border-color: @peach;
-    padding: 5px 10px 5px 10px;  
 }
 
 prompt {
@@ -59,6 +58,8 @@ entry {
     line-height: 30px;   
     font: @font;
     cursor-color: transparent;
+    padding: 5px 10px 5px 10px;
+
 }
 
 listview {
