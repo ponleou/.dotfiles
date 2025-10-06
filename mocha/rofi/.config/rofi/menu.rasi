@@ -17,6 +17,7 @@ window {
     font: @font;
     border: 2px;
     border-color: @peach;
+    border-radius: 5px;
 }
 
 mainbox {
