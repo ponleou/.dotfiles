@@ -27,7 +27,7 @@ mainbox {
 }
 
 inputbar {
-    children: [prompt, textbox-prompt-colon, entry];
+    children: [prompt, entry];
     background-color: @base;
     /*border-radius: 5px;*/
     padding: 2px;
@@ -44,14 +44,6 @@ prompt {
     text-align: center;
     margin: 0px;
     font: @font;
-}
-
-textbox-prompt-colon {
-    str: ":";
-    text-color: @peach;
-    background-color: white;
-    font: @font;
-    width: 1ch;
 }
 
 entry {
