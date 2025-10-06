@@ -14,8 +14,8 @@
 SAVE_DIR="/media/Shared/Drive/Replay captures/GSR"
 REPLAY_BUFFER_SEC="60"
 FRAMERATE="60"
-RECORDING_PREFIX="recording"
-REPLAY_PREFIX="replay"
+# RECORDING_PREFIX="recording"
+# REPLAY_PREFIX="replay"
 AUDIO_OUTPUT="default_output"
 AUDIO_INPUT="default_input"
 FRAMERATE_MODE="cfr"                            # 'cfr', or 'vfr'
