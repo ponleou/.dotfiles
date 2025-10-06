@@ -47,7 +47,6 @@ if [[ running == 1 && "$process_list" == *"-r "* ]]; then
     replay_mode=1
 fi
 
-
 # Make sure the "Videos" folder exists
 if [ ! -d "$SAVE_DIR" ]; then
     mkdir -p "$SAVE_DIR"
@@ -94,32 +93,32 @@ replay_options=(
 
 # Handle selected input
 case "$choice" in
-"${options[0]}")
+"$START_REPLAY")
     # START REPLAY
     gpu-screen-recorder "${replay_options[@]}"
     exit 0
     ;;
-"${options[1]}")
+"$SAVE_REPLAY")
     # SAVE REPLAY
     pkill -SIGUSR1 -f gpu-screen-recorder
     exit 0
     ;;
-"${options[2]}")
-    # STOP REPPLAY
+"$STOP_REPLAY")
+    # STOP REPLAY
     pkill -SIGINT -f gpu-screen-recorder
     exit 0
     ;;
-"${options[3]}")
+"$START_RECORDING")
     # START RECORDING
     gpu-screen-recorder "${recording_options[@]}"
     exit 0
     ;;
-"${options[4]}")
+"$STOP_RECORDING")
     # STOP RECORDING
     pkill -SIGINT -f gpu-screen-recorder
     exit 0
     ;;
-"${options[5]}")
+"$PAUSE_RECORDING")
     # PAUSE/RESUME RECORDING
     pkill -SIGUSR2 -f gpu-screen-recorder
     exit 0
