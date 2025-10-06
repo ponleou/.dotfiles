@@ -35,7 +35,7 @@ STOP_RECORDING=" Stop Recording"
 PAUSE_RECORDING=" Pause/Resume Recording"
 
 process_list=$(pgrep -af gpu-screen-recorder)
-printf $process_list
+echo $process_list
 running=0
 
 
