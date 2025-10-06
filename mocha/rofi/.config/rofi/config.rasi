@@ -154,6 +154,15 @@ configuration {
       directories-first: true;
       sorting-method:    "name";
   }
+
+  show-icons: true;
+  display-clipboard: "󰅇 clipboard";
+  display-ssh:    "󰣀 ssh";
+  display-run:    "󱓞 run";
+  display-drun:   "󰣖 drun";
+  display-window: "󱂬 window";
+  display-combi:  "󰕘 combi";
+  display-filebrowser: "󰉋 filebrowser:";
 }
 
 @theme "~/.config/rofi/menu.rasi"
