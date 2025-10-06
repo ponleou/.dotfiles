@@ -47,13 +47,12 @@ prompt {
 }
 
 textbox-prompt-colon {
-    expand: false;
+    expand: true;
     str: ":";
     font: @font;
 }
 
 entry {
-
     text-color: @peach;
     background-color: @base;
     text-align: center; 
