@@ -1,3 +1,3 @@
 #!/bin/bash
 
-stow --dir=./mocha --target=$HOME easyeffects GIMP mpv omz
+stow --dir=./essentials --target=$HOME easyeffects GIMP mpv omz
