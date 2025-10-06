@@ -43,7 +43,7 @@ date=$(date +"%Y-%m-%d_%H-%M-%S")
 
 # gpu-screen-recorder options
 recording_options=(
-    -w "screen"
+    -w $WINDOW
     -f $FRAMERATE
     -fm $FRAMERATE_MODE
     -q $VIDEO_QUALITY
@@ -57,7 +57,7 @@ recording_options=(
 )
 
 replay_options=(
-    -w "screen"
+    -w $WINDOW
     -f $FRAMERATE
     -fm $FRAMERATE_MODE
     -q $VIDEO_QUALITY
