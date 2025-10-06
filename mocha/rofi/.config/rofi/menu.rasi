@@ -44,7 +44,6 @@ prompt {
     text-align: center;
     margin: 0px;
     font: @font;
-    spacing: 0;
 }
 
 textbox-prompt-colon {
