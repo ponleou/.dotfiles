@@ -32,7 +32,7 @@ STOP_REPLAY=" Stop Replay"
 START_RECORDING=" Start Recording"
 STOP_RECORDING=" Stop Recording"
 PAUSE_RECORDING=" Pause/Resume Recording"
-
+####### END OF CONFIG #######
 
 
 # get process states (if its running and if its in replay mode)
