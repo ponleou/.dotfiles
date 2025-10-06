@@ -32,7 +32,7 @@ inputbar {
     padding: 2px;
     font: @font;
     border-color: @peach;
-    padding: 3px 8px 3px 8px;  
+    padding: 5px 10px 5px 10px;  
     margin: 20px 0px 0px 20px;
 }
 
