@@ -51,7 +51,7 @@ textbox-prompt-colon {
     text-color: @peach;
     background-color: white;
     font: @font;
-    expand: false;
+    width: 1ch;
 }
 
 entry {
