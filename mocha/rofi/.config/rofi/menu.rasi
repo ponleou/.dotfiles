@@ -45,7 +45,7 @@ prompt {
 
 textbox-prompt-colon {
     text-color: @text;
-    background-color: @surface0;
+    background-color: @base;
     font: @font;
     expand: false;
     width: 1ch;
