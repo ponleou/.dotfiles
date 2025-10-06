@@ -50,7 +50,7 @@ textbox-prompt-colon {
     str: ":";
     text-color: @peach;
     background-color: @base;
-    margin: 0px 2px 0px 2px;
+    margin: 0px;
     font: @font;
 }
 
