@@ -77,10 +77,10 @@ set $file dolphin
     bindsym $mod+Shift+Escape reload
 
     # screenshot
-    bindsym XF86Launch1 exec bash -c "~/.config/sway/screenshot.sh"
-    bindsym $mod+XF86Launch1 exec bash -c "~/.config/sway/window-screenshot.sh"
-    bindsym Print exec bash -c "~/.config/sway/screenshot.sh"
-    bindsym $mod+Print exec bash -c "~/.config/sway/window-screenshot.sh"
+    bindsym XF86Launch1 exec bash -c "~/.config/sway/scripts/screenshot.sh"
+    bindsym $mod+XF86Launch1 exec bash -c "~/.config/sway/scripts/window-screenshot.sh"
+    bindsym Print exec bash -c "~/.config/sway/scripts/screenshot.sh"
+    bindsym $mod+Print exec bash -c "~/.config/sway/scripts/window-screenshot.sh"
 
     # clipboard history with rofi
     bindsym $mod+v exec rofi -modi clipboard:~/.config/cliphist/contrib/cliphist-rofi-img -show clipboard -show-icons
@@ -90,6 +90,9 @@ set $file dolphin
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+    # gpu-record-screen with rofi
+    bindsym $mod+y exec bash -c "~/.config/sway/scripts/gsr-rofi.sh"
 #
 # Layout stuff:
 #
@@ -138,8 +141,8 @@ set $file dolphin
     bindsym $mod+z workspace prev
     bindsym $mod+Ctrl+Right workspace next
     bindsym $mod+Ctrl+left workspace prev
-    bindsym $mod+Ctrl+x exec bash -c "swaymsg 'workspace $(~/.config/sway/next-or-new-workspace.sh)' && ~/.config/sway/reorder-workspace.sh"
-    bindsym $mod+Ctrl+z exec bash -c "swaymsg 'workspace $(~/.config/sway/previous-or-new-workspace.sh)' && ~/.config/sway/reorder-workspace.sh"
+    bindsym $mod+Ctrl+x exec bash -c "swaymsg 'workspace $(~/.config/sway/scripts/next-or-new-workspace.sh)' && ~/.config/sway/scripts/reorder-workspace.sh"
+    bindsym $mod+Ctrl+z exec bash -c "swaymsg 'workspace $(~/.config/sway/scripts/previous-or-new-workspace.sh)' && ~/.config/sway/scripts/reorder-workspace.sh"
 
     # Move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace number 1
@@ -153,8 +156,11 @@ set $file dolphin
     bindsym $mod+Shift+9 move container to workspace number 9
     bindsym $mod+Shift+0 move container to workspace number 10
 
-    bindsym $mod+Shift+x exec bash -c "swaymsg 'move container to workspace $(~/.config/sway/next-or-new-workspace.sh), workspace next' && ~/.config/sway/reorder-workspace.sh"
-    bindsym $mod+Shift+z exec bash -c "swaymsg 'move container to workspace $(~/.config/sway/previous-or-new-workspace.sh), workspace prev' && ~/.config/sway/reorder-workspace.sh"
+    bindsym $mod+Shift+x exec bash -c "swaymsg 'move container to workspace $(~/.config/sway/scripts/next-or-new-workspace.sh), workspace next' && ~/.config/sway/scripts/reorder-workspace.sh"
+    bindsym $mod+Shift+z exec bash -c "swaymsg 'move container to workspace $(~/.config/sway/scripts/previous-or-new-workspace.sh), workspace prev' && ~/.config/sway/scripts/reorder-workspace.sh"
+
+    # Sticky window
+    bindsym $mod+Shift+t sticky toggle
 
     # Sticky window
     bindsym $mod+Shift+t sticky toggle
