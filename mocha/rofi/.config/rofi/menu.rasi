@@ -37,7 +37,6 @@ inputbar {
 
 prompt {
     enabled: true;
-    padding: 5px;
     background-color: @base;
     text-color: @peach;
     text-align: center;
