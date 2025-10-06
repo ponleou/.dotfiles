@@ -28,13 +28,7 @@ mainbox {
 
 inputbar {
     children: [prompt, textbox-prompt-colon, entry];
-    background-color: @base;
-    /*border-radius: 5px;*/
-    padding: 2px;
-    font: @font;
-    border-color: @peach;
-    padding: 0px 5px 8px 5px;  
-    margin: 15px 0px 0px 15px;
+
 }
 
 prompt {
