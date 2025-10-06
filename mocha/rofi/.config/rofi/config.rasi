@@ -159,7 +159,7 @@ configuration {
   display-ssh:    "󰣀 ssh";
   display-run:    "󱓞 run";
   display-drun:   "󰣖 drun";
-  display-window: "󱂬 windo:";
+  display-window: "󱂬 window";
   display-combi:  "󰕘 combi";
   display-filebrowser: "󰉋 filebrowser:";
 }
