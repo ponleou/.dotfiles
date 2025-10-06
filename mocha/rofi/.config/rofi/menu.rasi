@@ -23,7 +23,7 @@ window {
 mainbox {
     background-color: @base;
     font: @font;
-}
+} 
 
 inputbar {
     children: [prompt, entry];
