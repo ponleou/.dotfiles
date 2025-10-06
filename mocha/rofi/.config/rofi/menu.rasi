@@ -52,7 +52,7 @@ textbox-prompt-colon {
     font: @font;
     expand: false;
     width: 1ch;
-    height: 30px;
+    height: 50px;
 }
 
 entry {
