@@ -24,5 +24,6 @@ stow_accent() {
 if [[ $valid_accent == 1 ]]; then
   stow_accent "$1"
 else
+  echo "Accent not found, fallback to default accent ${accents[0]}"
   stow_accent "${accents[0]}"
 fi
