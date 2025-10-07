@@ -1,0 +1,150 @@
+@import "mocha.css";
+@import "./utils/accent.css";
+
+* {
+    border: none;
+    /* border-radius: 10px; */
+    font-family: WorkSans, FontAwesome6Free, SymbolsNerdFont;
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @base;
+    /* background-color: black; */
+    color: @text;
+}
+
+tooltip {
+    background-color: @base;
+    border: 1px solid @surface1;
+}
+
+tooltip label {
+    color: @text;
+}
+
+#workspaces {
+    background-color: @accent;
+    border-radius: 7px;
+    margin-right: 5px;
+    padding: 1px 4px;
+}
+
+#workspaces button {
+    padding: 0 0px;
+    margin: 0 -5px;
+    color: @base;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+#workspaces button.urgent {
+    /* background-image: linear-gradient(0deg, @red, @mantle); */
+    /* color: rgb(190, 0, 0); */
+    color: @red;
+}
+
+.modules-right,
+.modules-center,
+.modules-left {
+    margin: 3px 10px;
+    padding: 2px;
+}
+
+#interact {
+    background-color: @accent;
+    color: @mantle;
+    border-radius: 5px;
+    padding: 1px 5px;
+}
+
+#stats {
+    border: @accent solid 1px;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 1px 3px;
+}
+
+#swayinfo {
+    border: @accent solid 1px;
+    border-radius: 5px;
+    padding: 1px 1px;
+    margin-right: 5px;
+}
+
+#music {
+    border-radius: 5px;
+    /* padding: 1px 1px; */
+    /* margin-right: 5px; */
+}
+
+#idle_inhibitor,
+#pulseaudio,
+#bluetooth,
+#network,
+#backlight,
+#custom-power,
+#custom-notification {
+    margin: 0 -3px;
+}
+
+#window,
+#custom-playerctl,
+#custom-playerlabel,
+#clock,
+#pulseaudio,
+#bluetooth,
+#network,
+#memory,
+#cpu,
+#temperature,
+#idle_inhibitor,
+#scratchpad,
+#mode,
+#backlight,
+#battery,
+#backlight,
+#custom-power,
+#custom-notification {
+    padding: 0 10px;
+}
+
+#battery.charging {
+    color: @green;
+}
+
+#custom-playerctl {
+    background-color: @accent;
+    color: @mantle;
+    border-radius: 5px;
+}
+
+#custom-playerlabel {
+    margin: 0 -5px;
+}
+
+#mode {
+    background-color: @red;
+    color: @mantle;
+    border-radius: 3px;
+}
+
+#pulseaudio.muted,
+#network.disconnected {
+    color: rgb(190, 0, 0);
+}
+
+@keyframes blink {
+    to {
+        background-color: @mantle;
+        color: @text;
+    }
+}
+
+label:focus {
+    background-color: @mantle;
+}
