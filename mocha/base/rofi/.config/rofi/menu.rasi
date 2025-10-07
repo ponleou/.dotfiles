@@ -19,7 +19,7 @@ window {
     padding: 20px;
     font: @font;
     border: 2px;
-    border-color: @primary;
+    border-color: @accent;
     border-radius: 5px;
 }
 
@@ -32,7 +32,7 @@ inputbar {
     children: [prompt, entry];
     background-color: @base;
     font: @font;
-    border-color: @primary;
+    border-color: @accent;
 }
 
 prompt {
@@ -94,7 +94,7 @@ element-icon {
 element selected {
     background-color: @base;
     border-radius: 7.5px;
-    text-color: @primary;
+    text-color: @accent;
     font: @font;
 }
 
