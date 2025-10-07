@@ -10,7 +10,7 @@ Environment="AUTO_BRANCH=autocommit"
 Environment="MERGE_BRANCH=unstable"
 WorkingDirectory=%h/.dotfiles
 ExecStartPre=/bin/bash -c 'git checkout $AUTO_BRANCH'
-ExecStartPre=/bin/bash -c 'git worktree list --porcelain | awk '\''$1=="worktree" {p=$2} $1=="branch" && $2=="refs/heads/${MERGE_BRANCH}" {print p}'\'' | xargs -r git worktree remove'
+ExecStartPre=/bin/bash -c 'git worktree list --porcelain | awk '\''$1=="worktree" {p=$2} $1=="branch" && $2=="refs/heads/$MERGE_BRANCH" {print p}'\'' | xargs -r git worktree remove'
 ExecStartPre=/bin/bash -c 'export TMP_DIR=$(mktemp -d); mkdir -p tmp; touch tmp/SYNC_TIMER_PID; echo $TMP_DIR > tmp/TMP_DIR; git worktree add $TMP_DIR $MERGE_BRANCH'
 ExecStart=/bin/bash -c 'export TMP_DIR=$(cat ./tmp/TMP_DIR); ./stow-scripts/autocommit-stow.sh'
 ExecStop=/bin/bash -c 'export TMP_DIR=$(cat ./tmp/TMP_DIR); ./stow-scripts/autosync-stow.sh'
