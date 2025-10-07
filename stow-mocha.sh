@@ -16,7 +16,7 @@ stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/utils sway-uti
 stow_accent() {
   local accent="$1"   # this is the variable after --dir=$script_dir/mocha/
 
-    if [[ -f "$script_dir/.current_accent" ]]; then
+  if [[ -f "$script_dir/.current_accent" ]]; then
     local prev_accent=$(cat "$script_dir/.current_accent")
     stow -D --dir="$script_dir/mocha/$prev_accent" --target="$HOME" nwg-look qt6ct
     stow -D --dir="$script_dir/mocha/$prev_accent" --target="$script_dir/mocha/utils" rofi-util swaync-util waybar-util wlogout-util sway-util
