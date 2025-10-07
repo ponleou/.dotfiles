@@ -14,7 +14,7 @@ stow --dir=./mocha/base --target=$HOME btop konsole ghostwriter nwg-look qt6ct s
 
 if [[ $valid_theme == 1 ]]; then
   stow --dir=./mocha/$1 --target=$HOME nwg-look qt6ct sway waybar wlogout
-  stow --dir=./mocha/$1 --target=./mocha rofi-util swaync-util
+  stow --dir=./mocha/$1 --target=./mocha/utils rofi-util swaync-util
 else
   stow --dir=./mocha/"${primary_themes[0]}" nwg-look qt6ct sway waybar wlogout
 fi
