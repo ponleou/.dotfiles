@@ -2,6 +2,8 @@
 
 set -e
 
+LOCK_FILE="autosync.lock"
+
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 
 # Set TMP_DIR is not set
@@ -20,7 +22,6 @@ fi
 
 cd "$TMP_DIR"
 
-LOCK_FILE="autosync.lock"
 if [ -f "$SCRIPT_DIR/../tmp/$LOCK_FILE" ]; then
   notify-send "Autosync aborted" "$SCRIPT_DIR/../tmp/$LOCK_FILE exists"
   exit 1
