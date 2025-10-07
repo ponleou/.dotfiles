@@ -1,4 +1,4 @@
-@import "theme.css";
+@import "./utils/theme.css";
 
 * {
     background-image: none;
