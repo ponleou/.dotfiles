@@ -26,11 +26,10 @@ if [ -f "$SCRIPT_DIR/../tmp/$LOCK_FILE" ]; then
   exit 1
 fi
 
-git rm -rf .
-notify-send "Autosync is checking out $AUTO_BRANCH to $MERGE_BRANCH" "$(git checkout origin/$AUTO_BRANCH -- .)"
+notify-send "Autosync is merging" "$(git merge --squash -X theirs origin/autocommit)"
 git add -A
-notify-send "Autosync is commiting"  "$(git commit -m \"autosync: sync from $AUTO_BRANCH branch ($(date +'%d-%m-%Y %H:%M:%S'))\")"
+git commit -m "autosync: sync from autocommit branch ($(date +'%d-%m-%Y %H:%M:%S'))"
 
-notify-send "Autosync is pushing" "$(git push origin $MERGE_BRANCH)"
+notify-send "Autosync is pushing" "$(git push)"
 
 notify-send "Autosync completed"
