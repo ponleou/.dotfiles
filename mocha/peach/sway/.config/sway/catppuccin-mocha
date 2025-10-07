@@ -28,9 +28,9 @@ set $mantle #181825
 set $crust #11111b
 
 # target                 title      bg       text       indicator   border
-client.focused           $accent   $base    $text      $accent    $accent
-client.focused_inactive  $overlay0  $base    $text      $accent    $overlay0
-client.unfocused         $overlay0  $base    $text      $accent    $overlay0
-client.urgent            $accent   $base    $accent   $overlay0   $accent
+client.focused           $accent    $base    $text      $accent     $accent
+client.focused_inactive  $overlay0  $base    $text      $accent     $overlay0
+client.unfocused         $overlay0  $base    $text      $accent     $overlay0
+client.urgent            $accent    $base    $accent    $overlay0   $accent
 client.placeholder       $overlay0  $base    $text      $overlay0   $overlay0
 client.background                   $base
