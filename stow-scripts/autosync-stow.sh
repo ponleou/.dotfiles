@@ -29,7 +29,7 @@ fi
 git rm -rf .
 notify-send "Autosync is checking out $AUTO_BRANCH to $MERGE_BRANCH" "$(git checkout origin/$AUTO_BRANCH -- .)"
 git add -A
-notify-send "Autosync is commiting"  "$(git commit -m \"autosync: sync from $AUTO_BRANCH branch ($(date +'%d-%m-%Y %H:%M:%S'))\")"
+notify-send "Autosync is committing"  "$(git commit -m \"autosync: sync from $AUTO_BRANCH branch ($(date +'%d-%m-%Y %H:%M:%S'))\")"
 notify-send "Autosync is pushing" "$(git push origin $MERGE_BRANCH)"
 
 notify-send "Autosync completed"
