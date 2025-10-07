@@ -2,6 +2,7 @@
 
 primary_themes=("peach")
 valid_theme=0
+script_dir="$(dirname "$(realpath "$0")")"
 
 for theme in "${primary_themes[@]}"; do
   if [[ "$1" == "$theme" ]]; then
