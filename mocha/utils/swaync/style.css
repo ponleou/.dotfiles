@@ -1,5 +1,7 @@
 @import "mocha.css";
-@import "theme.css" * {
+@import "theme.css";
+
+* {
     all: unset;
     font-size: 14px;
     font-family: WorkSans, FontAwesome6Free, SymbolsNerdFont;
