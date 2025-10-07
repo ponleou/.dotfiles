@@ -1,4 +1,6 @@
-@import "theme.css" * {
+@import "theme.css";
+
+* {
     background-image: none;
     box-shadow: none;
 }
