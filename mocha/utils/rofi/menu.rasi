@@ -29,7 +29,7 @@ mainbox {
 }
 
 inputbar {
-    children: [prompt, textbox-prompt-colon, entry];
+    children: [prompt, entry];
     background-color: @base;
     font: @font;
     border-color: @primary;
