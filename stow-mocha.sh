@@ -10,11 +10,11 @@ for theme in "${primary_themes[@]}"; do
   fi
 done
 
-stow --dir=./mocha/base --target=$HOME btop konsole ghostwriter nwg-look qt6ct swaylock rofi
+stow --dir=./mocha/base --target=$HOME btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync
 
 if [[ $valid_theme == 1 ]]; then
-  stow --dir=./mocha/$1 --target=$HOME nwg-look qt6ct sway swaync waybar wlogout
-  stow --dir=./mocha/$1 --target=./mocha rofi-util
+  stow --dir=./mocha/$1 --target=$HOME nwg-look qt6ct sway waybar wlogout
+  stow --dir=./mocha/$1 --target=./mocha rofi-util swaync-util
 else
-  stow --dir=./mocha/"${primary_themes[0]}" nwg-look qt6ct sway swaync waybar wlogout
+  stow --dir=./mocha/"${primary_themes[0]}" nwg-look qt6ct sway waybar wlogout
 fi
