@@ -5,6 +5,7 @@
 # Read `man 5 sway` for a complete reference.
 
 include catppuccin-mocha
+include theme
 
 # other configs
 font pango: WorkSans Regular 12
