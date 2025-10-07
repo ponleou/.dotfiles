@@ -10,7 +10,6 @@ for accent in "${accents[@]}"; do
     break
   fi
 done
-
 stow --dir=$script_dir/mocha/base --target=$HOME btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout
 stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/utils sway-util
 
@@ -19,6 +18,8 @@ stow_accent() {
 
   stow --dir="$script_dir/mocha/$accent" --target="$HOME" nwg-look qt6ct
   stow --dir="$script_dir/mocha/$accent" --target="$script_dir/mocha/utils" rofi-util swaync-util waybar-util wlogout-util sway-util
+
+  echo $accent > "$script_dir/.current_accent"
 }
 
 if [[ $valid_accent == 1 ]]; then
