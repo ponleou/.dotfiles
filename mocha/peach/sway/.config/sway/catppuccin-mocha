@@ -31,4 +31,4 @@ client.focused_inactive  $overlay0  $base    $text      $primary    $overlay0
 client.unfocused         $overlay0  $base    $text      $primary    $overlay0
 client.urgent            $primary   $base    $primary   $overlay0   $primary
 client.placeholder       $overlay0  $base    $text      $overlay0   $overlay0
-client.background        $base
+client.background                   $base
