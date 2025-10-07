@@ -1,6 +1,6 @@
 #!/bin/bash
 
-accents=("peach")
+accents=("peach" "yellow")
 valid_accent=0
 script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
