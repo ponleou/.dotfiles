@@ -1,3 +1,5 @@
+include accent
+
 set $rosewater #f5e0dc
 set $flamingo #f2cdcd
 set $pink #f5c2e7
@@ -25,10 +27,11 @@ set $base #1e1e2e
 set $mantle #181825
 set $crust #11111b
 
-# target                 title      bg       text       indicator   border
-client.focused           $primary   $base    $text      $primary    $primary
-client.focused_inactive  $overlay0  $base    $text      $primary    $overlay0
-client.unfocused         $overlay0  $base    $text      $primary    $overlay0
-client.urgent            $primary   $base    $primary   $overlay0   $primary
-client.placeholder       $overlay0  $base    $text      $overlay0   $overlay0
-client.background                   $base
+# target title bg text indicator border
+
+client.focused $primary $base $text $primary $primary
+client.focused_inactive $overlay0 $base $text $primary $overlay0
+client.unfocused $overlay0 $base $text $primary $overlay0
+client.urgent $primary $base $primary $overlay0 $primary
+client.placeholder $overlay0 $base $text $overlay0 $overlay0
+client.background $base
