@@ -1,4 +1,5 @@
 @import "mocha.css";
+@import "theme.css";
 
 * {
     all: unset;
