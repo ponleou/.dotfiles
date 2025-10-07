@@ -155,7 +155,6 @@ configuration {
       sorting-method:    "name";
   }
 
-  show-icons: true;
   display-clipboard: "󰅇 clipboard";
   display-ssh:    "󰣀 ssh";
   display-run:    "󱓞 run";
