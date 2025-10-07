@@ -4,7 +4,6 @@
 
 # Read `man 5 sway` for a complete reference.
 
-include theme
 include catppuccin-mocha
 
 # other configs
