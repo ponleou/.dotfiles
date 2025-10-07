@@ -18,5 +18,6 @@ if [[ $valid_theme == 1 ]]; then
   stow --dir=$script_dir/mocha/$1 --target=$HOME nwg-look qt6ct
   stow --dir=$script_dir/mocha/$1 --target=$script_dir/mocha/utils rofi-util swaync-util waybar-util wlogout-util sway-util
 else
-  stow --dir=$script_dir/mocha/"${primary_themes[0]}" nwg-look qt6ct sway waybar wlogout
+  stow --dir=$script_dir/mocha/"${primary_themes[0]}" --target=$HOME nwg-look qt6ct
+  stow --dir=$script_dir/mocha/"${primary_themes[0]}" --target=$script_dir/mocha/utils rofi-util swaync-util waybar-util wlogout-util sway-util
 fi
