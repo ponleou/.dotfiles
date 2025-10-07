@@ -14,7 +14,7 @@ done
 stow --dir=$script_dir/mocha/base --target=$HOME btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout
 stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/utils sway-util
 
-stow_theme() {
+stow_accent() {
   local accent="$1"   # this is the variable after --dir=$script_dir/mocha/
 
   stow --dir="$script_dir/mocha/$accent" --target="$HOME" nwg-look qt6ct
@@ -22,7 +22,7 @@ stow_theme() {
 }
 
 if [[ $valid_accent == 1 ]]; then
-  stow_theme "$1"
+  stow_accent "$1"
 else
-  stow_theme "${accents[0]}"
+  stow_accent "${accents[0]}"
 fi
