@@ -27,7 +27,7 @@ stow_accent() {
 
   echo $accent > "$script_dir/.current_accent"
 
-  nwg-look -a
+  nwg-look -a > /dev/null
 }
 
 if [[ $valid_accent == 1 ]]; then
