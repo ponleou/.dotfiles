@@ -26,6 +26,8 @@ stow_accent() {
   stow --dir="$script_dir/mocha/$accent" --target="$script_dir/mocha/utils" rofi-util swaync-util waybar-util wlogout-util sway-util
 
   echo $accent > "$script_dir/.current_accent"
+
+  nwg-look -a
 }
 
 if [[ $valid_accent == 1 ]]; then
@@ -34,3 +36,5 @@ else
   echo "Accent not found, fallback to default accent ${accents[0]}"
   stow_accent "${accents[0]}"
 fi
+
+swaymsg reload
