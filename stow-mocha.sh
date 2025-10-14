@@ -28,6 +28,8 @@ stow_accent() {
   echo $accent > "$script_dir/.current_accent"
 
   nwg-look -a > /dev/null 2>&1
+  papirus-folders -C cat-mocha-$accent > /dev/null 2>&1
+  swaync-client --reload-css >/dev/null 2>&1
 }
 
 if [[ $valid_accent == 1 ]]; then
