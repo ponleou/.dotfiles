@@ -104,6 +104,10 @@ scale trough {
     font-size: 1rem;
 }
 
+.widget-notifications {
+    padding: 0 3px;
+}
+
 .control-center .notification-row .notification-background {
     border-radius: 5px;
     color: @text;
