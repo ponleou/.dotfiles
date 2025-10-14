@@ -148,7 +148,7 @@ scrolledwindow {
 }
 
 .close-button {
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .control-center .notification-row .notification-background .close-button:hover {
