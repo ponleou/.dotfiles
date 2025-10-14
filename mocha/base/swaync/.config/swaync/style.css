@@ -82,8 +82,8 @@ scale trough {
 
 .widget-title {
     padding: 1rem;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .control-center .widget-title > label {
