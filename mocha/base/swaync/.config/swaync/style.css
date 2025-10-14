@@ -86,7 +86,7 @@ scale trough {
 
 .control-center .widget-title > label {
     color: @text;
-    font-size: 1em;
+    font-size: 1.618em;
 }
 
 .control-center .widget-title button {
