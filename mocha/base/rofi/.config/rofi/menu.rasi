@@ -49,7 +49,7 @@ prompt {
 
 textbox-prompt-colon {
     text-color: @text;
-    background-color: @background;
+    background-color: #00000000;
     font: @font;
     expand: false;
     width: 1ch;
@@ -58,7 +58,7 @@ textbox-prompt-colon {
 entry {
     padding: 0 0 0 5px;
     text-color: @text;
-    background-color: @background;
+    background-color: #00000000;
     text-align: center; 
     line-height: 30px;   
     font: @font;
@@ -70,7 +70,7 @@ listview {
     border: 0px;
     padding: 5px 0px 0px;
     columns: 1;
-    background-color: @background;
+    background-color: #00000000;
     fixed-height: false;
     lines: 7;
     border-radius: 0px;
@@ -81,7 +81,7 @@ element {
     padding: 5px;
     border-radius: 0px;
     font: @font;
-    background-color: @background;
+    background-color: #00000000;
     text-color: @text;
     margin: 10px 0 0;
 }
@@ -93,7 +93,7 @@ element-icon {
 }
 
 element selected {
-    background-color: @background;
+    background-color: #00000000;
     border-radius: 7.5px;
     text-color: @accent;
     font: @font;
