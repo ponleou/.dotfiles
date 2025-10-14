@@ -1,7 +1,7 @@
 MenuBar=Disabled
 
 [Desktop Entry]
-DefaultProfile=Mocha.profile
+DefaultProfile=Main.profile
 
 [General]
 ConfigVersion=1
