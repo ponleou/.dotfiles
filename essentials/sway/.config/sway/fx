@@ -3,7 +3,7 @@ blur_xray disable
 blur_passes 4
 blur_radius 5
 blur_noise 0.06
-blur_brightness 1.2
+blur_brightness 0.8
 blur_contrast 1.1
 blur_saturation 1.1
 
