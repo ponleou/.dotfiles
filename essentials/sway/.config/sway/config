@@ -5,7 +5,7 @@
 # Read `man 5 sway` for a complete reference.
 
 include fx
-include utils/theme
+include base/theme
 
 # other configs
 font pango: WorkSans Regular 12
