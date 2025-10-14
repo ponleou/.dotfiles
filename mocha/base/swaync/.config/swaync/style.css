@@ -81,7 +81,7 @@ scale trough {
 }
 
 .widget-title {
-    padding: 3px;
+    padding: 1rem;
 }
 
 .control-center .widget-title > label {
@@ -105,7 +105,7 @@ scale trough {
 }
 
 .widget-notifications {
-    padding: 0 3px;
+    padding: 0 1rem;
 }
 
 .control-center .notification-row .notification-background {
@@ -218,7 +218,7 @@ scrolledwindow {
 
 .widget-dnd {
     margin: 0px;
-    padding: 0 3px;
+    padding: 0 1rem;
     font-size: 1rem;
 }
 
