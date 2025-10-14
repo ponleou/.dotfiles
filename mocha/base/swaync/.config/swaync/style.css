@@ -90,7 +90,7 @@ scale trough {
 }
 
 .control-center .widget-title button {
-    border-radius: 7px;
+    border-radius: 5px;
     color: @text;
     background-color: @surface0;
     padding: 0.5rem 1rem;
