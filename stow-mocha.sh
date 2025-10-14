@@ -11,7 +11,7 @@ for accent in "${accents[@]}"; do
   fi
 done
 stow --dir=$script_dir/mocha/base --target=$HOME btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout
-stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/utils sway-util
+stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases sway-base
 
 stow_accent() {
   local accent="$1"   # this is the variable after --dir=$script_dir/mocha/
