@@ -1,0 +1,34 @@
+blur enable
+blur_passes 4
+blur_radius 5
+blur_noise 0.06
+blur_brightness 0.8
+blur_contrast 1.1
+blur_saturation 0.9
+
+layer_effects "waybar" {
+  blur enable;
+  blur_ignore_transparent enable;
+}
+
+layer_effects "rofi" {
+  blur enable;
+  blur_ignore_transparent enable;
+}
+
+layer_effects "swaync-control-center" {
+  blur enable;
+  blur_ignore_transparent enable;
+}
+
+layer_effects "swaync-notification-window" {
+  blur enable;
+  blur_ignore_transparent enable;
+}
+
+layer_effects "logout_dialog" {
+  blur enable;
+  blur_ignore_transparent enable;
+}
+
+for_window [app_id=".*"] opacity set 1
