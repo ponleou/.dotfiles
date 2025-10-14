@@ -19,12 +19,8 @@ fi
 script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
 
-
 stow --dir=$script_dir/mocha/base --target=$HOME btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout
 stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases sway-base
-
-stow --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods transparent
-stow --dir=$script_dir/mocha/configs/fx --target=$script_dir/mocha/mods blur
 
 stow_accent() {
   local accent="$1"   # this is the variable after --dir=$script_dir/mocha/
@@ -50,6 +46,14 @@ if [[ $valid_accent == 1 ]]; then
 else
   echo "Accent not found, fallback to default accent ${accents[0]}"
   stow_accent "${accents[0]}"
+fi
+
+if [[ $enable_blur == 1 ]]; then
+  stow --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods transparent
+  stow --dir=$script_dir/mocha/configs/fx --target=$script_dir/mocha/mods blur
+else 
+  stow --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods opague
+  stow --dir=$script_dir/mocha/configs/fx --target=$script_dir/mocha/mods noblur
 fi
 
 swaymsg reload
