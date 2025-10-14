@@ -106,6 +106,8 @@ scale trough {
 
 .widget-notifications {
     padding: 0 1rem;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .control-center .notification-row .notification-background {
