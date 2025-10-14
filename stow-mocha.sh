@@ -51,9 +51,15 @@ stow_mods() {
   if [[ $enable_blur == 1 ]]; then
     stow --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods transparent
     stow --dir=$script_dir/mocha/configs/fx --target=$script_dir/mocha/mods blur
+
+    echo transparent > "$script_dir/settings/.current_mod_background"
+    echo blur > "$script_dir/settings/.current_mod_fx"
   else 
     stow --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods opague
     stow --dir=$script_dir/mocha/configs/fx --target=$script_dir/mocha/mods noblur
+
+    echo opague > "$script_dir/settings/.current_mod_background"
+    echo noblur > "$script_dir/settings/.current_mod_fx"
   fi
 }
 
