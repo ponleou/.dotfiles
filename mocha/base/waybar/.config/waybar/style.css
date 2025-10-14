@@ -1,5 +1,6 @@
 @import "mocha.css";
-@import "./utils/accent.css";
+@import "./option/accent.css";
+@import "./mod/background.css";
 
 * {
     border: none;
@@ -10,13 +11,13 @@
 }
 
 window#waybar {
-    background-color: @base;
+    background-color: @background;
     /* background-color: black; */
     color: @text;
 }
 
 tooltip {
-    background-color: @base;
+    background-color: @background;
     border: 1px solid @surface1;
 }
 

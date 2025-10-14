@@ -112,12 +112,4 @@ source $ZSH/oh-my-zsh.sh
 export ANDROID_HOME="/home/ponleou/Android/Sdk"
 export ANDROID_SDK_ROOT="/home/ponleou/Android/Sdk"
 export CAPACITOR_ANDROID_STUDIO_PATH=/usr/bin/android-studio
-
-# for qt app in sway
-if [ "$DESKTOP_SESSION" = "sway" ]; then
-    export QT_QPA_PLATFORMTHEME=qt6ct
-    export XDG_CURRENT_DESKTOP=sway
-fi
-
-# set mesa/radv as default vulkan driver
-export AMD_VULKAN_ICD=RADV
+export PATH=$PATH:~/.cargo/bin/

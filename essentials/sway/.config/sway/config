@@ -4,14 +4,15 @@
 
 # Read `man 5 sway` for a complete reference.
 
-include fx
-include utils/theme
+include base/theme
 
 # other configs
 font pango: WorkSans Regular 12
 
 gaps inner 10px
 gaps outer 2px
+
+corner_radius 5
 
 # set sway cursor
 seat seat0 xcursor_theme breeze_cursors 24

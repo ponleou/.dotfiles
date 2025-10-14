@@ -1,5 +1,6 @@
 @import "./colors.rasi"
-@import "./utils/accent.rasi"
+@import "./option/accent.rasi"
+@import "./mod/background.rasi"
 
 * {
     width: 600;
@@ -15,7 +16,7 @@ element-text, element-icon, mode-switcher {
 
 window {
     border-color: transparent;
-    background-color: @base;
+    background-color: @background;
     padding: 20px;
     font: @font;
     border: 2px;
@@ -24,13 +25,13 @@ window {
 }
 
 mainbox {
-    background-color: @base;
+    background-color: #00000000;
     font: @font;
 }
 
 inputbar {
     children: [prompt, entry];
-    background-color: @base;
+    background-color: #00000000;
     font: @font;
     border-color: @accent;
 }
@@ -48,7 +49,7 @@ prompt {
 
 textbox-prompt-colon {
     text-color: @text;
-    background-color: @base;
+    background-color: #00000000;
     font: @font;
     expand: false;
     width: 1ch;
@@ -57,7 +58,7 @@ textbox-prompt-colon {
 entry {
     padding: 0 0 0 5px;
     text-color: @text;
-    background-color: @base;
+    background-color: #00000000;
     text-align: center; 
     line-height: 30px;   
     font: @font;
@@ -69,7 +70,7 @@ listview {
     border: 0px;
     padding: 5px 0px 0px;
     columns: 1;
-    background-color: @base;
+    background-color: #00000000;
     fixed-height: false;
     lines: 7;
     border-radius: 0px;
@@ -80,7 +81,7 @@ element {
     padding: 5px;
     border-radius: 0px;
     font: @font;
-    background-color: @base;
+    background-color: #00000000;
     text-color: @text;
     margin: 10px 0 0;
 }
@@ -92,7 +93,7 @@ element-icon {
 }
 
 element selected {
-    background-color: @base;
+    background-color: #00000000;
     border-radius: 7.5px;
     text-color: @accent;
     font: @font;
