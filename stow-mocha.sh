@@ -2,7 +2,6 @@
 
 accents=("peach" "yellow")
 valid_accent=0
-script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
 for accent in "${accents[@]}"; do
   if [[ "$1" == "$accent" ]]; then
@@ -10,6 +9,17 @@ for accent in "${accents[@]}"; do
     break
   fi
 done
+
+enable_blur=0
+
+if [[ "$2" == "blur" ]]; then
+  enable_blur=1
+fi
+
+script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
+
+
+
 stow --dir=$script_dir/mocha/base --target=$HOME btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout
 stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases sway-base
 
