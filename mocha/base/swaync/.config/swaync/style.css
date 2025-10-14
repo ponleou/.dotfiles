@@ -104,6 +104,10 @@ scale trough {
     font-size: 1rem;
 }
 
+.control-center .notification-row {
+    background-color: white;
+}
+
 .control-center .notification-row .notification-background {
     border-radius: 5px;
     color: @text;
