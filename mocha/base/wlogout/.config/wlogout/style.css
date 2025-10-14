@@ -1,4 +1,4 @@
-@import "./utils/accent.css";
+@import "./option/accent.css";
 
 * {
     background-image: none;
@@ -31,25 +31,25 @@ button:hover {
 }
 
 #lock {
-    background-image: url("./utils/icons/lock.svg");
+    background-image: url("./option/icons/lock.svg");
 }
 
 #logout {
-    background-image: url("./utils/icons/logout.svg");
+    background-image: url("./option/icons/logout.svg");
 }
 
 #suspend {
-    background-image: url("./utils/icons/suspend.svg");
+    background-image: url("./option/icons/suspend.svg");
 }
 
 #hibernate {
-    background-image: url("./utils/icons/hibernate.svg");
+    background-image: url("./option/icons/hibernate.svg");
 }
 
 #shutdown {
-    background-image: url("./utils/icons/shutdown.svg");
+    background-image: url("./option/icons/shutdown.svg");
 }
 
 #reboot {
-    background-image: url("./utils/icons/reboot.svg");
+    background-image: url("./option/icons/reboot.svg");
 }
