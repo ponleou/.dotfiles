@@ -81,7 +81,7 @@ scale trough {
 }
 
 .widget-title {
-    margin-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 .control-center .widget-title > label {
