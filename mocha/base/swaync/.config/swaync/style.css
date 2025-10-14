@@ -142,7 +142,7 @@ scrolledwindow {
 .control-center .notification-row .notification-background .close-button {
     margin: 7px;
     padding: 2px;
-    border-radius: 6.3px;
+    border-radius: 5px;
     color: @base;
     background-color: @maroon;
 }
