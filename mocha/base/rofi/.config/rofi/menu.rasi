@@ -1,6 +1,6 @@
 @import "./colors.rasi"
 @import "./option/accent.rasi"
-@import "./mod/background.rasi
+@import "./mod/background.rasi"
 
 * {
     width: 600;
