@@ -29,4 +29,4 @@ layer_effects "swaync-notification-window" {
   blur_ignore_transparent enable;
 }
 
-for_window [app_id=".*"] opacity set 0.6
+for_window [app_id=".*"] opacity set 0
