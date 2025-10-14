@@ -33,4 +33,4 @@ layer_effects "logout_dialog" {
   blur_ignore_transparent enable;
 }
 
-for_window [app_id=".*"] opacity set 0.9
+for_window [app_id=".*"] opacity set 1
