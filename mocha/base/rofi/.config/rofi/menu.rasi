@@ -1,5 +1,5 @@
 @import "./colors.rasi"
-@import "./utils/accent.rasi"
+@import "./option/accent.rasi"
 
 * {
     width: 600;
