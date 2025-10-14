@@ -305,8 +305,8 @@ scrolledwindow {
 .widget-volume {
     padding: 1rem;
     border: @accent solid 1px;
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     border-bottom: none;
 }
 
@@ -324,8 +324,8 @@ scrolledwindow {
     padding: 1rem;
     padding-top: 0;
     border: @accent solid 1px;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     border-top: none;
     margin-bottom: 1rem;
 }
@@ -366,7 +366,7 @@ scrolledwindow {
     margin-right: 1rem;
     padding: 0.5rem 1rem;
     background-color: @accent;
-    border-radius: 7px;
+    border-radius: 5px;
     color: @mantle;
 }
 
