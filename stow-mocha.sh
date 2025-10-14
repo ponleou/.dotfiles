@@ -45,7 +45,8 @@ stow_mods() {
     local prev_fx=$(cat "$script_dir/settings/.current_mod_fx")
 
     stow -D --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods "$prev_background"
-    stow -D --dir="$script_dir/mocha/$prev_accent" --target="$script_dir/mocha/options" rofi-option swaync-option waybar-option wlogout-option sway-option
+    stow -D --dir=$script_dir/mocha/configs/fx --target=$script_dir/mocha/mods "$prev_fx"
+
   fi
 
   if [[ $enable_blur == 1 ]]; then
