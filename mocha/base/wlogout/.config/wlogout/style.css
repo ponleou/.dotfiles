@@ -1,4 +1,5 @@
-@import "mocha.css" @import "./option/accent.css";
+@import "mocha.css";
+@import "./option/accent.css";
 
 * {
     background-image: none;
