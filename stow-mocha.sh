@@ -13,6 +13,9 @@ done
 stow --dir=$script_dir/mocha/base --target=$HOME btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout
 stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases sway-base
 
+stow --dir=$script_dir/mocha/configs/background --target=$script_dir/mods transparent
+stow --dir=$script_dir/mocha/configs/fx --target=$script_dir/mods blur
+
 stow_accent() {
   local accent="$1"   # this is the variable after --dir=$script_dir/mocha/
 
