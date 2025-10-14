@@ -56,6 +56,6 @@ fi
 
 swaymsg reload
 swaync-client --reload-css >/dev/null 2>&1
-  nwg-look -a > /dev/null 2>&1
+nwg-look -a > /dev/null 2>&1
 
 
