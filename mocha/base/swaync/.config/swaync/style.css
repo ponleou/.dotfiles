@@ -206,6 +206,7 @@ scrolledwindow {
 .control-center-dnd slider {
     background: @surface1;
     border-radius: 8px;
+    margin: 2px;
 }
 
 .widget-dnd {
