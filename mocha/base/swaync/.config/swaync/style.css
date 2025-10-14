@@ -28,7 +28,6 @@ scale trough {
     background-color: @base;
     color: @text;
     padding: 0;
-    border-radius: 5px;
 }
 
 .floating-notifications.background .notification-row .notification-background:hover {
