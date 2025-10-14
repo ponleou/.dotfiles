@@ -30,6 +30,7 @@ layer_effects "swaync-notification-window" {
 
 layer_effects "logout_dialog" {
   blur enable;
+  blur_ignore_transparent enable;
   blur_passes 4;
   blur_radius 5;
   blur_noise 0.06;
