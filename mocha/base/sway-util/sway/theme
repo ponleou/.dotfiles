@@ -1,4 +1,4 @@
-include ./mocha-utils/accent
+include ./mocha-option/accent
 
 set $rosewater #f5e0dc
 set $flamingo #f2cdcd
