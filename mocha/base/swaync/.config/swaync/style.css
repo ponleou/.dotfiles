@@ -352,6 +352,7 @@ scrolledwindow {
     padding: 3px;
     background-color: @base;
     border-radius: 100%;
+    visibility: none;
 }
 
 .widget-buttons-grid {
