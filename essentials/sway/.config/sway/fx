@@ -31,12 +31,6 @@ layer_effects "swaync-notification-window" {
 layer_effects "logout_dialog" {
   blur enable;
   blur_ignore_transparent enable;
-  blur_passes 4;
-  blur_radius 5;
-  blur_noise 0.06;
-  blur_brightness 0.8;
-  blur_contrast 1.1;
-  blur_saturation 0.9;
 }
 
 for_window [app_id=".*"] opacity set 0.9
