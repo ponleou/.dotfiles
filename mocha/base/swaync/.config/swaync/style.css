@@ -25,7 +25,7 @@ scale trough {
 .floating-notifications.background .notification-row .notification-background {
     box-shadow: inset 0 0 0 1px @surface0;
     margin: 1rem;
-    background-color: @background;
+    background-color: @bgg;
     color: @text;
     padding: 0;
     border-radius: 5px;
@@ -74,7 +74,7 @@ scale trough {
 .control-center {
     box-shadow: inset 0 0 0 1px @surface0;
     margin: 12px;
-    background-color: @background;
+    background-color: @bgg;
     color: @text;
     padding: 1rem;
     border-radius: 5px;
@@ -84,7 +84,7 @@ scale trough {
     padding: 1rem;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    background-color: @background;
+    background-color: @bgg;
 }
 
 .control-center .widget-title > label {
@@ -111,14 +111,14 @@ scale trough {
     padding: 0 1rem;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    background-color: @background;
+    background-color: @bgg;
 }
 
 .control-center .notification-row .notification-background {
     border-radius: 5px;
     color: @text;
     box-shadow: inset 0 0 0 1px @surface1;
-    background-color: @background;
+    background-color: @bgg;
     margin-top: 1rem;
 }
 
@@ -226,7 +226,7 @@ scrolledwindow {
     margin: 0px;
     padding: 0 1rem;
     font-size: 1rem;
-    background-color: @background;
+    background-color: @bgg;
 }
 
 .widget-dnd > switch {
