@@ -1,5 +1,5 @@
 @import "mocha.css";
-@import "./utils/accent.css";
+@import "./option/accent.css";
 
 * {
     border: none;
