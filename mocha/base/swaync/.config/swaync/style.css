@@ -349,7 +349,7 @@ scrolledwindow {
 .app-icon {
     margin-bottom: -0.25rem;
     padding: 3px;
-    background-color: white;
+    background-color: @base;
     border-radius: 100%;
 }
 
