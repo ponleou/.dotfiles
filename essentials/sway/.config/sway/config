@@ -4,7 +4,6 @@
 
 # Read `man 5 sway` for a complete reference.
 
-include fx
 include base/theme
 
 # other configs
