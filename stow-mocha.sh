@@ -25,8 +25,8 @@ stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases sway-bas
 stow_accent() {
   local accent="$1"   # this is the variable after --dir=$script_dir/mocha/
 
-  if [[ -f "$script_dir/.current_accent" ]]; then
-    local prev_accent=$(cat "$script_dir/.current_accent")
+  if [[ -f "$script_dir/settings/.current_accent" ]]; then
+    local prev_accent=$(cat "$script_dir/settings/.current_accent")
     stow -D --dir="$script_dir/mocha/$prev_accent" --target="$HOME" nwg-look qt6ct
     stow -D --dir="$script_dir/mocha/$prev_accent" --target="$script_dir/mocha/options" rofi-option swaync-option waybar-option wlogout-option sway-option
   fi
@@ -34,9 +34,19 @@ stow_accent() {
   stow --dir="$script_dir/mocha/$accent" --target="$HOME" nwg-look qt6ct
   stow --dir="$script_dir/mocha/$accent" --target="$script_dir/mocha/options" rofi-option swaync-option waybar-option wlogout-option sway-option
 
-  echo $accent > "$script_dir/.current_accent"
+  echo $accent > "$script_dir/settings/.current_accent"
 
   papirus-folders -C cat-mocha-$accent > /dev/null 2>&1
+}
+
+stow_mods() {
+  if [[ -f "$script_dir/settings/.current_accent" ]]; then
+    local prev_background=$(cat "$script_dir/settings/.current_mod_background")
+    local prev_fx=$(cat "$script_dir/settings/.current_mod_fx")
+
+    stow -D --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods "$prev_background"
+    stow -D --dir="$script_dir/mocha/$prev_accent" --target="$script_dir/mocha/options" rofi-option swaync-option waybar-option wlogout-option sway-option
+  fi
 }
 
 if [[ $valid_accent == 1 ]]; then
