@@ -91,6 +91,6 @@ Color=205,214,244
 [General]
 Blur=false
 ColorRandomization=false
-Description=Catppuccin Mocha
-Opacity=1
+Description=Catppuccin Mocha Transparent
+Opacity=0.6
 Wallpaper=
