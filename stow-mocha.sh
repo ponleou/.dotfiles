@@ -47,6 +47,14 @@ stow_mods() {
     stow -D --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods "$prev_background"
     stow -D --dir="$script_dir/mocha/$prev_accent" --target="$script_dir/mocha/options" rofi-option swaync-option waybar-option wlogout-option sway-option
   fi
+
+  if [[ $enable_blur == 1 ]]; then
+    stow --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods transparent
+    stow --dir=$script_dir/mocha/configs/fx --target=$script_dir/mocha/mods blur
+  else 
+    stow --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods opague
+    stow --dir=$script_dir/mocha/configs/fx --target=$script_dir/mocha/mods noblur
+  fi
 }
 
 if [[ $valid_accent == 1 ]]; then
@@ -56,13 +64,7 @@ else
   stow_accent "${accents[0]}"
 fi
 
-if [[ $enable_blur == 1 ]]; then
-  stow --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods transparent
-  stow --dir=$script_dir/mocha/configs/fx --target=$script_dir/mocha/mods blur
-else 
-  stow --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods opague
-  stow --dir=$script_dir/mocha/configs/fx --target=$script_dir/mocha/mods noblur
-fi
+stow_mods
 
 swaymsg reload
 swaync-client --reload-css >/dev/null 2>&1
