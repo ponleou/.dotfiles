@@ -214,6 +214,7 @@ scrolledwindow {
 
 .widget-dnd {
     margin: 0px;
+    padding: 0 1rem;
     font-size: 1rem;
 }
 
