@@ -5,7 +5,7 @@ blur_radius 5
 blur_noise 0.06
 blur_brightness 0
 blur_contrast 1.5
-blur_saturation 1
+blur_saturation 0.5
 
 corner_radius 5
 
