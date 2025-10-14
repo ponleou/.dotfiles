@@ -1,4 +1,4 @@
-@import "./option/accent.css";
+@import "mocha.css" @import "./option/accent.css";
 
 * {
     background-image: none;
@@ -12,9 +12,9 @@ window {
 button {
     border-radius: 0;
     border-color: @accent;
-    text-decoration-color: #cdd6f4;
-    color: #cdd6f4;
-    background-color: #181825;
+    text-decoration-color: @text;
+    color: @text;
+    background-color: @mantle;
     border-style: solid;
     border-width: 1px;
     background-repeat: no-repeat;
@@ -25,8 +25,7 @@ button {
 button:focus,
 button:active,
 button:hover {
-    /* 20% Overlay 2, 80% mantle */
-    background-color: rgb(48, 50, 66);
+    background-color: @base;
     outline-style: none;
 }
 
