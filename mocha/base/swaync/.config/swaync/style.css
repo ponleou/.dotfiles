@@ -42,7 +42,7 @@ scale trough {
 .floating-notifications.background .notification-row .notification-background .close-button {
     margin: 7px;
     padding: 2px;
-    border-radius: 100px;
+    border-radius: 3px;
     color: @base;
     background-color: @red;
 }
