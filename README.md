@@ -15,7 +15,6 @@ Note that this repository also contains my personal scripts and systemd-services
 -   Wallpaper: Swaybg
 -   Terminal: Konsole
 -   Shell: Zsh
--   Editor: VSCode
 
 ## Screenshots
 
@@ -29,7 +28,6 @@ Stow's `.dotfiles/mocha/nwg-look` should not own any of the config folders, exce
 
 -   swayfx
 -   gpu-screen-record
--   rofi
 -   nwg-look
 -   catppuccin-gtk-theme-mocha
 -   qt6ct-kde
