@@ -46,7 +46,6 @@ stow_mods() {
 
     stow -D --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods "$prev_background"
     stow -D --dir=$script_dir/mocha/configs/fx --target=$script_dir/mocha/mods "$prev_fx"
-
   fi
 
   if [[ $enable_blur == 1 ]]; then
