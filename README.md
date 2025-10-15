@@ -34,4 +34,4 @@ Note that this repository also contains my personal scripts and systemd-services
 -   qt6ct-kde
 -   papirus-folders-catppuccin-git
 -   papirus-icon-theme
--   kde darkly theme
+-   darkly
