@@ -1,0 +1,4 @@
+.visual-refresh .theme-dark,
+body {
+    --control-text-primary-default: #1e1e2e !important;
+}
