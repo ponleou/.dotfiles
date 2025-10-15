@@ -1,0 +1,7 @@
+.visual-refresh .theme-dark, 
+body {
+    --__header-bar-background: #18182599 !important;
+    --background-base-lowest: #11111b1a !important;
+    --background-base-lower: #18182599 !important;
+    --custom-channel-members-bg: #1818251a;
+}
