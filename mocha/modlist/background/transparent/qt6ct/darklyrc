@@ -2,7 +2,7 @@
 OutlineCloseButton=false
 
 [Style]
-DolphinSidebarOpacity=0
+DolphinSidebarOpacity=60
 MenuBarOpacity=0
 TabBarOpacity=0
 
