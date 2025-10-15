@@ -28,11 +28,11 @@ stow_accent() {
   if [[ -f "$script_dir/settings/.current_accent" ]]; then
     local prev_accent=$(cat "$script_dir/settings/.current_accent")
     stow -D --dir="$script_dir/mocha/$prev_accent" --target="$HOME" nwg-look qt6ct
-    stow -D --dir="$script_dir/mocha/$prev_accent" --target="$script_dir/mocha/options" rofi-option swaync-option waybar-option wlogout-option sway-option
+    stow -D --dir="$script_dir/mocha/$prev_accent" --target="$script_dir/mocha/options" rofi-option swaync-option waybar-option wlogout-option sway-option vesktop-option
   fi
 
   stow --dir="$script_dir/mocha/$accent" --target="$HOME" nwg-look qt6ct
-  stow --dir="$script_dir/mocha/$accent" --target="$script_dir/mocha/options" rofi-option swaync-option waybar-option wlogout-option sway-option
+  stow --dir="$script_dir/mocha/$accent" --target="$script_dir/mocha/options" rofi-option swaync-option waybar-option wlogout-option sway-option vesktop-option
 
   echo $accent > "$script_dir/settings/.current_accent"
 
