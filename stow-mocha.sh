@@ -20,7 +20,7 @@ script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
 
 stow --dir=$script_dir/mocha/base --target=$HOME btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout
-stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases sway-base
+stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases sway-base vesktop-base
 
 stow_accent() {
   local accent="$1"   # this is the variable after --dir=$script_dir/mocha/
