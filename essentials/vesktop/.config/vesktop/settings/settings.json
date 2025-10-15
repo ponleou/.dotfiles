@@ -1,7 +1,7 @@
 {
     "autoUpdate": true,
     "autoUpdateNotification": true,
-    "useQuickCss": false,
+    "useQuickCss": true,
     "themeLinks": [],
     "eagerPatches": false,
     "enabledThemes": [],
@@ -577,6 +577,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1760528546536
+        "settingsSyncVersion": 1760528548808
     }
 }
