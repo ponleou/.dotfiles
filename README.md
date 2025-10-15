@@ -34,3 +34,4 @@ Note that this repository also contains my personal scripts and systemd-services
 -   papirus-folders-catppuccin-git
 -   papirus-icon-theme
 -   darkly
+-   cliphist
