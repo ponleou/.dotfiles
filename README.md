@@ -6,7 +6,7 @@ Note that this repository also contains my personal scripts and systemd-services
 
 ## Applications used
 
--   WM: Sway
+-   WM: Swayfx
 -   Bar: Waybar
 -   Launcher: Rofi
 -   File manager: Dolphin
@@ -27,7 +27,6 @@ Note that this repository also contains my personal scripts and systemd-services
 
 ### Dependencies
 
--   swayfx
 -   gpu-screen-record
 -   nwg-look
 -   catppuccin-gtk-theme-mocha
