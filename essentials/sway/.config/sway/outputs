@@ -7,5 +7,5 @@ output "eDP-2" {
     scale 1.5
     scale_filter linear
     adaptive_sync on
-    dpms off
+    dpmson
 }
