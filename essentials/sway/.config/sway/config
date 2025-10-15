@@ -48,7 +48,6 @@ exec kwalletd6
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
-set $home /home/ponleou
 set $mod Mod4
 
 set $term konsole
@@ -210,9 +209,9 @@ output * bg ./wallpaper/PXL_Luna_Beach.jpg fill
 # Example configuration:
 #
  exec swayidle -w \
-          timeout 600 'swaylock --grace 10 -f -C /home/ponleou/.config/swaylock/mocha.conf --clock --indicator --datestr '%d-%m-%Y'' \
+          timeout 600 'swaylock --grace 10 -f -C ~/.config/swaylock/mocha.conf --clock --indicator --datestr '%d-%m-%Y'' \
           timeout 700 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-          before-sleep 'swaylock -f -C /home/ponleou/.config/swaylock/mocha.conf --clock --indicator --datestr '%d-%m-%Y''
+          before-sleep 'swaylock -f -C ~/.config/swaylock/mocha.conf --clock --indicator --datestr '%d-%m-%Y''
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
