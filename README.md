@@ -35,3 +35,4 @@ Stow's `.dotfiles/mocha/nwg-look` should not own any of the config folders, exce
 -   qt6ct-kde
 -   papirus-folders-catppuccin-git
 -   papirus-icon-theme
+-   kde darkly theme
