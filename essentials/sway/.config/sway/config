@@ -133,8 +133,6 @@ set $file dolphin
     bindsym $mod+0 workspace number 10
     bindsym $mod+x workspace next
     bindsym $mod+z workspace prev
-    bindsym $mod+Ctrl+Right workspace next
-    bindsym $mod+Ctrl+left workspace prev
     bindsym $mod+Ctrl+x exec bash -c "swaymsg 'workspace $(~/.config/sway/scripts/next-or-new-workspace.sh)' && ~/.config/sway/scripts/reorder-workspace.sh"
     bindsym $mod+Ctrl+z exec bash -c "swaymsg 'workspace $(~/.config/sway/scripts/previous-or-new-workspace.sh)' && ~/.config/sway/scripts/reorder-workspace.sh"
 
