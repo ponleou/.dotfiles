@@ -44,19 +44,19 @@ stow_mods() {
     local prev_background=$(cat "$script_dir/settings/.current_mod_background")
     local prev_fx=$(cat "$script_dir/settings/.current_mod_fx")
 
-    stow -D --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods "$prev_background"
-    stow -D --dir=$script_dir/mocha/configs/fx --target=$script_dir/mocha/mods "$prev_fx"
+    stow -D --dir=$script_dir/mocha/modlist/background --target=$script_dir/mocha/mods "$prev_background"
+    stow -D --dir=$script_dir/mocha/modlist/fx --target=$script_dir/mocha/mods "$prev_fx"
   fi
 
   if [[ $enable_blur == 1 ]]; then
-    stow --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods transparent
-    stow --dir=$script_dir/mocha/configs/fx --target=$script_dir/mocha/mods blur
+    stow --dir=$script_dir/mocha/modlist/background --target=$script_dir/mocha/mods transparent
+    stow --dir=$script_dir/mocha/modlist/fx --target=$script_dir/mocha/mods blur
 
     echo transparent > "$script_dir/settings/.current_mod_background"
     echo blur > "$script_dir/settings/.current_mod_fx"
   else 
-    stow --dir=$script_dir/mocha/configs/background --target=$script_dir/mocha/mods default
-    stow --dir=$script_dir/mocha/configs/fx --target=$script_dir/mocha/mods default
+    stow --dir=$script_dir/mocha/modlist/background --target=$script_dir/mocha/mods default
+    stow --dir=$script_dir/mocha/modlist/fx --target=$script_dir/mocha/mods default
 
     echo default > "$script_dir/settings/.current_mod_background"
     echo default > "$script_dir/settings/.current_mod_fx"
