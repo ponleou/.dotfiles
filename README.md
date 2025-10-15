@@ -35,3 +35,4 @@ Note that this repository also contains my personal scripts and systemd-services
 -   papirus-icon-theme
 -   darkly
 -   cliphist
+-   oh-my-zsh
