@@ -133,8 +133,6 @@ set $file dolphin
     bindsym $mod+0 workspace number 10
     bindsym $mod+x workspace next
     bindsym $mod+z workspace prev
-    bindsym $mod+Ctrl+Right workspace next
-    bindsym $mod+Ctrl+left workspace prev
     bindsym $mod+Ctrl+x exec bash -c "swaymsg 'workspace $(~/.config/sway/scripts/next-or-new-workspace.sh)' && ~/.config/sway/scripts/reorder-workspace.sh"
     bindsym $mod+Ctrl+z exec bash -c "swaymsg 'workspace $(~/.config/sway/scripts/previous-or-new-workspace.sh)' && ~/.config/sway/scripts/reorder-workspace.sh"
 
@@ -191,15 +189,16 @@ bindsym $mod+r mode "resize"
 
 
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-output eDP-2 resolution 2560x1600 position 0,0
-output eDP-2 scale 1.5
+include outputs
+# output eDP-2 resolution 2560x1600 position 0,0
+# output eDP-2 scale 1.5
 
 # Macbook Air 2020 edid virtual display
 # output DP-3 resolution 2560x1600 position -1707,0
 # output HDMI-A-1 resolution 2560x1600 position -1707,0
 
-output DP-3 disable
-output HDMI-A-1 disable
+# output DP-3 disable
+# output HDMI-A-1 disable
 
 output * bg ./wallpaper/PXL_Luna_Beach.jpg fill
 
@@ -208,9 +207,9 @@ output * bg ./wallpaper/PXL_Luna_Beach.jpg fill
 # Example configuration:
 #
  exec swayidle -w \
-          timeout 600 'swaylock --grace 10 -f -C /home/ponleou/.config/swaylock/mocha.conf --clock --indicator --datestr '%d-%m-%Y'' \
+          timeout 600 'swaylock --grace 10 -f -C ~/.config/swaylock/mocha.conf --clock --indicator --datestr '%d-%m-%Y'' \
           timeout 700 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-          before-sleep 'swaylock -f -C /home/ponleou/.config/swaylock/mocha.conf --clock --indicator --datestr '%d-%m-%Y''
+          before-sleep 'swaylock -f -C ~/.config/swaylock/mocha.conf --clock --indicator --datestr '%d-%m-%Y''
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
