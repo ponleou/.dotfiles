@@ -24,3 +24,14 @@ Note that this repository also contains my personal scripts and systemd-services
 ### Additional info
 
 Stow's `.dotfiles/mocha/nwg-look` should not own any of the config folders, except for nwg-look config itself (that means it should not own the gtk-3.0 or gtk-4.0 directories). Stow should ONLY symlink the FILES, not the directory.
+
+### Dependencies
+
+-   swayfx
+-   gpu-screen-record
+-   rofi
+-   nwg-look
+-   catppuccin-gtk-theme-mocha
+-   qt6ct-kde
+-   papirus-folders-catppuccin-git
+-   papirus-icon-theme
