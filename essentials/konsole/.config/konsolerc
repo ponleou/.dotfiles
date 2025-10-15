@@ -1,7 +1,7 @@
 MenuBar=Disabled
 
 [Desktop Entry]
-DefaultProfile=Mocha.profile
+DefaultProfile=stow_dotfiles.profile
 
 [General]
 ConfigVersion=1
