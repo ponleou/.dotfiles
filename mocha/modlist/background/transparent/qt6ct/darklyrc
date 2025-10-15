@@ -5,6 +5,7 @@ OutlineCloseButton=false
 DolphinSidebarOpacity=60
 MenuBarOpacity=60
 TabBarOpacity=60
+TransparentDolphinView=true
 
 [Windeco]
 DrawBackgroundGradient=false
