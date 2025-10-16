@@ -1,0 +1,56 @@
+@import "mocha.css";
+@import "./option/accent.css";
+@import "./mod/background.css";
+
+* {
+    background-image: none;
+    box-shadow: none;
+}
+
+window {
+    background-color: @background;
+}
+
+button {
+    border-radius: 0;
+    border-color: @accent;
+    text-decoration-color: @text;
+    color: @text;
+    background-color: @mantle;
+    border-style: solid;
+    border-width: 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+}
+
+button:focus,
+button:active,
+button:hover {
+    background-color: @base;
+    outline-style: none;
+}
+
+#lock {
+    background-image: url("./option/icons/lock.svg");
+}
+
+#logout {
+    background-image: url("./option/icons/logout.svg");
+}
+
+#suspend {
+    background-image: url("./option/icons/suspend.svg");
+}
+
+#hibernate {
+    background-image: url("./option/icons/hibernate.svg");
+}
+
+#shutdown {
+    background-image: url("./option/icons/shutdown.svg");
+}
+
+#reboot {
+    background-image: url("./option/icons/reboot.svg");
+}

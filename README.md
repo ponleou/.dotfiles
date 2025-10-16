@@ -6,7 +6,7 @@ Note that this repository also contains my personal scripts and systemd-services
 
 ## Applications used
 
--   WM: Sway
+-   WM: Swayfx
 -   Bar: Waybar
 -   Launcher: Rofi
 -   File manager: Dolphin
@@ -15,12 +15,28 @@ Note that this repository also contains my personal scripts and systemd-services
 -   Wallpaper: Swaybg
 -   Terminal: Konsole
 -   Shell: Zsh
--   Editor: VSCode
 
 ## Screenshots
 
 ## Keybinds
 
-### Additional info
+### Unknowned Directory Packages
 
-Stow's `.dotfiles/mocha/nwg-look` should not own any of the config folders, except for nwg-look config itself (that means it should not own the gtk-3.0 or gtk-4.0 directories). Stow should ONLY symlink the FILES, not the directory.
+-   vesktop (only owns settings/)
+-   youtube music
+
+### Dependencies
+
+-   nwg-look
+-   catppuccin-gtk-theme-mocha
+-   qt6ct-kde
+-   papirus-folders-catppuccin-git
+-   papirus-icon-theme
+-   darkly
+
+Optional:
+
+-   autotiling
+-   gpu-screen-record
+-   cliphist
+-   oh-my-zsh

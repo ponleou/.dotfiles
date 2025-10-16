@@ -1,0 +1,28 @@
+MenuBar=Disabled
+
+[Desktop Entry]
+DefaultProfile=stow_dotfiles.profile
+
+[General]
+ConfigVersion=1
+
+[MainWindow]
+1920x1200 screen: Height=541
+1920x1200 screen: Width=896
+1920x1200 screen: Window-Maximized=true
+1920x1200 screen: XPosition=115
+1920x1200 screen: YPosition=213
+2 screens: Height=541
+2 screens: Width=896
+2 screens: XPosition=2739
+2 screens: YPosition=126
+HDMI-A-1-0 eDP-1=HDMI-A-1-0
+RestorePositionForNextInstance=false
+eDP=eDP
+eDP-1=eDP-1
+
+[TabBar]
+TabBarPosition=Bottom
+
+[UiSettings]
+ColorScheme=
