@@ -27,12 +27,16 @@ Note that this repository also contains my personal scripts and systemd-services
 
 ### Dependencies
 
--   gpu-screen-record
 -   nwg-look
 -   catppuccin-gtk-theme-mocha
 -   qt6ct-kde
 -   papirus-folders-catppuccin-git
 -   papirus-icon-theme
 -   darkly
+
+Optional:
+
+-   autotiling
+-   gpu-screen-record
 -   cliphist
 -   oh-my-zsh
