@@ -1,1 +1,1 @@
-for_window [app_id="pavucontrol-qt"] floating enable
+for_window [app_id="pavucontrol-qt"] floating enable, resize set 50 pct 75 pct, move position center
