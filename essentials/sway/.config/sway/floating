@@ -1,0 +1,2 @@
+for_window [app_id="pavucontrol-qt"] floating enable, resize set 50 ppt 75 ppt, move position center
+for_window [app_id="blueman-manager"] floating enable, resize set 50 ppt 75 ppt, move position center
