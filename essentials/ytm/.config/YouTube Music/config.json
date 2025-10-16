@@ -44,7 +44,8 @@
 			"globalShortcuts": {
 				"volumeUp": "",
 				"volumeDown": ""
-			}
+			},
+			"savedVolume": 69
 		},
 		"discord": {
 			"enabled": true,
