@@ -1,178 +1,195 @@
 {
-    "window-maximized": false,
-    "window-position": {
-        "x": 0,
-        "y": 0
-    },
-    "options": {
-        "tray": false,
-        "appVisible": true,
-        "autoUpdates": true,
-        "alwaysOnTop": false,
-        "hideMenu": true,
-        "hideMenuWarned": true,
-        "startAtLogin": false,
-        "disableHardwareAcceleration": false,
-        "removeUpgradeButton": false,
-        "restartOnConfigChanges": false,
-        "trayClickPlayPause": false,
-        "autoResetAppCache": false,
-        "resumeOnStart": false,
-        "likeButtons": "",
-        "proxy": "",
-        "startingPage": "Home",
-        "overrideUserAgent": false,
-        "usePodcastParticipantAsArtist": false,
-        "themes": ["/home/ponleou/.config/YouTube Music/theme.css"]
-    },
-    "plugins": {
-        "notifications": {},
-        "video-toggle": {
-            "mode": "custom"
-        },
-        "precise-volume": {
-            "enabled": true,
-            "steps": "1",
-            "arrowsShortcut": true,
-            "globalShortcuts": {
-                "volumeUp": "",
-                "volumeDown": ""
-            },
-            "savedVolume": 65
-        },
-        "discord": {
-            "enabled": true,
-            "autoReconnect": true,
-            "activityTimeoutEnabled": true,
-            "activityTimeoutTime": 1000,
-            "playOnYouTubeMusic": true,
-            "hideGitHubButton": true,
-            "hideDurationLeft": false,
-            "statusDisplayType": 1,
-            "listenAlong": true
-        },
-        "ambient-mode": {
-            "enabled": false
-        },
-        "album-color-theme": {
-            "enabled": true,
-            "ratio": 0.1
-        },
-        "blur-nav-bar": {
-            "enabled": true
-        },
-        "compact-sidebar": {
-            "enabled": false
-        },
-        "synced-lyrics": {
-            "enabled": true
-        },
-        "music-together": {
-            "enabled": true
-        },
-        "visualizer": {
-            "enabled": false,
-            "type": "wave",
-            "butterchurn": {
-                "preset": "martin [shadow harlequins shape code] - fata morgana",
-                "renderingFrequencyInMs": 500,
-                "blendTimeInSeconds": 2.7
-            },
-            "vudio": {
-                "effect": "lighting",
-                "accuracy": 128,
-                "lighting": {
-                    "maxHeight": 160,
-                    "maxSize": 12,
-                    "lineWidth": 1,
-                    "color": "#49f3f7",
-                    "shadowBlur": 2,
-                    "shadowColor": "rgba(244,244,244,.5)",
-                    "fadeSide": true,
-                    "prettify": false,
-                    "horizontalAlign": "center",
-                    "verticalAlign": "middle",
-                    "dottify": true
-                }
-            },
-            "wave": {
-                "animations": [
-                    {
-                        "type": "Cubes",
-                        "config": {
-                            "bottom": true,
-                            "count": 30,
-                            "cubeHeight": 5,
-                            "fillColor": {
-                                "gradient": ["#FAD961", "#F76B1C"]
-                            },
-                            "lineColor": "rgba(0,0,0,0)",
-                            "radius": 20
-                        }
-                    },
-                    {
-                        "type": "Cubes",
-                        "config": {
-                            "top": true,
-                            "count": 12,
-                            "cubeHeight": 5,
-                            "fillColor": {
-                                "gradient": ["#FAD961", "#F76B1C"]
-                            },
-                            "lineColor": "rgba(0,0,0,0)",
-                            "radius": 10
-                        }
-                    },
-                    {
-                        "type": "Circles",
-                        "config": {
-                            "lineColor": {
-                                "gradient": ["#FAD961", "#FAD961", "#F76B1C"],
-                                "rotate": 90
-                            },
-                            "lineWidth": 4,
-                            "diameter": 20,
-                            "count": 10,
-                            "frequencyBand": "base"
-                        }
-                    }
-                ]
-            }
-        },
-        "scrobbler": {
-            "enabled": false
-        },
-        "in-app-menu": {
-            "enabled": false
-        },
-        "audio-compressor": {
-            "enabled": false
-        },
-        "lumiastream": {
-            "enabled": false
-        },
-        "downloader": {
-            "enabled": false
-        },
-        "navigation": {
-            "enabled": true
-        },
-        "album-actions": {
-            "enabled": false
-        },
-        "exponential-volume": {
-            "enabled": true
-        },
-        "auth-proxy-adapter": {
-            "enabled": false
-        },
-        "equalizer": {
-            "enabled": false
-        }
-    },
-    "__internal__": {
-        "migrations": {
-            "version": "3.11.0"
-        }
-    }
+	"window-size": {
+		"width": 1100,
+		"height": 550
+	},
+	"window-maximized": false,
+	"window-position": {
+		"x": 0,
+		"y": 0
+	},
+	"url": "https://music.youtube.com",
+	"options": {
+		"tray": false,
+		"appVisible": true,
+		"autoUpdates": true,
+		"alwaysOnTop": false,
+		"hideMenu": true,
+		"hideMenuWarned": true,
+		"startAtLogin": false,
+		"disableHardwareAcceleration": false,
+		"removeUpgradeButton": false,
+		"restartOnConfigChanges": false,
+		"trayClickPlayPause": false,
+		"autoResetAppCache": false,
+		"resumeOnStart": false,
+		"likeButtons": "",
+		"proxy": "",
+		"startingPage": "Home",
+		"overrideUserAgent": false,
+		"usePodcastParticipantAsArtist": false,
+		"themes": [
+			"/home/ponleou/.config/YouTube Music/theme.css"
+		]
+	},
+	"plugins": {
+		"notifications": {},
+		"video-toggle": {
+			"mode": "custom"
+		},
+		"precise-volume": {
+			"enabled": true,
+			"steps": "1",
+			"arrowsShortcut": true,
+			"globalShortcuts": {
+				"volumeUp": "",
+				"volumeDown": ""
+			},
+			"savedVolume": 65
+		},
+		"discord": {
+			"enabled": true,
+			"autoReconnect": true,
+			"activityTimeoutEnabled": true,
+			"activityTimeoutTime": 1000,
+			"playOnYouTubeMusic": true,
+			"hideGitHubButton": true,
+			"hideDurationLeft": false,
+			"statusDisplayType": 1,
+			"listenAlong": true
+		},
+		"ambient-mode": {
+			"enabled": false
+		},
+		"album-color-theme": {
+			"enabled": true,
+			"ratio": 0.1
+		},
+		"blur-nav-bar": {
+			"enabled": true
+		},
+		"compact-sidebar": {
+			"enabled": false
+		},
+		"synced-lyrics": {
+			"enabled": true
+		},
+		"music-together": {
+			"enabled": true
+		},
+		"visualizer": {
+			"enabled": false,
+			"type": "wave",
+			"butterchurn": {
+				"preset": "martin [shadow harlequins shape code] - fata morgana",
+				"renderingFrequencyInMs": 500,
+				"blendTimeInSeconds": 2.7
+			},
+			"vudio": {
+				"effect": "lighting",
+				"accuracy": 128,
+				"lighting": {
+					"maxHeight": 160,
+					"maxSize": 12,
+					"lineWidth": 1,
+					"color": "#49f3f7",
+					"shadowBlur": 2,
+					"shadowColor": "rgba(244,244,244,.5)",
+					"fadeSide": true,
+					"prettify": false,
+					"horizontalAlign": "center",
+					"verticalAlign": "middle",
+					"dottify": true
+				}
+			},
+			"wave": {
+				"animations": [
+					{
+						"type": "Cubes",
+						"config": {
+							"bottom": true,
+							"count": 30,
+							"cubeHeight": 5,
+							"fillColor": {
+								"gradient": [
+									"#FAD961",
+									"#F76B1C"
+								]
+							},
+							"lineColor": "rgba(0,0,0,0)",
+							"radius": 20
+						}
+					},
+					{
+						"type": "Cubes",
+						"config": {
+							"top": true,
+							"count": 12,
+							"cubeHeight": 5,
+							"fillColor": {
+								"gradient": [
+									"#FAD961",
+									"#F76B1C"
+								]
+							},
+							"lineColor": "rgba(0,0,0,0)",
+							"radius": 10
+						}
+					},
+					{
+						"type": "Circles",
+						"config": {
+							"lineColor": {
+								"gradient": [
+									"#FAD961",
+									"#FAD961",
+									"#F76B1C"
+								],
+								"rotate": 90
+							},
+							"lineWidth": 4,
+							"diameter": 20,
+							"count": 10,
+							"frequencyBand": "base"
+						}
+					}
+				]
+			}
+		},
+		"scrobbler": {
+			"enabled": false
+		},
+		"in-app-menu": {
+			"enabled": false
+		},
+		"audio-compressor": {
+			"enabled": false
+		},
+		"lumiastream": {
+			"enabled": false
+		},
+		"downloader": {
+			"enabled": false
+		},
+		"navigation": {
+			"enabled": true
+		},
+		"album-actions": {
+			"enabled": false
+		},
+		"exponential-volume": {
+			"enabled": true
+		},
+		"auth-proxy-adapter": {
+			"enabled": false
+		},
+		"equalizer": {
+			"enabled": false
+		}
+	},
+	"__internal__": {
+		"migrations": {
+			"version": "3.11.0"
+		}
+	}
 }
